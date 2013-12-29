@@ -1,0 +1,83 @@
+<?php
+/*
+ * Copyright 2013 by Sawyer Bowman and Dwayne Bowman. This program is 
+ * made originally for Woodlawn School, a nonprofit private school in
+ * Davidson, NC. It comes with absolutely no warranty.  You can redistribute 
+ * and/or modify it under the terms of the GNU Public License as published
+ * by the Free Software Foundation (see <http://www.gnu.org/licenses/).
+*/
+
+/*
+ *  a form for a new applicant for middle or high school at Woodlawn School
+ *	@Sawyer Bowman
+ *	@version 12/28/2013
+ */
+ 
+include_once("applicantEdit.php");
+
+//Make a new applicant
+
+$today = date('Y-M-d');
+$currentday = substr($today, 9, 2);
+$currentmonth = substr($today, 5, 3);
+$currentyear = substr($today, 0, 4);
+
+echo('<p><strong>Middle and Upper School Admissions Application</strong><br />');
+?>
+
+<p>Applying for grade:<span style="font-size:x-small;color:FF0000"></span>:
+
+<?php
+
+$grades = array("6th", "7th", "8th", "9th", "10th", "11th", "12th");
+foreach ($grades as $grade) {
+	echo "<option value'" . $grade . "' ";
+}
+
+?>
+
+<p>in the school year:<span style="font-size:x-small;color:FF0000"></span>:
+
+<?php
+
+$nextYear = $currentyear + 1;
+$years = array($currentyear, $nextYear);
+foreach ($years as $year) {
+	echo "<option value'" . $year . "' ";
+}
+
+?>
+
+<p>Preferred Name:<span style="font-size:x-small;color:FF0000"></span>:<br /><input type="text" size="40">
+
+<fieldset>
+	<legend>Applicant Name:</legend>
+		<table>
+			<tr><td>First<span style="font-size:x-small;color:FF0000"></span></td> <input type="text" size="40"
+			<tr><td>Middle<span style="font-size:x-small;color:FF0000"></span></td> <input type="text" size="40"
+			<tr><td>Last<span style="font-size:x-small;color:FF0000"></span></td> <input type="text" size="40"
+		</table>
+</fieldset>
+
+<fieldset>
+	<legend>Date of Birth:</legend>
+		<table>
+			<tr><td>Month
+		</table>
+</fieldset>
+<p>Date of Birth:<span style="font-size:x-small;color:FF0000"></span>:
+
+<?php 
+
+$months = array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+foreach($months as $month) {
+	echo "<option value'" . $month . "' ";
+}
+
+$days = array("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17",
+				"18","19","20","21","22","23","24","25","26","27","28","29","30","31");
+
+echo('<input type="checkbox" name="female" value="FEMALE"> Female');
+echo('<input type="checkbox" name="male" value="MALE"> Male');
+
+?>

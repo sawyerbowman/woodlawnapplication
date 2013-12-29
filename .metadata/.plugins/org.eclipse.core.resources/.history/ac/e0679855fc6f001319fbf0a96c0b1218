@@ -1,0 +1,25 @@
+<?php
+/*
+ * Copyright 2013 by Sawyer Bowman and Dwayne Bowman. This program is 
+ * made originally for Woodlawn School, a nonprofit private school in
+ * Davidson, NC. It comes with absolutely no warranty.  You can redistribute 
+ * and/or modify it under the terms of the GNU Public License as published
+ * by the Free Software Foundation (see <http://www.gnu.org/licenses/).
+*/
+
+/*
+ *  a form for a client to be added or edited in the database
+ *	@author Hartley Brody and Sawyer Bowman
+ *	@version 12/28/2013
+ */
+ 
+include_once("applicantEdit.php");
+
+//Make a new applicant
+
+$today = date('Y-M-d');
+$currentday = substr($today, 9, 2);
+$currentmonth = substr($today, 5, 3);
+$currentyear = substr($today, 0, 4);
+
+echo('<p><strong>Middle and Upper School Admissions Application</strong><br />')

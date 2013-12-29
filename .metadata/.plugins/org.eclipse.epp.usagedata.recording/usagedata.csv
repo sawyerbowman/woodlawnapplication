@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330728082
+error,log,,,"IStructuredDocumentRegion management failed.",1388330736893
+error,log,,,"IStructuredDocumentRegion management failed.",1388330740526
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330747343
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330753574
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330754812
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330784460
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330797541
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330799439
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330810634
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330814624
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330817938
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330819073
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330823318
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330824659
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330833639
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330840306
+error,log,,,"IStructuredDocumentRegion management failed.",1388330847290
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330855532
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330887661
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330891532
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330894701
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330916447
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330953421
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330954307
