@@ -67,7 +67,7 @@ foreach ($years as $year) {
 			<tr><td>Preferred<span style="font-size:x-small;color:FF0000"></span></td> <td><input type="text" size="20"
 			id="preferred" name="preferredname"></td></tr>
 			<tr><td>Gender<span style="font-size:x-small;color:FF0000"></span></td> <td><input type="Radio" name="gender" id="female" 
-			value="Female"> Female </td> <td><input type="Radio" name="gender" id="male" value="Male"> Male</tr>
+			name="female" value="Female"> Female </td> <td><input type="Radio" name="gender" id="male" name="male" value="Male"> Male</tr>
 		</table>
 </fieldset>
 
