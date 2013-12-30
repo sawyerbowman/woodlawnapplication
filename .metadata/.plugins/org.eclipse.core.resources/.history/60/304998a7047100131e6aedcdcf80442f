@@ -111,7 +111,7 @@ foreach ($years as $year) {
 		</table>
 </fieldset>
 
-<br>
+<br><br>
 
 <fieldset>
 	<legend>Home Address:</legend>
@@ -301,7 +301,7 @@ Clear Guardian 1 Address</button><br />
 <fieldset>
 	<legend>Guardian 1 Contact Information:</legend>
 		<table>
-			<tr><td>Email:<span style="font-size:x-small;color:FF0000"></span></td> <td><input type="text" size="30"
+			<tr><td>Email:<span style="font-size:x-small;color:FF0000"></span></td> <td><input type="text" size="40"
 			id="guardian1email" name="guardian1email">
 			<tr><td>Phone (home):<span style="font-size:x-small;color:FF0000"></span></td> <td><input type="text" size="20"
 			id="guardian1homephone" name="guardian1homephone">
@@ -309,15 +309,14 @@ Clear Guardian 1 Address</button><br />
 			id="guardian1cellphone" name="guardian1cellphone">
 			<tr><td>Employer:<span style="font-size:x-small;color:FF0000"></span></td> <td><input type="text" size="30"
 			id="guardian1employer" name="guardian1employer">
-			<td>Occupation:<span style="font-size:x-small;color:FF0000"></span></td> <td><input type="text" size="20"
+			<td>Occupation:<span style="font-size:x-small;color:FF0000"></span></td> <td><input type="text" size="30"
 			id="guardian1occupation" name="guardian1occupation"></td></tr>
 		</table>
 </fieldset>
 
 <br><br>
 
-<p>Guardian 2:<span style="font-size:x-small;color:FF0000"></span><input type="text" size="30"
-id="guardian2name" name="guardian2name">
+<p>Guardian 2:<span style="font-size:x-small;color:FF0000"></span><input type="text" size="30">
  Relationship to Applicant:<span style="font-size:x-small;color:FF0000"></span> <select
  id="guardian2rel" name="guardian2rel">
 
@@ -377,7 +376,7 @@ Clear Guardian 2 Address</button><br />
 <fieldset>
 	<legend>Guardian 2 Contact Information:</legend>
 		<table>
-			<tr><td>Email:<span style="font-size:x-small;color:FF0000"></span></td> <td><input type="text" size="30"
+			<tr><td>Email:<span style="font-size:x-small;color:FF0000"></span></td> <td><input type="text" size="40"
 			id="guardian2email" name="guardian2email">
 			<tr><td>Phone (home):<span style="font-size:x-small;color:FF0000"></span></td> <td><input type="text" size="20"
 			id="guardian2homephone" name="guardian2homephone">
@@ -385,7 +384,7 @@ Clear Guardian 2 Address</button><br />
 			id="guardian2cellphone" name="guardian2cellphone">
 			<tr><td>Employer:<span style="font-size:x-small;color:FF0000"></span></td> <td><input type="text" size="30"
 			id="guardian2employer" name="guardian2employer">
-			<td>Occupation:<span style="font-size:x-small;color:FF0000"></span></td> <td><input type="text" size="20"
+			<td>Occupation:<span style="font-size:x-small;color:FF0000"></span></td> <td><input type="text" size="30"
 			id="guardian2occupation" name="guardian2occupation"></td></tr>
 		</table>
 </fieldset>
@@ -393,7 +392,7 @@ Clear Guardian 2 Address</button><br />
 <p>Please list any family or friend connections to the school:
 <br /> <textarea id="connections" name="connections" rows="5" cols="80"></textarea>
 
-<br><br><br>
+<br>
 
 <button type="submit" name="Submit Application">Submit Application </button>
 <button type="reset" value="Clear" name="Clear All">Clear Application</button>

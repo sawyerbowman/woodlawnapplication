@@ -111,7 +111,7 @@ foreach ($years as $year) {
 		</table>
 </fieldset>
 
-<br>
+<br><br>
 
 <fieldset>
 	<legend>Home Address:</legend>

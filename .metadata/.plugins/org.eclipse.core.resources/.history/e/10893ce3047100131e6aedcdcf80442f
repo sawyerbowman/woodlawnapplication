@@ -111,7 +111,7 @@ foreach ($years as $year) {
 		</table>
 </fieldset>
 
-<br>
+<br><br>
 
 <fieldset>
 	<legend>Home Address:</legend>
@@ -393,7 +393,7 @@ Clear Guardian 2 Address</button><br />
 <p>Please list any family or friend connections to the school:
 <br /> <textarea id="connections" name="connections" rows="5" cols="80"></textarea>
 
-<br><br><br>
+<br>
 
 <button type="submit" name="Submit Application">Submit Application </button>
 <button type="reset" value="Clear" name="Clear All">Clear Application</button>
