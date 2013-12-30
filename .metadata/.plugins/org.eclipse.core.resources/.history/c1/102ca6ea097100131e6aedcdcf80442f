@@ -12,13 +12,9 @@
  *	@Sawyer Bowman
  *	@version 12/28/2013
  */
-
-$datetime = date('M-d-Y-g-i-a-e');
 ?>
-<form method=post action="*****">
-<input type="hidden" name="next_url" value="http://www.woodlawnschool.org">
-<input type="hidden" name="time_date" value="<?php echo($datetime);?>">
-
+<form method=post action="**********************">
+<input type="hidden" name="next_url" value="http://woodlawnschool.org/index.html">
 <?php
  
 include_once("applicantEdit.php");
@@ -136,7 +132,9 @@ foreach ($years as $year) {
 			}
 			
 			?>
-			</select>
+			</select></td></tr>
+		</table>
+
 			<tr><td>Country</td> <td><input type="text" size="20" 
 			id="applicantcountry" name="applicantcountry" value="<?php 
 			echo("United States of America");
@@ -144,7 +142,7 @@ foreach ($years as $year) {
 			></td>
 			<td>Zip</td> <td><input type="text" size="10"
 			id="applicantzip" name="applicantzip"></td></tr>
-		</table>
+
 </fieldset>
 
 <br>
@@ -323,7 +321,7 @@ Clear Guardian 1 Address</button><br />
 		</table>
 </fieldset>
 
-<br>
+<br><br>
 
 <p>Guardian 2:<input type="text" size="30"
 id="guardian2name" name="guardian2name">

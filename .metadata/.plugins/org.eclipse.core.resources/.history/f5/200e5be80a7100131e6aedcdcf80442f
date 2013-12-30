@@ -13,11 +13,11 @@
  *	@version 12/28/2013
  */
 
-$datetime = date('M-d-Y-g-i-a-e');
+$datetime = date('M-d-Y-g-i-a');
 ?>
-<form method=post action="*****">
-<input type="hidden" name="next_url" value="http://www.woodlawnschool.org">
-<input type="hidden" name="time_date" value="<?php echo($datetime);?>">
+<form method=post action="**********************">
+<input type="hidden" name="next_url" value="<?php echo($datetime);?>">
+<input type="hidden" name="time_date" value="">
 
 <?php
  

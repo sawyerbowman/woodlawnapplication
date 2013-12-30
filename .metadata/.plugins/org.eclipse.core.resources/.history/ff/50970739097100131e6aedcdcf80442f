@@ -12,13 +12,9 @@
  *	@Sawyer Bowman
  *	@version 12/28/2013
  */
-
-$datetime = date('M-d-Y-g-i-a-e');
 ?>
-<form method=post action="*****">
-<input type="hidden" name="next_url" value="http://www.woodlawnschool.org">
-<input type="hidden" name="time_date" value="<?php echo($datetime);?>">
-
+<form method=post action="**********************">
+<input type="hidden" name="next_url" value="http://woodlawnschool.org/index.html">
 <?php
  
 include_once("applicantEdit.php");
@@ -70,13 +66,17 @@ foreach ($years as $year) {
 			id="last" name="lastname"></td></tr>
 			<tr><td>Preferred</td> <td><input type="text" size="20"
 			id="preferred" name="preferredname"></td></tr>
-		</table>
-		<table>
 			<tr><td>Gender</td> <td><input type="Radio" name="gender" id="female" 
 			value="Female"> Female </td> <td><input type="Radio" name="gender" id="male" value="Male"> Male</tr>
 		</table>
+</fieldset>
+
+<br>
+
+<fieldset>
+	<legend>Date of Birth:</legend>
 		<table>
-			<tr><td>Date of Birth: Month</td> <td><select id="dobmonth" name="dobmonth">
+			<tr><td>Month</td> <td><select id="dobmonth" name="dobmonth">
 			<?php 
 			$months = array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
 			foreach($months as $month) {
@@ -165,8 +165,6 @@ foreach ($years as $year) {
 
 			?>
 			</select></td></tr>
-		</table>
-		<table>
 			<tr><td>School Type</td> <td><input type="Radio" 
 			id="schooltype" name="schooltype" value="Public"> Public </td> <td><input type="Radio" id="schooltype" 
 			name="schooltype" value="Private"> Private</td></tr>
@@ -323,7 +321,7 @@ Clear Guardian 1 Address</button><br />
 		</table>
 </fieldset>
 
-<br>
+<br><br>
 
 <p>Guardian 2:<input type="text" size="30"
 id="guardian2name" name="guardian2name">
