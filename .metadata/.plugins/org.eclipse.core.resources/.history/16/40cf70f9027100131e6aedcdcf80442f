@@ -13,9 +13,10 @@
  *	@version 12/28/2013
  */
 ?>
-<form method=post action="**********************">
+<form method=post action="http://us.1.p10.webhosting.yahoo.com/forms?login=dwayneb">
 <input type="hidden" name="next_url" value="http://woodlawnschool.org/index.html">
 <?php
+session_start();
  
 include_once("applicantEdit.php");
 
@@ -26,6 +27,8 @@ $currentday = substr($today, 9, 2);
 $currentmonth = substr($today, 5, 3);
 $currentyear = substr($today, 0, 4);
 ?>
+
+<img src="Images/Application_Header.png" alt="Application_Header" width="640.5" height="163.5">
 
 <p>Applying for<span style="font-size:x-small;color:FF0000"></span> <select id="futuregrade" name="futuregrade">
 <?php

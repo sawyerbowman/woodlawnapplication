@@ -13,7 +13,7 @@
  *	@version 12/28/2013
  */
 ?>
-<form method=post action="**********************">
+<form method=post action="http://us.1.p10.webhosting.yahoo.com/forms?login=dwayneb">
 <input type="hidden" name="next_url" value="http://woodlawnschool.org/index.html">
 <?php
  
