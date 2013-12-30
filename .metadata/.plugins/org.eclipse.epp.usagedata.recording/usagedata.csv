@@ -1,26 +1,301 @@
 what,kind,bundleId,bundleVersion,description,time
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330728082
-error,log,,,"IStructuredDocumentRegion management failed.",1388330736893
-error,log,,,"IStructuredDocumentRegion management failed.",1388330740526
-executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330747343
-executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330753574
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330754812
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330784460
-executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330797541
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330799439
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330810634
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330814624
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330817938
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330819073
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330823318
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330824659
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330833639
-executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330840306
-error,log,,,"IStructuredDocumentRegion management failed.",1388330847290
-executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330855532
-executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330887661
-executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330891532
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330894701
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330916447
-executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388330953421
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388330954307
+locale,sysinfo,,,"en_US",1388369990398
+processors,sysinfo,,,"8",1388369990399
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1388369990399
+java.runtime.version,sysinfo,,,"1.6.0_65-b14-462-11M4609",1388369990399
+java.specification.name,sysinfo,,,"Java Platform API Specification",1388369990399
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1388369990399
+java.specification.version,sysinfo,,,"1.6",1388369990399
+java.vendor,sysinfo,,,"Apple Inc.",1388369990399
+java.version,sysinfo,,,"1.6.0_65",1388369990399
+java.vm.info,sysinfo,,,"mixed mode",1388369990399
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1388369990399
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1388369990399
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1388369990399
+java.vm.specification.version,sysinfo,,,"1.0",1388369990399
+java.vm.vendor,sysinfo,,,"Apple Inc.",1388369990399
+java.vm.version,sysinfo,,,"20.65-b04-462",1388369990399
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388369996150
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370012590
+started,bundle,org.eclipse.wst.xsl.core,1.1.0.v201004290328,"org.eclipse.wst.xsl.core",1388370022386
+started,bundle,org.eclipse.wst.xsl.exslt.core,1.0.0.v201005240426,"org.eclipse.wst.xsl.exslt.core",1388370022387
+started,bundle,org.eclipse.wst.dtd.core,1.1.401.v201101122255,"org.eclipse.wst.dtd.core",1388370022435
+started,bundle,org.eclipse.emf.ecore,2.6.1.v20100914-1218,"org.eclipse.emf.ecore",1388370022447
+started,bundle,org.eclipse.emf.ecore.xmi,2.5.0.v20100521-1846,"org.eclipse.emf.ecore.xmi",1388370022505
+started,bundle,org.eclipse.wst.internet.cache,1.0.400.v201004280700,"org.eclipse.wst.internet.cache",1388370022554
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370136699
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370170195
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370179233
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370192021
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388370193370
+started,bundle,org.eclipse.wst.xsd.core,1.1.503.v201011121919,"org.eclipse.wst.xsd.core",1388370193486
+started,bundle,org.eclipse.dltk.validators.core,1.0.0.v20100524-0038,"org.eclipse.dltk.validators.core",1388370193491
+started,bundle,org.eclipse.dltk.validators.externalchecker,1.0.0.v20090803-1754,"org.eclipse.dltk.validators.externalchecker",1388370193505
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370205062
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370235769
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388370247203
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370248177
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370327083
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370370345
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370391615
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388370464025
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388370490843
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370492192
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370503944
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388370558073
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370559183
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370566653
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388370605184
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388370611820
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370618926
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370630448
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388370637612
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388370642595
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370643844
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370653986
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388370713441
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370715337
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370723975
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370727576
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370753984
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388370771815
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388370814029
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370815182
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388370853710
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388370980954
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388371028800
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388371131927
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388371166136
+started,bundle,org.eclipse.ltk.core.refactoring,3.5.101.r362_v20101117-0800,"org.eclipse.ltk.core.refactoring",1388371198149
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388371226765
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371241986
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371260012
+error,log,,,"IStructuredDocumentRegion management failed.",1388371275841
+started,bundle,org.eclipse.wst.server.core,1.1.206.v20110110,"org.eclipse.wst.server.core",1388371277360
+started,bundle,org.eclipse.wst.server.ui,1.1.207.v20110119,"org.eclipse.wst.server.ui",1388371277372
+started,bundle,org.eclipse.jdt.core,3.6.2.v_A76_R36x,"org.eclipse.jdt.core",1388371277471
+started,bundle,org.eclipse.jdt.debug,3.6.1.v20100715_r361,"org.eclipse.jdt.debug",1388371277492
+started,bundle,org.eclipse.jdt.launching,3.5.200.v20110105_r362,"org.eclipse.jdt.launching",1388371277508
+started,bundle,org.eclipse.jdt.core.manipulation,1.3.0.v20100520-0800,"org.eclipse.jdt.core.manipulation",1388371277576
+started,bundle,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui",1388371277584
+started,bundle,org.eclipse.jdt.debug.ui,3.5.2.v20100928a_r362,"org.eclipse.jdt.debug.ui",1388371277605
+started,bundle,org.eclipse.php.server.ui,2.2.0.v20101001-2300,"org.eclipse.php.server.ui",1388371277619
+stopped,bundle,net.sf.simpletest.eclipse,0.2.5,"net.sf.simpletest.eclipse",1388371277630
+error,log,,,"Error logged from Debug UI: ",1388371277634
+error,log,,,"Error logged from Debug UI: ",1388371277635
+error,log,,,"Error logged from Debug UI: ",1388371277648
+error,log,,,"Error logged from Debug UI: ",1388371277649
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388371300168
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388371303401
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371364586
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371366744
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371371912
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371377175
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371378993
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371380909
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388371473127
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388371474319
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371474957
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371475669
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388371490797
+started,bundle,org.eclipse.wst.web,1.1.402.v201012160000,"org.eclipse.wst.web",1388371490910
+started,bundle,org.eclipse.wst.common.emf,1.2.3.v201012100400,"org.eclipse.wst.common.emf",1388371490918
+started,bundle,org.eclipse.jem.util,2.1.3.v201012070000,"org.eclipse.jem.util",1388371490921
+started,bundle,org.eclipse.wst.common.emfworkbench.integration,1.2.3.v201012020600,"org.eclipse.wst.common.emfworkbench.integration",1388371490924
+started,bundle,org.eclipse.wst.common.core,1.2.0.v200908252030,"org.eclipse.wst.common.core",1388371490942
+started,bundle,org.eclipse.wst.common.modulecore,1.2.5.v201101270100,"org.eclipse.wst.common.modulecore",1388371490944
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371496306
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371498193
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388371500345
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388371526432
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388371565575
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371567286
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371568674
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371571991
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371582960
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388371593719
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371594398
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371613556
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388371623057
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371624668
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371630478
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388371634613
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371635637
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371676843
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388371693399
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388371704960
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388371708733
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371715596
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388371717172
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388371772366
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388371803803
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388371808671
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388371823404
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388371836889
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388371838510
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388371849949
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388371915023
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388371917846
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388371961580
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388371976668
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388371978020
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388371999920
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372009650
+error,log,,,"Error logged from Debug UI: ",1388372010075
+error,log,,,"Error logged from Debug UI: ",1388372010076
+error,log,,,"Error logged from Debug UI: ",1388372010080
+error,log,,,"Error logged from Debug UI: ",1388372010080
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372012356
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372026257
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372041122
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372052779
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372066669
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372069084
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372073596
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372099930
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372103095
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372108121
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372114131
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372115035
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372118372
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372119948
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372120698
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372143008
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388372184772
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388372186503
+error,log,,,"IStructuredDocumentRegion management failed.",1388372253644
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.cut",1388372258949
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388372260278
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388372294497
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388372295932
+error,log,,,"IStructuredDocumentRegion management failed.",1388372304465
+error,log,,,"IStructuredDocumentRegion management failed.",1388372308097
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372308838
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372311657
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372321700
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388372339407
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388372340668
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372354033
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388372370775
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388372371896
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372393286
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372419412
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372420173
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372427553
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372431670
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372432409
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372452647
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388372457324
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388372471419
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372495660
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372508903
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372527005
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372533149
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372534220
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372551989
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372565976
+error,log,,,"IStructuredDocumentRegion management failed.",1388372578610
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388372606358
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388372610515
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372676783
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372678892
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372686438
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372692872
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372693938
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372699979
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372703212
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372704894
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372709614
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372711107
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372717964
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372732868
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372739267
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372745841
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372746877
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372753044
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372754216
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372773223
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372785416
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372792925
+error,log,,,"IStructuredDocumentRegion management failed.",1388372799864
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372810736
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372811517
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372831343
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372838865
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388372867724
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388372889164
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388372896783
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372898669
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372907281
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372923757
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372933284
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388372944702
+error,log,,,"IStructuredDocumentRegion management failed.",1388372976614
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.cut",1388373012544
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388373016132
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373017658
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373077313
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388373089052
+error,log,,,"IStructuredDocumentRegion management failed.",1388373101185
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388373101275
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373116183
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373128474
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373138651
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373162828
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373173989
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373177875
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373186126
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373196680
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373199219
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373205291
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373214966
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373216554
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373229695
+error,log,,,"IStructuredDocumentRegion management failed.",1388373238312
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373242529
+error,log,,,"IStructuredDocumentRegion management failed.",1388373249075
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373249406
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373250227
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373265378
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.cut",1388373273770
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388373276148
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373276570
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373278580
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373284254
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373285505
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373286793
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373293775
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373294717
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373314150
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373360213
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373363065
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373368013
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373377724
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373380891
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373389887
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373391059
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373404626
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373423793
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373425419
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373455587
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388373466502
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388373470482
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373476967
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373479809
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373492076
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373493002
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373503082
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373504715
+started,bundle,org.eclipse.compare,3.5.101.R36x_v20100929-0800,"org.eclipse.compare",1388373520574
+started,bundle,org.eclipse.dltk.validators.ui,2.0.0.v20091214-1712,"org.eclipse.dltk.validators.ui",1388373520632
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373522367
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388373533540
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388373536381
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373568098
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373574306
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373576217
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388373587716
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373599540
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388373605533
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.text"".",1388373610849
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.cut",1388373610850
