@@ -12,21 +12,12 @@
  *	@Sawyer Bowman
  *	@version 12/28/2013
  */
- 
-session_start();
 
 //Get the last name of the new applicant
 $last = $_GET['lastname'];
-?>
 
-<html>
-<head>
-	<title>New Applicant Edit</title>
-	<link rel="stylesheet" href="styles.css" type="text/css" />
-</head>
-<body>
-<div id="content">
-	<?php 
+include('newApplicantHeader.html');
+
 	include('newApplicantValidate.php');
 	if(!array_key_exists('_form_submit', $_POST)){
 		//the form has not been submitted, so show it

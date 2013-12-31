@@ -33,14 +33,17 @@ $currentyear = substr($today, 0, 4);
 
 <p align="center"><font color="green"><strong>Applicant Information</strong></font><br />
 
-<p>Applying for <select id="futuregrade" name="futuregrade">
-<?php
+<p>Applying for <select id="futuregrade" name="futuregrade"><?php 
 
 $grades = array("6th", "7th", "8th", "9th", "10th", "11th", "12th");
 foreach ($grades as $grade) {
 	echo "<option value'" . $grade . "' ";
+	if ($grade == $_POST['futuregrade']){
+		echo(SELECTED);
+	}
 	echo ">" . $grade . "</option>";
 }
+
 
 ?>
 </select>
@@ -55,6 +58,9 @@ $stringyear2 = "$nextYear-$nextYear2";
 $years = array($stringyear1, $stringyear2);
 foreach ($years as $year) {
 	echo "<option value'" . $year . "' ";
+	if ($year == $_POST['schoolyear']){
+		echo(SELECTED);
+	}
 	echo ">" . $year . "</option>";
 }
 
@@ -65,17 +71,20 @@ foreach ($years as $year) {
 	<legend><font color="green">Applicant:</font></legend>
 		<table>
 			<tr><td>First</td> <td><input type="text" size="20"
-			id="firstname" name="firstname"></td>
+			id="firstname" name="firstname" value="<?php echo($_POST['firstname']); ?>"></td>
 			<td>Middle</td> <td><input type="text" size="20"
-			id="middle_name" name="middlename"></td>
+			id="middle_name" name="middlename" value="<?php echo($_POST['middlename']); ?>"></td>
 			<td>Last</td> <td><input type="text" size="20"
-			id="lastname" name="lastname"></td></tr>
+			id="lastname" name="lastname" value="<?php echo($_POST['lastname']); ?>"></td></tr>
 			<tr><td>Preferred</td> <td><input type="text" size="20"
-			id="preferredname" name="preferredname"></td></tr>
+			id="preferredname" name="preferredname" value="<?php echo($_POST['preferredname']); ?>"></td></tr>
 		</table>
 		<table>
-			<tr><td>Gender</td> <td><input type="Radio" name="gender" id="female" 
-			value="Female"> Female </td> <td><input type="Radio" name="gender" id="male" value="Male"> Male</tr>
+			<tr><td>Gender</td> <td><input <?php if(!(strcmp($_POST['gender'],"Female"))) {echo 'checked="checked"';}?> 
+			type="Radio" name="gender" id="female" value="Female"> Female </td> 
+			<td><input <?php if(!(strcmp($_POST['gender'],"Male"))) {echo 'checked="checked"';}?> 
+			type="Radio" name="gender" id="male" value="Male"> Male</tr>
+			
 		</table>
 		<table>
 			<tr><td>Date of Birth: Month</td> <td><select id="dobmonth" name="dobmonth">
@@ -83,6 +92,9 @@ foreach ($years as $year) {
 			$months = array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
 			foreach($months as $month) {
 				echo "<option value'" . $month . "' ";
+				if ($month == $_POST['dobmonth']){
+					echo(SELECTED);
+				}
 				echo ">" . $month . "</option>";
 			}
 			?>
@@ -94,6 +106,9 @@ foreach ($years as $year) {
 				"18","19","20","21","22","23","24","25","26","27","28","29","30","31");
 			foreach($days as $day) {
 				echo "<option value'" . $day ."' ";
+				if ($day == $_POST['dobday']){
+					echo(SELECTED);
+				}
 				echo ">" . $day . "</option>";
 			}
 			?>
@@ -106,6 +121,9 @@ foreach ($years as $year) {
 							$oldyear+8, $oldyear+9, $oldyear+10);
 			foreach($years as $year) {
 				echo "<option value'" . $year ."' ";
+				if ($year == $_POST['dobyear']){
+					echo(SELECTED);
+				}
 				echo ">" . $year . "</option>";
 			}
 			?>
@@ -119,10 +137,10 @@ foreach ($years as $year) {
 	<legend><font color="green">Home Address:</font></legend>
 		<table>
 			<tr><td>Street Address</td> <td><input type="text" size="40"
-			id="applicantaddress" name="applicantaddress">
+			id="applicantaddress" name="applicantaddress" value="<?php echo($_POST['applicantaddress']); ?>">
 
 			<tr><td>City</td> <td><input type="text" size="40"
-			id="applicantcity" name="applicantcity">
+			id="applicantcity" name="applicantcity" value="<?php echo($_POST['applicantcity']); ?>">
 			
 			<td>State</td> <td><select
 			id="applicantstate" name="applicantstate">
@@ -133,19 +151,32 @@ foreach ($years as $year) {
 					        "WV","WI","WY");
 			foreach ($states as $state) {
 				echo "<option value'" . $state ."' ";
-				if ($state == "NC") echo("SELECTED");
-				echo ">" . $state . "</option>";
+				if ($_POST['applicantstate'] == null){
+					if ($state == "NC") echo("SELECTED");
+					echo ">" . $state . "</option>";
+				}
+				else {
+					if ($state == $_POST['applicantstate']){
+						echo(SELECTED);
+					}
+					echo ">" . $state . "</option>";
+				}	
 			}
 			
 			?>
 			</select>
 			<tr><td>Country</td> <td><input type="text" size="20" 
 			id="applicantcountry" name="applicantcountry" value="<?php 
-			echo("United States of America");
+			if ($_POST['applicantcountry'] == null) {
+				echo("United States of America");
+			}
+			else{
+				echo($_POST['applicantcountry']);
+			}
 			?>"
 			></td>
 			<td>Zip</td> <td><input type="text" size="10"
-			id="applicantzip" name="applicantzip"></td></tr>
+			id="applicantzip" name="applicantzip" value="<?php echo($_POST['applicantzip']); ?>"></td></tr>
 		</table>
 </fieldset>
 
@@ -155,13 +186,16 @@ foreach ($years as $year) {
 	<legend><font color="green">Current School:</font></legend>
 		<table>
 			<tr><td>School Name<input type="text" size="30" 
-			id="prevschool" name="prevschool">
+			id="prevschool" name="prevschool" value="<?php echo($_POST['prevschool']); ?>">
 			<td>Current Grade<select id="curgrade" name="curgrade">
 			<?php
 
 			$grades = array("5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th");
 			foreach ($grades as $grade) {
 				echo "<option value'" . $grade . "' ";
+				if ($grade == $_POST['curgrade']){
+					echo(SELECTED);
+				}
 				echo ">" . $grade . "</option>";
 			}
 
@@ -169,36 +203,54 @@ foreach ($years as $year) {
 			</select></td></tr>
 		</table>
 		<table>
-			<tr><td>School Type</td> <td><input type="Radio" 
-			id="schooltype" name="schooltype" value="Public"> Public </td> <td><input type="Radio" id="schooltype" 
-			name="schooltype" value="Private"> Private</td></tr>
+			<tr><td>School Type</td> <td><input <?php if(!(strcmp($_POST['schooltype'],"Public"))) {echo 'checked="checked"';}?> 
+			type="Radio" id="schooltype" name="schooltype" value="Public"> Public </td> 
+			<td><input <?php if(!(strcmp($_POST['schooltype'],"Private"))) {echo 'checked="checked"';}?> 
+			type="Radio" id="schooltype" name="schooltype" value="Private"> Private</td></tr>
 		</table>
 </fieldset>
 
 <br> 
 
 <p>Please list applicant's favorite activities/areas of study/hobbies:
-<br /> <textarea id="activities" name="activities" rows="5" cols="80"></textarea>
+<br /> <textarea id="activities" name="activities" rows="5" cols="80" ><?php 
+if(isset($_POST['activities'])) {
+	echo ($_POST['activities']); 
+}
+?></textarea>
 
 <p>Please list any siblings and include their grade and school:
-<br /> <textarea id="siblings" name="siblings" rows="5" cols="80"></textarea>
+<br /> <textarea id="siblings" name="siblings" rows="5" cols="80">
+<?php 
+if(isset($_POST['siblings'])) {
+	echo ($_POST['siblings']); 
+}
+?></textarea>
 
 <p>How did you hear about Woodlawn School?:
-<br /> <textarea id="communication" name="communication" rows="5" cols="80"></textarea>
+<br /> <textarea id="communication" name="communication" rows="5" cols="80">
+<?php 
+if(isset($_POST['communication'])) {
+	echo ($_POST['communication']); 
+}
+?></textarea>
 
 
 <p align="center"><font color="green"><strong>Parent Information</strong></font><br />
 
 <p>Guardian 1:<input type="text" size="30"
-id="guardian1name" name="guardian1name">
+id="guardian1name" name="guardian1name" value="<?php echo($_POST['guardian1name']); ?>">
  Relationship to Applicant: <select
- id="guardian1rel" name="guardian1rel">
+id="guardian1rel" name="guardian1rel">
 
 <?php
 
 $relations = array("Father", "Mother", "Step-Father", "Step-Mother", "Legal Guardian", "Other");
 foreach ($relations as $relation) {
 	echo "<option value'" . $relation . "' ";
+	if ($relation == $_POST['guardian1rel']){
+		echo(SELECTED);
+	}
 	echo ">" . $relation . "</option>";
 }
 
@@ -280,9 +332,9 @@ Clear Guardian 1 Address</button><br />
 	<legend><font color="green">Guardian 1 Address:</font></legend>
 		<table>
 			<tr><td>Street Address</td> <td><input type="text" size="40"
-			id="guardian1address" name="guardian1address">
+			id="guardian1address" name="guardian1address" value="<?php echo($_POST['guardian1address']); ?>">
 			<tr><td>City</td> <td><input type="text" size="40"
-			id="guardian1city" name="guardian1city">
+			id="guardian1city" name="guardian1city" value="<?php echo($_POST['guardian1city']); ?>">
 			<td>State</td> <td><select
 			id="guardian1state" name="guardian1state">
 			<?php 
@@ -292,18 +344,30 @@ Clear Guardian 1 Address</button><br />
 					        "WV","WI","WY");
 			foreach ($states as $state) {
 				echo "<option value'" . $state ."' ";
-				if ($state == "NC") echo("SELECTED");
-				echo ">" . $state . "</option>";
+				if ($_POST['guardian1state'] == null){
+					if ($state == "NC") echo("SELECTED");
+					echo ">" . $state . "</option>";
+				}
+				else {
+					if ($state == $_POST['guardian1state']){
+						echo(SELECTED);
+					}
+					echo ">" . $state . "</option>";
+				}	
 			}
 			?>
 			</select>
 			<tr><td>Country</td> <td><input type="text" size="20" 
 			id="guardian1country" name="guardian1country" value="<?php 
-			echo("United States of America");
-			?>"
-			></td>
+			if ($_POST['guardian1country'] == null) {
+				echo("United States of America");
+			}
+			else{
+				echo($_POST['guardian1country']);
+			}
+			?>"></td>
 			<td>Zip</td> <td><input type="text" size="10"
-			id="guardian1zip" name="guardian1zip"></td></tr>
+			id="guardian1zip" name="guardian1zip" value="<?php echo($_POST['guardian1zip']); ?>"></td></tr>
 		</table>
 </fieldset>
 
@@ -313,22 +377,22 @@ Clear Guardian 1 Address</button><br />
 	<legend><font color="green">Guardian 1 Contact Information:</font></legend>
 		<table>
 			<tr><td>Email:</td> <td><input type="text" size="30"
-			id="guardian1email" name="guardian1email">
+			id="guardian1email" name="guardian1email" value="<?php echo($_POST['guardian1email']); ?>">
 			<tr><td>Phone (home):</td> <td><input type="text" size="20"
-			id="guardian1homephone" name="guardian1homephone">
+			id="guardian1homephone" name="guardian1homephone" value="<?php echo($_POST['guardian1homephone']); ?>">
 			<td>Phone (cell):</td> <td><input type="text" size="20"
-			id="guardian1cellphone" name="guardian1cellphone">
+			id="guardian1cellphone" name="guardian1cellphone" value="<?php echo($_POST['guardian1cellphone']); ?>">
 			<tr><td>Employer:</td> <td><input type="text" size="30"
-			id="guardian1employer" name="guardian1employer">
+			id="guardian1employer" name="guardian1employer" value="<?php echo($_POST['guardian1employer']); ?>">
 			<td>Occupation:</td> <td><input type="text" size="20"
-			id="guardian1occupation" name="guardian1occupation"></td></tr>
+			id="guardian1occupation" name="guardian1occupation" value="<?php echo($_POST['guardian1occupation']); ?>"></td></tr>
 		</table>
 </fieldset>
 
 <br>
 
 <p>Guardian 2:<input type="text" size="30"
-id="guardian2name" name="guardian2name">
+id="guardian2name" name="guardian2name" value="<?php echo($_POST['guardian2name']); ?>">
  Relationship to Applicant: <select
  id="guardian2rel" name="guardian2rel">
 
@@ -337,6 +401,9 @@ id="guardian2name" name="guardian2name">
 $relations = array("Father", "Mother", "Step-Father", "Step-Mother", "Legal Guardian", "Other");
 foreach ($relations as $relation) {
 	echo "<option value'" . $relation . "' ";
+	if ($relation == $_POST['guardian2rel']){
+		echo(SELECTED);
+	}
 	echo ">" . $relation . "</option>";
 }
 
@@ -356,9 +423,9 @@ Clear Guardian 2 Address</button><br />
 	<legend><font color="green">Guardian 2 Address:</font></legend>
 		<table>
 			<tr><td>Street Address</td> <td><input type="text" size="40"
-			id="guardian2address" name="guardian2address">
+			id="guardian2address" name="guardian2address" value="<?php echo($_POST['guardian2address']); ?>">
 			<tr><td>City</td> <td><input type="text" size="40"
-			id="guardian2city" name="guardian2city">
+			id="guardian2city" name="guardian2city" value="<?php echo($_POST['guardian2city']); ?>">
 			<td>State</td> <td><select
 			id="guardian2state" name="guardian2state">
 			<?php 
@@ -368,18 +435,30 @@ Clear Guardian 2 Address</button><br />
 					        "WV","WI","WY");
 			foreach ($states as $state) {
 				echo "<option value'" . $state ."' ";
-				if ($state == "NC") echo("SELECTED");
-				echo ">" . $state . "</option>";
+				if ($_POST['guardian2state'] == null){
+					if ($state == "NC") echo("SELECTED");
+					echo ">" . $state . "</option>";
+				}
+				else {
+					if ($state == $_POST['guardian2state']){
+						echo(SELECTED);
+					}
+					echo ">" . $state . "</option>";
+				}
 			}
 			?>
 			</select>
 			<tr><td>Country</td> <td><input type="text" size="20" 
 			id="guardian2country" name="guardian2country" value="<?php 
-			echo("United States of America");
-			?>"
-			></td>
+			if ($_POST['guardian2country'] == null) {
+				echo("United States of America");
+			}
+			else{
+				echo($_POST['guardian2country']);
+			}
+			?>"></td>
 			<td>Zip</td> <td><input type="text" size="10"
-			id="guardian2zip" name="guardian2zip"></td></tr>
+			id="guardian2zip" name="guardian2zip" value="<?php echo($_POST['guardian2zip']); ?>"></td></tr>
 		</table>
 </fieldset>
 
@@ -389,35 +468,58 @@ Clear Guardian 2 Address</button><br />
 	<legend><font color="green">Guardian 2 Contact Information:</font></legend>
 		<table>
 			<tr><td>Email:</td> <td><input type="text" size="30"
-			id="guardian2email" name="guardian2email">
+			id="guardian2email" name="guardian2email" value="<?php echo($_POST['guardian2email']); ?>">
 			<tr><td>Phone (home):</td> <td><input type="text" size="20"
-			id="guardian2homephone" name="guardian2homephone">
+			id="guardian2homephone" name="guardian2homephone" value="<?php echo($_POST['guardian2homephone']); ?>">
 			<td>Phone (cell):</td> <td><input type="text" size="20"
-			id="guardian2cellphone" name="guardian2cellphone">
+			id="guardian2cellphone" name="guardian2cellphone" value="<?php echo($_POST['guardian2cellphone']); ?>">
 			<tr><td>Employer:</td> <td><input type="text" size="30"
-			id="guardian2employer" name="guardian2employer">
+			id="guardian2employer" name="guardian2employer" value="<?php echo($_POST['guardian2employer']); ?>">
 			<td>Occupation:</td> <td><input type="text" size="20"
-			id="guardian2occupation" name="guardian2occupation"></td></tr>
+			id="guardian2occupation" name="guardian2occupation" value="<?php echo($_POST['guardian2occupation']); ?>"></td></tr>
 		</table>
 </fieldset>
 
 <p>Please list any family or friend connections to the school:
-<br /> <textarea id="connections" name="connections" rows="5" cols="80"></textarea>
+<br /> <textarea id="connections" name="connections" rows="5" cols="80"><?php 
+if(isset($_POST['connections'])) {
+	echo htmlentities ($_POST['connections']); 
+}
+?></textarea>
 
 <p align="center"><font color="green"><strong>General Information</strong></font><br />
 
 <p>Is there any academic, medical or psychological history that might affect your child's ability <br> to
-participate fully in Woodlawn's programs? <input type="Radio" id="applicanthistory" name="applicanthistory" 
-value="No"> No <input type="Radio" id="applicanthistory" name="applicanthistory" value="Yes"> 
-Yes If yes, please explain: <br /> <textarea id="applicanthistorytext" name="applicanthistorytext" rows="5" cols="80"></textarea>
+participate fully in Woodlawn's programs? <input <?php if(!(strcmp($_POST['applicanthistory'],"No"))) {echo 'checked="checked"';}?> 
+type="Radio" id="applicanthistory" name="applicanthistory" value="No"> No 
+<input <?php if(!(strcmp($_POST['applicanthistory'],"Yes"))) {echo 'checked="checked"';}?> 
+type="Radio" id="applicanthistory" name="applicanthistory" value="Yes"> Yes 
+If yes, please explain: <br /> <textarea id="applicanthistorytext" name="applicanthistorytext" rows="5" cols="80">
+<?php 
+if(isset($_POST['applicanthistorytext'])) {
+	echo ($_POST['applicanthistorytext']); 
+}
+?></textarea>
 
 <p>Has your child ever had any psychological or educational testing, undergone any counseling <br> or treatment,
-ever been involved with the judicial system, or ever been suspended or expelled <br> from school? <input type="Radio" id="applicantpsychjudicial" 
-name="applicantpsychjudicial" value="No"> No <input type="Radio" id="applicantpsychjudicial" name="applicantpsychjudicial" value="Yes"> 
-Yes If yes, please explain: <br /> <textarea id="applicantpsychjudicialtext" name="applicantpsychjudicialtext" rows="5" cols="80"></textarea>
+ever been involved with the judicial system, or ever been suspended or expelled <br> from school? <input <?php if(!(strcmp($_POST['applicantpsychjudicial'],"No"))) {echo 'checked="checked"';}?>
+type="Radio" id="applicantpsychjudicial" name="applicantpsychjudicial" value="No"> No 
+<input <?php if(!(strcmp($_POST['applicantpsychjudicial'],"Yes"))) {echo 'checked="checked"';}?> 
+type="Radio" id="applicantpsychjudicial" name="applicantpsychjudicial" value="Yes"> Yes 
+If yes, please explain: <br /> <textarea id="applicantpsychjudicialtext" name="applicantpsychjudicialtext" rows="5" cols="80">
+<?php 
+if(isset($_POST['applicantpsychjudicialtext'])) {
+	echo ($_POST['applicantpsychjudicialtext']); 
+}
+?></textarea>
 
 <p>Please note any medical concerns of which we need to be aware: <br /> <textarea id="applicantmedical" 
-name="applicantmedical" rows="5" cols="80"></textarea>
+name="applicantmedical" rows="5" cols="80">
+<?php 
+if(isset($_POST['applicantmedical'])) {
+	echo ($_POST['applicantmedical']); 
+}
+?></textarea>
 
 <p align="center">Woodlawn School admits students of any race, religion, gender, nationality, ethnic background, or sexual orientation.<br> 
 Woodlawn School does not discriminate on the basis of race, religion, gender, nationality, ethnic background, or sexual <br>
