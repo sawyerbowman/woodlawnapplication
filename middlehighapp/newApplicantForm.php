@@ -80,7 +80,7 @@ foreach ($years as $year) {
 			id="preferredname" name="preferredname" value="<?php echo($_POST['preferredname']); ?>"></td></tr>
 		</table>
 		<table>
-			<tr><td>Gender</td> <td><input <?php if(!(strcmp($_POST['gender'],"Female"))) {echo 'checked="checked"';}?> 
+			<tr><td>Gender</td> <td width="5"></td><td><input <?php if(!(strcmp($_POST['gender'],"Female"))) {echo 'checked="checked"';}?> 
 			type="Radio" name="gender" id="female" value="Female"> Female </td> 
 			<td><input <?php if(!(strcmp($_POST['gender'],"Male"))) {echo 'checked="checked"';}?> 
 			type="Radio" name="gender" id="male" value="Male"> Male</tr>
