@@ -11,11 +11,12 @@
  *  a form for a new applicant for middle or high school at Woodlawn School
  *	@Sawyer Bowman
  *	@version 12/28/2013
+ *<input type="hidden" name="next_url" value="http://www.woodlawnschool.org">
  */
 
 $datetime = date('M-d-Y-g-i-a-e');
 ?>
-<form method="POST" id="newApplicantForm" name="newApplicantForm">
+<form method="POST">
 
 <input type="hidden" name="time_date" value="<?php echo($datetime);?>">
 <?php
@@ -528,9 +529,5 @@ orientation in the administration of its educational policies, scholarship progr
 
 <button type="submit" value="_form_submit" name="_form_submit">Submit Application </button>
 <button type="reset" value="Clear" name="Clear All">Clear Application</button>
-
-<?php 
-include('newApplicantFooter.html'');
-?>
 
 </form>

@@ -34,13 +34,11 @@ include('newApplicantHeader.html');
 			//echo($errors[0]);
 			showErrors($errors);
 			include('newApplicantForm.php');
+			//This was a successful form submission
 		}
 		else {
-			//This was a successful form submission
 			echo("This was a successful form submission.");
-			include('newApplicantForm2.php');
 			?>
-			
 			<?php
 		}
 		echo('</div>');

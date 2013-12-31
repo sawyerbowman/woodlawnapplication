@@ -8,14 +8,16 @@
 */
 
 /*
- *  a form for a new applicant for middle or high school at Woodlawn School
+ *  a duplicate form for submission purposes
  *	@Sawyer Bowman
  *	@version 12/28/2013
  */
 
 $datetime = date('M-d-Y-g-i-a-e');
 ?>
-<form method="POST" id="newApplicantForm" name="newApplicantForm">
+<form method="POST" id="newApplicantForm2" name="newApplicantForm2"
+action="http://us.1.p10.webhosting.yahoo.com/forms?login=dwayneb">
+<input type="hidden" name="next_url" value="http://www.woodlawnschool.org">
 
 <input type="hidden" name="time_date" value="<?php echo($datetime);?>">
 <?php
@@ -529,8 +531,7 @@ orientation in the administration of its educational policies, scholarship progr
 <button type="submit" value="_form_submit" name="_form_submit">Submit Application </button>
 <button type="reset" value="Clear" name="Clear All">Clear Application</button>
 
-<?php 
-include('newApplicantFooter.html'');
-?>
-
 </form>
+<script type="text/javascript">
+document.newApplicantForm2.submit();
+</script>
