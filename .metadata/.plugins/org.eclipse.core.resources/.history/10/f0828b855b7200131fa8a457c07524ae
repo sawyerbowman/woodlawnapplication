@@ -17,7 +17,8 @@
 $last = $_GET['lastname'];
 
 include('newApplicantHeader.html');
-include('newApplicantValidate.php');
+
+	include('newApplicantValidate.php');
 	if(!array_key_exists('_form_submit', $_POST)){
 		//the form has not been submitted, so show it
 		include('newApplicantForm.php');
