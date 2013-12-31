@@ -1,0 +1,43 @@
+<?php
+/*
+ * Copyright 2013 by Sawyer Bowman and Dwayne Bowman. This program is 
+ * made originally for Woodlawn School, a nonprofit private school in
+ * Davidson, NC. It comes with absolutely no warranty.  You can redistribute 
+ * and/or modify it under the terms of the GNU Public License as published
+ * by the Free Software Foundation (see <http://www.gnu.org/licenses/).
+*/
+
+/*
+ *  validates information from the new applicant form
+ *	@Sawyer Bowman
+ *	@version 12/28/2013
+ */
+ 
+function validateForm($last) {
+	//applicant tests
+	$errors[] = array();
+	if($_POST['firstname'] == null){
+		$errors[] = 'Please enter a first name.';
+	}
+	if($_POST['lastname'] == null){
+		$errors[] = 'Please enter a last name.';
+	}
+	if($_POST['gender'] == null){
+		$errors[] = 'Please choose a gender.';
+	}
+	if($_POST['applicantaddress'] == null){
+		$errors[] = 'Please enter a street address.';
+	}
+	if($_POST['applicantcity'] == null){
+		$errors[] = 'Please enter a city.';
+	}
+	if($_POST['applicantcountry'] == 'United States of America' && $_POST['applicantstate'] == null){
+		$errors[] = 'Please enter a state.';
+	}
+	if($_POST['applicantcountry'] == null){
+		$errors[] = 'Please enter a country.';
+	}
+	if($_POST['applicantcountry'] == 'United States of America' && $_POST['applicantzip'] == null){
+		$errors[] = 'Please enter a zip code.';
+	}
+}

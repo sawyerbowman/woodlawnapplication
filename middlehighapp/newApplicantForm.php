@@ -11,17 +11,17 @@
  *  a form for a new applicant for middle or high school at Woodlawn School
  *	@Sawyer Bowman
  *	@version 12/28/2013
+ *<input type="hidden" name="next_url" value="http://www.woodlawnschool.org">
  */
 
 $datetime = date('M-d-Y-g-i-a-e');
 ?>
-<form method=post action="*****">
-<input type="hidden" name="next_url" value="http://www.woodlawnschool.org">
-<input type="hidden" name="time_date" value="<?php echo($datetime);?>">
+<form method="POST">
 
+<input type="hidden" name="time_date" value="<?php echo($datetime);?>">
 <?php
  
-include_once("applicantEdit.php");
+include_once("newApplicantEdit.php");
 
 //Make a new applicant
 
@@ -30,6 +30,8 @@ $currentday = substr($today, 9, 2);
 $currentmonth = substr($today, 5, 3);
 $currentyear = substr($today, 0, 4);
 ?>
+
+<p align="center"><font color="green"><strong>Applicant Information</strong></font><br />
 
 <p>Applying for <select id="futuregrade" name="futuregrade">
 <?php
@@ -60,16 +62,16 @@ foreach ($years as $year) {
 </select>
 
 <fieldset>
-	<legend>Applicant:</legend>
+	<legend><font color="green">Applicant:</font></legend>
 		<table>
 			<tr><td>First</td> <td><input type="text" size="20"
-			id="first" name="firstname"></td>
+			id="firstname" name="firstname"></td>
 			<td>Middle</td> <td><input type="text" size="20"
 			id="middle_name" name="middlename"></td>
 			<td>Last</td> <td><input type="text" size="20"
-			id="last" name="lastname"></td></tr>
+			id="lastname" name="lastname"></td></tr>
 			<tr><td>Preferred</td> <td><input type="text" size="20"
-			id="preferred" name="preferredname"></td></tr>
+			id="preferredname" name="preferredname"></td></tr>
 		</table>
 		<table>
 			<tr><td>Gender</td> <td><input type="Radio" name="gender" id="female" 
@@ -114,7 +116,7 @@ foreach ($years as $year) {
 <br>
 
 <fieldset>
-	<legend>Home Address:</legend>
+	<legend><font color="green">Home Address:</font></legend>
 		<table>
 			<tr><td>Street Address</td> <td><input type="text" size="40"
 			id="applicantaddress" name="applicantaddress">
@@ -125,7 +127,7 @@ foreach ($years as $year) {
 			<td>State</td> <td><select
 			id="applicantstate" name="applicantstate">
 			<?php 
-			$states = array(" ","AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL","IN","IA",
+			$states = array("","AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL","IN","IA",
 					        "KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM",
 					        "NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA",
 					        "WV","WI","WY");
@@ -150,7 +152,7 @@ foreach ($years as $year) {
 <br>
 
 <fieldset>
-	<legend>Current School:</legend>
+	<legend><font color="green">Current School:</font></legend>
 		<table>
 			<tr><td>School Name<input type="text" size="30" 
 			id="prevschool" name="prevschool">
@@ -185,7 +187,7 @@ foreach ($years as $year) {
 <br /> <textarea id="communication" name="communication" rows="5" cols="80"></textarea>
 
 
-<p><strong>Parent Information</strong><br />
+<p align="center"><font color="green"><strong>Parent Information</strong></font><br />
 
 <p>Guardian 1:<input type="text" size="30"
 id="guardian1name" name="guardian1name">
@@ -275,7 +277,7 @@ Clear Guardian 1 Address</button><br />
 </script>
 
 <fieldset>
-	<legend>Guardian 1 Address:</legend>
+	<legend><font color="green">Guardian 1 Address:</font></legend>
 		<table>
 			<tr><td>Street Address</td> <td><input type="text" size="40"
 			id="guardian1address" name="guardian1address">
@@ -308,7 +310,7 @@ Clear Guardian 1 Address</button><br />
 <br>
 
 <fieldset>
-	<legend>Guardian 1 Contact Information:</legend>
+	<legend><font color="green">Guardian 1 Contact Information:</font></legend>
 		<table>
 			<tr><td>Email:</td> <td><input type="text" size="30"
 			id="guardian1email" name="guardian1email">
@@ -351,7 +353,7 @@ Clear Guardian 2 Address</button><br />
 
 
 <fieldset>
-	<legend>Guardian 2 Address:</legend>
+	<legend><font color="green">Guardian 2 Address:</font></legend>
 		<table>
 			<tr><td>Street Address</td> <td><input type="text" size="40"
 			id="guardian2address" name="guardian2address">
@@ -384,7 +386,7 @@ Clear Guardian 2 Address</button><br />
 <br>
 
 <fieldset>
-	<legend>Guardian 2 Contact Information:</legend>
+	<legend><font color="green">Guardian 2 Contact Information:</font></legend>
 		<table>
 			<tr><td>Email:</td> <td><input type="text" size="30"
 			id="guardian2email" name="guardian2email">
@@ -402,9 +404,28 @@ Clear Guardian 2 Address</button><br />
 <p>Please list any family or friend connections to the school:
 <br /> <textarea id="connections" name="connections" rows="5" cols="80"></textarea>
 
+<p align="center"><font color="green"><strong>General Information</strong></font><br />
+
+<p>Is there any academic, medical or psychological history that might affect your child's ability <br> to
+participate fully in Woodlawn's programs? <input type="Radio" id="applicanthistory" name="applicanthistory" 
+value="No"> No <input type="Radio" id="applicanthistory" name="applicanthistory" value="Yes"> 
+Yes If yes, please explain: <br /> <textarea id="applicanthistorytext" name="applicanthistorytext" rows="5" cols="80"></textarea>
+
+<p>Has your child ever had any psychological or educational testing, undergone any counseling <br> or treatment,
+ever been involved with the judicial system, or ever been suspended or expelled <br> from school? <input type="Radio" id="applicantpsychjudicial" 
+name="applicantpsychjudicial" value="No"> No <input type="Radio" id="applicantpsychjudicial" name="applicantpsychjudicial" value="Yes"> 
+Yes If yes, please explain: <br /> <textarea id="applicantpsychjudicialtext" name="applicantpsychjudicialtext" rows="5" cols="80"></textarea>
+
+<p>Please note any medical concerns of which we need to be aware: <br /> <textarea id="applicantmedical" 
+name="applicantmedical" rows="5" cols="80"></textarea>
+
+<p align="center">Woodlawn School admits students of any race, religion, gender, nationality, ethnic background, or sexual orientation.<br> 
+Woodlawn School does not discriminate on the basis of race, religion, gender, nationality, ethnic background, or sexual <br>
+orientation in the administration of its educational policies, scholarship programs, athletic or other school-administered programs.
+
 <br><br><br>
 
-<button type="submit" name="Submit Application">Submit Application </button>
+<button type="submit" value="_form_submit" name="_form_submit">Submit Application </button>
 <button type="reset" value="Clear" name="Clear All">Clear Application</button>
 
 </form>

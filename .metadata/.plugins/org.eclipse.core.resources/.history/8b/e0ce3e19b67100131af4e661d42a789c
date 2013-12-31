@@ -1,0 +1,64 @@
+<?php
+/*
+ * Copyright 2013 by Sawyer Bowman and Dwayne Bowman. This program is 
+ * made originally for Woodlawn School, a nonprofit private school in
+ * Davidson, NC. It comes with absolutely no warranty.  You can redistribute 
+ * and/or modify it under the terms of the GNU Public License as published
+ * by the Free Software Foundation (see <http://www.gnu.org/licenses/).
+*/
+
+/*
+ *  implements editing of a new applicant
+ *	@Sawyer Bowman
+ *	@version 12/28/2013
+ */
+ 
+session_start();
+
+//Get the last name of the new applicant
+$last = $_GET['lastname'];
+?>
+
+<html>
+<head>
+	<title>New Applicant Edit</title>
+	<link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body>
+<div id="content">
+	<?php 
+	include('newApplicantValidate.php');
+	if(!array_key_exists('_form_submit', $_POST)){
+		//the form has not been submitted, so show it
+		include('newApplicantForm.php');
+	}
+	else {
+		//form has been submitted, so validate it
+		//step 1: errors array lists problems on form submitted
+		$errors = validateForm($last);
+		//get rid of 0th position
+		array_shift($errors);
+		//step 2: display the errors on the form to fix
+		if($errors){
+			//echo($errors[0]);
+			showErrors($errors);
+			include('newApplicantForm.php');
+			//This was a successful form submission
+		}
+		else {
+			echo("This was a successful form submission.");
+			?>
+			<input type="hidden" name="next_url" value="http://www.woodlawnschool.org">
+			<form method=post action="http://us.1.p10.webhosting.yahoo.com/forms?login=dwayneb">
+			<?php
+		}
+		echo('</div>');
+		echo('</div></body></html>');
+		die();
+	}
+	?>
+</div>
+</body>
+</html>
+
+
