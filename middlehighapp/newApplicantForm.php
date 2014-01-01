@@ -232,8 +232,8 @@ if(isset($_POST['communication'])) {
 }
 ?></textarea>
 
-
-<p align="center"><font color="green"><strong>Parent/Guardian Information</strong></font><br />
+<br>
+<p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>Parent/Guardian Information</strong></span></p>
 
 <p>Parent/Guardian 1<input type="text" size="30"
 id="guardian1name" name="guardian1name" value="<?php echo($_POST['guardian1name']); ?>">
@@ -482,8 +482,8 @@ if(isset($_POST['connections'])) {
 	echo htmlentities ($_POST['connections']); 
 }
 ?></textarea>
-
-<p align="center"><font color="green"><strong>General Information</strong></font><br />
+<br>
+<p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>General Information</strong></span></p>
 
 <p>Is there any academic, medical or psychological history that might affect your child's ability <br> to
 participate fully in Woodlawn's programs? <input <?php if(!(strcmp($_POST['applicanthistory'],"No"))) {echo 'checked="checked"';}?> 
