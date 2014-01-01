@@ -230,7 +230,7 @@ if(isset($_POST['siblings'])) {
 if(isset($_POST['communication'])) {
 	echo ($_POST['communication']); 
 }
-?></textarea>
+?></textarea></p>
 
 <br>
 <p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>Parent/Guardian Information</strong></span></p>
@@ -481,7 +481,7 @@ Clear Guardian 2 Address</button><br />
 if(isset($_POST['connections'])) {
 	echo htmlentities ($_POST['connections']); 
 }
-?></textarea>
+?></textarea></p>
 <br>
 <p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>General Information</strong></span></p>
 
