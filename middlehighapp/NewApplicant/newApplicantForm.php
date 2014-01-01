@@ -181,8 +181,9 @@ foreach ($years as $year) {
 <fieldset>
 	<legend><font color="green">Current School</font></legend>
 		<table>
-			<tr><td>School Name<input type="text" size="30" 
+			<tr><td>School Name</td><td><input type="text" size="30" 
 			id="prevschool" name="prevschool" value="<?php echo($_POST['prevschool']); ?>">
+<td width="10"></td>
 			<td>Current Grade<select id="curgrade" name="curgrade">
 			<?php
 
