@@ -81,11 +81,9 @@ foreach ($years as $year) {
 			<tr><td>Gender</td> <td width="5"></td><td><input <?php if(!(strcmp($_POST['gender'],"Female"))) {echo 'checked="checked"';}?> 
 			type="Radio" name="gender" id="female" value="Female"> Female </td> 
 			<td><input <?php if(!(strcmp($_POST['gender'],"Male"))) {echo 'checked="checked"';}?> 
-			type="Radio" name="gender" id="male" value="Male"> Male</tr>
-			
-		</table>
-		<table>
-			<tr><td>Date of Birth: Month</td> <td><select id="dobmonth" name="dobmonth">
+			type="Radio" name="gender" id="male" value="Male"> Male</td>
+		<td width="15"></td>	
+		<td>Date of Birth: Month</td> <td><select id="dobmonth" name="dobmonth">
 			<?php 
 			$months = array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
 			foreach($months as $month) {
