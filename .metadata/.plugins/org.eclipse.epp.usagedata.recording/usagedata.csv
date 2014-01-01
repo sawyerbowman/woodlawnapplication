@@ -174,3 +174,28 @@ activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor
 error,log,,,"IStructuredDocumentRegion management failed.",1388549375522
 executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388549377851
 activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388549379313
+closed,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388549379313
+activated,view,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.ui.explorer",1388549380190
+closed,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388549380190
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388549382195
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388549512006
+error,log,,,"Resource is out of sync with the file system: '/middlehighapp/NewApplicant/newApplicantForm.php'.",1388549514876
+error,log,,,"Resource is out of sync with the file system: '/middlehighapp/NewApplicant/newApplicantForm.php'.",1388549515040
+opened,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388549515089
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388549515129
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.refresh",1388549548701
+activated,view,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.ui.explorer",1388549566748
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388549571641
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.refresh",1388549571671
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388549589632
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388550523381
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388550539795
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.refresh",1388550539814
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388550579820
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388550622415
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388550624541
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388550800106
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388550802653
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388550841956
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388550848982
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.refresh",1388550849557
