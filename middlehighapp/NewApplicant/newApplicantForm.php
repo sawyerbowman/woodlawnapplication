@@ -16,8 +16,8 @@
 $datetime = date('M-d-Y-g-i-a-e');
 ?>
 <form method="POST" id="newApplicantForm" name="newApplicantForm">
-
 <input type="hidden" name="time_date" value="<?php echo($datetime);?>">
+
 <?php
  
 include_once("newApplicantEdit.php");
@@ -30,7 +30,7 @@ $currentmonth = substr($today, 5, 3);
 $currentyear = substr($today, 0, 4);
 ?>
 
-<p align="center"><font color="green"><strong>Applicant Information</strong></font><br />
+<p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>Applicant Information</strong></span></p>
 
 <p>Applying for <select id="futuregrade" name="futuregrade"><?php 
 
@@ -42,7 +42,6 @@ foreach ($grades as $grade) {
 	}
 	echo ">" . $grade . "</option>";
 }
-
 
 ?>
 </select>
@@ -67,7 +66,7 @@ foreach ($years as $year) {
 </select>
 
 <fieldset>
-	<legend><font color="green">Applicant:</font></legend>
+	<legend><font color="green">Applicant</font></legend>
 		<table>
 			<tr><td>First</td> <td><input type="text" size="20"
 			id="firstname" name="firstname" value="<?php echo($_POST['firstname']); ?>"></td>
@@ -82,11 +81,9 @@ foreach ($years as $year) {
 			<tr><td>Gender</td> <td width="5"></td><td><input <?php if(!(strcmp($_POST['gender'],"Female"))) {echo 'checked="checked"';}?> 
 			type="Radio" name="gender" id="female" value="Female"> Female </td> 
 			<td><input <?php if(!(strcmp($_POST['gender'],"Male"))) {echo 'checked="checked"';}?> 
-			type="Radio" name="gender" id="male" value="Male"> Male</tr>
-			
-		</table>
-		<table>
-			<tr><td>Date of Birth: Month</td> <td><select id="dobmonth" name="dobmonth">
+			type="Radio" name="gender" id="male" value="Male"> Male</td>
+		<td width="40"></td>	
+		<td>Date of Birth: Month</td> <td><select id="dobmonth" name="dobmonth">
 			<?php 
 			$months = array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
 			foreach($months as $month) {
@@ -133,7 +130,7 @@ foreach ($years as $year) {
 <br>
 
 <fieldset>
-	<legend><font color="green">Home Address:</font></legend>
+	<legend><font color="green">Home Address</font></legend>
 		<table>
 			<tr><td>Street Address</td> <td><input type="text" size="40"
 			id="applicantaddress" name="applicantaddress" value="<?php echo($_POST['applicantaddress']); ?>">
@@ -182,7 +179,7 @@ foreach ($years as $year) {
 <br>
 
 <fieldset>
-	<legend><font color="green">Current School:</font></legend>
+	<legend><font color="green">Current School</font></legend>
 		<table>
 			<tr><td>School Name<input type="text" size="30" 
 			id="prevschool" name="prevschool" value="<?php echo($_POST['prevschool']); ?>">
@@ -210,15 +207,14 @@ foreach ($years as $year) {
 </fieldset>
 
 <br> 
-
-<p>Please list applicant's favorite activities/areas of study/hobbies:
+<p>Please list applicant's favorite activities/areas of study/hobbies.
 <br /> <textarea id="activities" name="activities" rows="5" cols="80" ><?php 
 if(isset($_POST['activities'])) {
 	echo ($_POST['activities']); 
 }
 ?></textarea>
 
-<p>Please list any siblings and include their grade and school:
+<p>Please list any siblings and include their grade and school.
 <br /> <textarea id="siblings" name="siblings" rows="5" cols="80">
 <?php 
 if(isset($_POST['siblings'])) {
@@ -226,24 +222,23 @@ if(isset($_POST['siblings'])) {
 }
 ?></textarea>
 
-<p>How did you hear about Woodlawn School?:
+<p>How did you hear about Woodlawn School?
 <br /> <textarea id="communication" name="communication" rows="5" cols="80">
 <?php 
 if(isset($_POST['communication'])) {
 	echo ($_POST['communication']); 
 }
-?></textarea>
+?></textarea></p>
 
+<br>
+<p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>Parent/Guardian Information</strong></span></p>
 
-<p align="center"><font color="green"><strong>Parent Information</strong></font><br />
-
-<p>Guardian 1:<input type="text" size="30"
+<p>Parent/Guardian 1<input type="text" size="30"
 id="guardian1name" name="guardian1name" value="<?php echo($_POST['guardian1name']); ?>">
- Relationship to Applicant: <select
+ Relationship to Applicant <select
 id="guardian1rel" name="guardian1rel">
 
 <?php
-
 $relations = array("Father", "Mother", "Step-Father", "Step-Mother", "Legal Guardian", "Other");
 foreach ($relations as $relation) {
 	echo "<option value'" . $relation . "' ";
@@ -259,9 +254,9 @@ foreach ($relations as $relation) {
 <br><br>
 
 <button type="button" onclick = "getAndCopy()" value="Fill" name="Fill Guardian 1 Information">
-Copy Applicant Address to Guardian 1 Address </button>
+Copy Applicant Address to Parent/Guardian 1 Address </button>
 
-<button type="button" onclick = "clearGuardian()" value="Clear" name="Clear Guardian 1 Information">
+<button type="button" onclick = "clearGuardian()" value="Clear" name="Clear Parent/Guardian 1 Information">
 Clear Guardian 1 Address</button><br />
 
 
@@ -328,7 +323,7 @@ Clear Guardian 1 Address</button><br />
 </script>
 
 <fieldset>
-	<legend><font color="green">Guardian 1 Address:</font></legend>
+	<legend><font color="green">Parent/Guardian 1 Address</font></legend>
 		<table>
 			<tr><td>Street Address</td> <td><input type="text" size="40"
 			id="guardian1address" name="guardian1address" value="<?php echo($_POST['guardian1address']); ?>">
@@ -373,26 +368,26 @@ Clear Guardian 1 Address</button><br />
 <br>
 
 <fieldset>
-	<legend><font color="green">Guardian 1 Contact Information:</font></legend>
+	<legend><font color="green">Parent/Guardian 1 Contact Information</font></legend>
 		<table>
 			<tr><td>Email:</td> <td><input type="text" size="30"
 			id="guardian1email" name="guardian1email" value="<?php echo($_POST['guardian1email']); ?>">
-			<tr><td>Phone (home):</td> <td><input type="text" size="20"
+			<tr><td>Phone (home)</td> <td><input type="text" size="20"
 			id="guardian1homephone" name="guardian1homephone" value="<?php echo($_POST['guardian1homephone']); ?>">
-			<td>Phone (cell):</td> <td><input type="text" size="20"
+			<td>Phone (cell)</td> <td><input type="text" size="20"
 			id="guardian1cellphone" name="guardian1cellphone" value="<?php echo($_POST['guardian1cellphone']); ?>">
-			<tr><td>Employer:</td> <td><input type="text" size="30"
+			<tr><td>Employer</td> <td><input type="text" size="30"
 			id="guardian1employer" name="guardian1employer" value="<?php echo($_POST['guardian1employer']); ?>">
-			<td>Occupation:</td> <td><input type="text" size="20"
+			<td>Occupation</td> <td><input type="text" size="20"
 			id="guardian1occupation" name="guardian1occupation" value="<?php echo($_POST['guardian1occupation']); ?>"></td></tr>
 		</table>
 </fieldset>
 
 <br>
 
-<p>Guardian 2:<input type="text" size="30"
+<p>Parent/Guardian 2<input type="text" size="30"
 id="guardian2name" name="guardian2name" value="<?php echo($_POST['guardian2name']); ?>">
- Relationship to Applicant: <select
+ Relationship to Applicant <select
  id="guardian2rel" name="guardian2rel">
 
 <?php
@@ -412,14 +407,14 @@ foreach ($relations as $relation) {
 <br><br>
 
 <button type="button" onclick = "getAndCopy2()" value="Fill" name="Fill Guardian 2 Information">
-Copy Applicant Address to Guardian 2 Address </button>
+Copy Applicant Address to Parent/Guardian 2 Address </button>
 
-<button type="button" onclick = "clearGuardian2()" value="Clear" name="Clear Guardian 2 Information">
+<button type="button" onclick = "clearGuardian2()" value="Clear" name="Clear Parent/Guardian 2 Information">
 Clear Guardian 2 Address</button><br />
 
 
 <fieldset>
-	<legend><font color="green">Guardian 2 Address:</font></legend>
+	<legend><font color="green">Parent/Guardian 2 Address</font></legend>
 		<table>
 			<tr><td>Street Address</td> <td><input type="text" size="40"
 			id="guardian2address" name="guardian2address" value="<?php echo($_POST['guardian2address']); ?>">
@@ -464,29 +459,29 @@ Clear Guardian 2 Address</button><br />
 <br>
 
 <fieldset>
-	<legend><font color="green">Guardian 2 Contact Information:</font></legend>
+	<legend><font color="green">Parent/Guardian 2 Contact Information</font></legend>
 		<table>
 			<tr><td>Email:</td> <td><input type="text" size="30"
 			id="guardian2email" name="guardian2email" value="<?php echo($_POST['guardian2email']); ?>">
-			<tr><td>Phone (home):</td> <td><input type="text" size="20"
+			<tr><td>Phone (home)</td> <td><input type="text" size="20"
 			id="guardian2homephone" name="guardian2homephone" value="<?php echo($_POST['guardian2homephone']); ?>">
-			<td>Phone (cell):</td> <td><input type="text" size="20"
+			<td>Phone (cell)</td> <td><input type="text" size="20"
 			id="guardian2cellphone" name="guardian2cellphone" value="<?php echo($_POST['guardian2cellphone']); ?>">
-			<tr><td>Employer:</td> <td><input type="text" size="30"
+			<tr><td>Employer</td> <td><input type="text" size="30"
 			id="guardian2employer" name="guardian2employer" value="<?php echo($_POST['guardian2employer']); ?>">
-			<td>Occupation:</td> <td><input type="text" size="20"
+			<td>Occupation</td> <td><input type="text" size="20"
 			id="guardian2occupation" name="guardian2occupation" value="<?php echo($_POST['guardian2occupation']); ?>"></td></tr>
 		</table>
 </fieldset>
 
-<p>Please list any family or friend connections to the school:
+<p>Please list any family or friend connections to the school.
 <br /> <textarea id="connections" name="connections" rows="5" cols="80"><?php 
 if(isset($_POST['connections'])) {
 	echo htmlentities ($_POST['connections']); 
 }
-?></textarea>
-
-<p align="center"><font color="green"><strong>General Information</strong></font><br />
+?></textarea></p>
+<br>
+<p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>General Information</strong></span></p>
 
 <p>Is there any academic, medical or psychological history that might affect your child's ability <br> to
 participate fully in Woodlawn's programs? <input <?php if(!(strcmp($_POST['applicanthistory'],"No"))) {echo 'checked="checked"';}?> 
@@ -512,7 +507,7 @@ if(isset($_POST['applicantpsychjudicialtext'])) {
 }
 ?></textarea>
 
-<p>Please note any medical concerns of which we need to be aware: <br /> <textarea id="applicantmedical" 
+<p>Please note any medical concerns of which we need to be aware. <br /> <textarea id="applicantmedical" 
 name="applicantmedical" rows="5" cols="80">
 <?php 
 if(isset($_POST['applicantmedical'])) {
@@ -520,15 +515,15 @@ if(isset($_POST['applicantmedical'])) {
 }
 ?></textarea>
 
-<p align="center">Woodlawn School admits students of any race, religion, gender, nationality, ethnic background, or sexual orientation.<br> 
-Woodlawn School does not discriminate on the basis of race, religion, gender, nationality, ethnic background, or sexual <br>
+<p align="center">Woodlawn School admits students of any race, religion, gender, nationality, ethnic background, or sexual orientation. 
+Woodlawn School does not discriminate on the basis of race, religion, gender, nationality, ethnic background, or sexual
 orientation in the administration of its educational policies, scholarship programs, athletic or other school-administered programs.
 
-<br><br><br>
+<br><br>
 
 <button type="submit" value="_form_submit" name="_form_submit">Submit Application </button>
 <button type="reset" value="Clear" name="Clear All">Clear Application</button>
-
+</p>
 <?php 
 include('newApplicantFooter.html');
 ?>
