@@ -30,7 +30,7 @@ $currentmonth = substr($today, 5, 3);
 $currentyear = substr($today, 0, 4);
 ?>
 
-<p align="center"><font color="green" size="12"><strong>Applicant Information</strong></font><br />
+<p align="center"><font color="green" size="10"><strong>Applicant Information</strong></font><br />
 
 <p>Applying for <select id="futuregrade" name="futuregrade"><?php 
 
@@ -521,7 +521,7 @@ if(isset($_POST['applicantmedical'])) {
 Woodlawn School does not discriminate on the basis of race, religion, gender, nationality, ethnic background, or sexual
 orientation in the administration of its educational policies, scholarship programs, athletic or other school-administered programs.
 
-<br><br><br>
+<br><br>
 
 <button type="submit" value="_form_submit" name="_form_submit">Submit Application </button>
 <button type="reset" value="Clear" name="Clear All">Clear Application</button>
