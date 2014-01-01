@@ -374,11 +374,11 @@ Clear Guardian 1 Address</button><br />
 			<tr><td>Email</td> <td><input type="text" size="30"
 			id="guardian1email" name="guardian1email" value="<?php echo($_POST['guardian1email']); ?>"></td></tr>
 			<tr><td>Phone (home)</td> <td><input type="text" size="20"
-			id="guardian1homephone" name="guardian1homephone" value="<?php echo($_POST['guardian1homephone']); ?>"></td><td width="5"></td>
+			id="guardian1homephone" name="guardian1homephone" value="<?php echo($_POST['guardian1homephone']); ?>"></td><td width="10"></td>
 			<td>Phone (cell)</td> <td><input type="text" size="20"
 			id="guardian1cellphone" name="guardian1cellphone" value="<?php echo($_POST['guardian1cellphone']); ?>"></td></tr>
 			<tr><td>Employer</td> <td><input type="text" size="30"
-			id="guardian1employer" name="guardian1employer" value="<?php echo($_POST['guardian1employer']); ?>"></td><td width="5"></td>
+			id="guardian1employer" name="guardian1employer" value="<?php echo($_POST['guardian1employer']); ?>"></td><td width="10"></td>
 			<td>Occupation</td> <td><input type="text" size="20"
 			id="guardian1occupation" name="guardian1occupation" value="<?php echo($_POST['guardian1occupation']); ?>"></td></tr>
 		</table>
@@ -463,13 +463,13 @@ Clear Guardian 2 Address</button><br />
 	<legend><font color="green">Parent/Guardian 2 Contact Information</font></legend>
 		<table>
 			<tr><td>Email</td> <td><input type="text" size="30"
-			id="guardian2email" name="guardian2email" value="<?php echo($_POST['guardian2email']); ?>">
+			id="guardian2email" name="guardian2email" value="<?php echo($_POST['guardian2email']); ?>"></td></tr>
 			<tr><td>Phone (home)</td> <td><input type="text" size="20"
-			id="guardian2homephone" name="guardian2homephone" value="<?php echo($_POST['guardian2homephone']); ?>">
+			id="guardian2homephone" name="guardian2homephone" value="<?php echo($_POST['guardian2homephone']); ?>"></td><td width="10"></td>
 			<td>Phone (cell)</td> <td><input type="text" size="20"
-			id="guardian2cellphone" name="guardian2cellphone" value="<?php echo($_POST['guardian2cellphone']); ?>">
+			id="guardian2cellphone" name="guardian2cellphone" value="<?php echo($_POST['guardian2cellphone']); ?>"></td></tr>
 			<tr><td>Employer</td> <td><input type="text" size="30"
-			id="guardian2employer" name="guardian2employer" value="<?php echo($_POST['guardian2employer']); ?>">
+			id="guardian2employer" name="guardian2employer" value="<?php echo($_POST['guardian2employer']); ?>"></td><td width="10"></td>
 			<td>Occupation</td> <td><input type="text" size="20"
 			id="guardian2occupation" name="guardian2occupation" value="<?php echo($_POST['guardian2occupation']); ?>"></td></tr>
 		</table>
