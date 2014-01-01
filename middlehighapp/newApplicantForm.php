@@ -30,7 +30,7 @@ $currentmonth = substr($today, 5, 3);
 $currentyear = substr($today, 0, 4);
 ?>
 
-<p align="center"><font color="green" size="10"><strong>Applicant Information</strong></font><br />
+<p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>Applicant Information</strong></span></p>
 
 <p>Applying for <select id="futuregrade" name="futuregrade"><?php 
 
