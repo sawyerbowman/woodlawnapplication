@@ -234,8 +234,8 @@ if(isset($_POST['communication'])) {
 <br>
 <p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>Parent/Guardian Information</strong></span></p>
 
-<p>Parent/Guardian 1 Name <input type="text" size="30"
-id="guardian1name" name="guardian1name" value="<?php echo($_POST['guardian1name']); ?>"><br>
+<p>Parent/Guardian 1 Name <input type="text" size="20"
+id="guardian1name" name="guardian1name" value="<?php echo($_POST['guardian1name']); ?>"> &nbsp;&nbsp;&nbsp;&nbsp; 
 Relationship to Applicant <select
 id="guardian1rel" name="guardian1rel">
 
@@ -386,8 +386,8 @@ Clear Guardian 1 Address</button><br />
 
 <br>
 
-<p>Parent/Guardian 2 Name <input type="text" size="30"
-id="guardian2name" name="guardian2name" value="<?php echo($_POST['guardian2name']); ?>"><br>
+<p>Parent/Guardian 2 Name <input type="text" size="20"
+id="guardian2name" name="guardian2name" value="<?php echo($_POST['guardian2name']); ?>"> &nbsp;&nbsp;&nbsp;&nbsp; 
 Relationship to Applicant <select
  id="guardian2rel" name="guardian2rel">
 
