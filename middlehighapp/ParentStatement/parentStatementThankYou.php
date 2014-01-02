@@ -25,9 +25,8 @@ include('parentStatementHeader.html');
 <p>Thank you for your submission. Below, you can find other links to complete your application.<br><br>
 
 <a href="http://www.woodlawnschool.org/application/new_applicant/newApplicantEdit.php">Main Application Form</a><br>
-<a href="http://www.woodlawnschool.org/application/applicant_statement/applicantStatementEdit.php">Student Statement Form</a>
-
-
+<a href="http://www.woodlawnschool.org/application/applicant_statement/applicantStatementEdit.php">Student Statement Form</a>  (for middle and upper school applicants only)
+</p>
 <?php 
 include('parentStatementFooter.html');
 ?>	
