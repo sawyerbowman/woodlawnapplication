@@ -21,15 +21,15 @@ $datetime = date('M-d-Y-g-i-a-e');
 <?php 
 include_once("applicantStatementEdit.php");
 ?>
-
-<p><strong>Applicant Information:</strong>
-
-<p>First Name <input type="text" size="20" id="firstname" name="firstname" 
-value="<?php echo($_POST['firstname']); ?>">
-
-Last Name <input type="text" size="20" id="lastname" name="lastname" 
-value="<?php echo($_POST['lastname']); ?>">
-
+<p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>Student Statement Form</strong></span></p>
+<fieldset>
+	<legend><span style="color: green;">Applicant Info</span></legend>
+		<table>
+			<tr><td>First Name</td> <td><input type="text" size="20"
+			id="firstname" name="firstname" value="<?php echo($_POST['firstname']); ?>"></td><td width="10"></td>
+			<td>Last Name</td> <td><input type="text" size="20"
+			id="lastname" name="lastname" value="<?php echo($_POST['lastname']); ?>"></td></tr>
+		</table>
 <p>Applying for <select id="futuregrade" name="futuregrade"><?php 
 
 $grades = array("6th", "7th", "8th", "9th", "10th", "11th", "12th");
@@ -41,9 +41,8 @@ foreach ($grades as $grade) {
 	echo ">" . $grade . "</option>";
 }
 ?>
-</select> grade.
-
-<p><strong>Student Statement:</strong>
+</select> grade.</p>
+</fieldset>
 
 <p>Please craft an authentic response to this writing prompt. We look forward to your<br>
 personal story:
