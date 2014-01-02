@@ -22,7 +22,7 @@ $datetime = date('M-d-Y-g-i-a-e');
 include_once("parentStatementEdit.php");
 ?>
 
-<p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>Student Statement Form</strong></span></p>
+<p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>Parent Statement Form</strong></span></p>
 <fieldset>
         <legend><span style="color: green;">Applicant Info</span></legend>
                 <table>
