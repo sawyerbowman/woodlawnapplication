@@ -27,7 +27,7 @@ include('../applicationHeader.html');
 <a href="http://www.woodlawnschool.org/application/applicant_statement/applicantStatementEdit.php">Student Statement Form</a> (for middle and upper school applicants only)<br>
 <a href="http://www.woodlawnschool.org/application/parent_statement/parentStatementEdit.php">Parent Statement Form</a><br>
 <a href="http://www.woodlawnschool.org/application/recommendations/recommendEdit.php">Recommendations Form</a>
-
+</p>
 <?php 
 include('../applicationFooter.html');
 ?>	
