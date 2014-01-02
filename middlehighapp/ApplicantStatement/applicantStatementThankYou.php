@@ -25,8 +25,8 @@ include('../applicationHeader.html');
 <p>Thank you for your submission. Below, you can find other links to complete your application.<br><br>
 
 <a href="http://www.woodlawnschool.org/application/new_applicant/newApplicantEdit.php">Main Application Form</a><br>
-<a href="http://www.woodlawnschool.org/application/parent_statement/parentStatementEdit.php">Parent Statement Form</a>
-
+<a href="http://www.woodlawnschool.org/application/parent_statement/parentStatementEdit.php">Parent Statement Form</a><br>
+<a href="http://www.woodlawnschool.org/application/recommendations/recommendEdit.php">Recommendations Form</a>
 
 <?php 
 include('../applicationFooter.html');
