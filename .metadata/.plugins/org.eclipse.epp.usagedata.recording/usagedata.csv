@@ -1,51 +1,76 @@
 what,kind,bundleId,bundleVersion,description,time
-opened,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697101533
-activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697102832
-executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.refresh",1388697110861
-activated,view,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.ui.explorer",1388697117105
-error,log,,,"Resource is out of sync with the file system: '/middlehighapp/NewApplicant/newApplicantForm2.php'.",1388697118802
-error,log,,,"Resource is out of sync with the file system: '/middlehighapp/NewApplicant/newApplicantForm2.php'.",1388697118956
-opened,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697119526
-activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697120796
-error,log,,,"Resource is out of sync with the file system: '/middlehighapp/NewApplicant/newApplicantForm2.php'.",1388697133277
-activated,view,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.ui.explorer",1388697133277
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697137739
-executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.refresh",1388697138489
-activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697151364
-activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697151730
-closed,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697151730
-activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697153520
-closed,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697153520
-activated,view,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.ui.explorer",1388697155957
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697164464
-opened,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697172724
-activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697173259
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697174097
-activated,view,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.ui.explorer",1388697174383
-activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697180857
-closed,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697180967
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697184462
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697185786
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697187166
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697188110
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697190025
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697191347
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697194622
-activated,view,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.ui.explorer",1388697268319
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697268410
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697285618
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697286111
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697287994
-executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1388697288039
-closed,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697288316
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697293369
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697331064
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697352844
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697367819
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697379337
-opened,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697383248
-activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388697383926
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697384687
-activated,view,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.ui.explorer",1388697385028
-deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697387548
-activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388697412860
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388700184620
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700185630
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700195856
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388700202248
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388700206697
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388700211652
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.cut",1388700216818
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388700220282
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388700220744
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388700223289
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388700225796
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700227015
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700239323
+error,log,,,"Error logged from Debug UI: ",1388700239602
+error,log,,,"Error logged from Debug UI: ",1388700239603
+error,log,,,"Error logged from Debug UI: ",1388700239605
+error,log,,,"Error logged from Debug UI: ",1388700239606
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388700242449
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388700245429
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388700246848
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.cut",1388700251161
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388700255893
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388700256381
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388700258427
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388700262108
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388700263710
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388700264248
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700265305
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700276494
+error,log,,,"Error logged from Debug UI: ",1388700276789
+error,log,,,"Error logged from Debug UI: ",1388700276790
+error,log,,,"Error logged from Debug UI: ",1388700276793
+error,log,,,"Error logged from Debug UI: ",1388700276793
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388700281785
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388700282582
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.cut",1388700293286
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388700294743
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700295879
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700307273
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388700308148
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388700308739
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388700310390
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388700311445
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1388700316629
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388700317692
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388700320114
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388700326863
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388700331746
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388700334174
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388700338368
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388700343157
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388700350977
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700351921
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700368533
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.cut",1388700372109
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388700372929
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700373553
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700396009
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388700396832
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388700397439
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1388700399182
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700400093
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700423883
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.cut",1388700428484
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388700429030
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700429749
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700454774
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388700455407
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388700456493
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700457816
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1388700482440
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.cut",1388700484828
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388700485324
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1388700487948
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1388700488697
