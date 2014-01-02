@@ -66,20 +66,20 @@ foreach ($years as $year) {
 </select>
 
 <fieldset>
-	<legend><span style="font-family: verdana,arial,helvetica; color: #336633;">Applicant</span></legend>
+	<legend><span style="font-family: verdana,arial,helvetica; color: green;">Applicant</span></legend>
 		<table>
 			<tr><td>First</td> <td><input type="text" size="15"
-			id="firstname" name="firstname" value="<?php echo($_POST['firstname']); ?>"></td><td width="5"></td>
+			id="firstname" name="firstname" value="<?php echo($_POST['firstname']); ?>"></td><td width="10"></td>
 			<td>Middle</td> <td><input type="text" size="15"
-			id="middle_name" name="middlename" value="<?php echo($_POST['middlename']); ?>"></td><td width="5"></td>
+			id="middle_name" name="middlename" value="<?php echo($_POST['middlename']); ?>"></td><td width="10"></td>
 			<td>Last</td> <td><input type="text" size="15"
 			id="lastname" name="lastname" value="<?php echo($_POST['lastname']); ?>"></td></tr>
 			<tr><td>Preferred</td> <td><input type="text" size="15"
 			id="preferredname" name="preferredname" value="<?php echo($_POST['preferredname']); ?>"></td></tr>
 		</table>
 		<table>
-			<tr><td>Gender</td> <td width="5"></td><td><input <?php if(!(strcmp($_POST['gender'],"Female"))) {echo 'checked="checked"';}?> 
-			type="Radio" name="gender" id="female" value="Female"> Female </td> 
+			<tr><td>Gender</td> <td width="10"></td><td><input <?php if(!(strcmp($_POST['gender'],"Female"))) {echo 'checked="checked"';}?> 
+			type="Radio" name="gender" id="female" value="Female"> Female </td> <td width="5"></td>
 			<td><input <?php if(!(strcmp($_POST['gender'],"Male"))) {echo 'checked="checked"';}?> 
 			type="Radio" name="gender" id="male" value="Male"> Male</td>
 		<td width="40"></td>	
