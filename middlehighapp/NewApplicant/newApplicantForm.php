@@ -484,11 +484,10 @@ if(isset($_POST['connections'])) {
 <br>
 <p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>General Information</strong></span></p>
 
-<p>Is there any academic, medical or psychological history that might affect your child's ability <br> to
-participate fully in Woodlawn's programs? <input <?php if(!(strcmp($_POST['applicanthistory'],"No"))) {echo 'checked="checked"';}?> 
-type="Radio" id="applicanthistory" name="applicanthistory" value="No"> No 
+<p>Is there any academic, medical or psychological history that might affect your child's ability to participate fully in Woodlawn's programs? &nbsp;&nbsp;&nbsp;&nbsp; <input <?php if(!(strcmp($_POST['applicanthistory'],"No"))) {echo 'checked="checked"';}?> 
+type="Radio" id="applicanthistory" name="applicanthistory" value="No"> No &nbsp;&nbsp;
 <input <?php if(!(strcmp($_POST['applicanthistory'],"Yes"))) {echo 'checked="checked"';}?> 
-type="Radio" id="applicanthistory" name="applicanthistory" value="Yes"> Yes 
+type="Radio" id="applicanthistory" name="applicanthistory" value="Yes"> Yes &nbsp;&nbsp;
 If yes, please explain: <br /> <textarea id="applicanthistorytext" name="applicanthistorytext" rows="5" cols="80">
 <?php 
 if(isset($_POST['applicanthistorytext'])) {
@@ -496,11 +495,10 @@ if(isset($_POST['applicanthistorytext'])) {
 }
 ?></textarea>
 
-<p>Has your child ever had any psychological or educational testing, undergone any counseling <br> or treatment,
-ever been involved with the judicial system, or ever been suspended or expelled <br> from school? <input <?php if(!(strcmp($_POST['applicantpsychjudicial'],"No"))) {echo 'checked="checked"';}?>
-type="Radio" id="applicantpsychjudicial" name="applicantpsychjudicial" value="No"> No 
+<p>Has your child ever had any psychological or educational testing, undergone any counseling or treatment, ever been involved with the judicial system, or ever been suspended or expelled from school? &nbsp;&nbsp;&nbsp;&nbsp; <input <?php if(!(strcmp($_POST['applicantpsychjudicial'],"No"))) {echo 'checked="checked"';}?>
+type="Radio" id="applicantpsychjudicial" name="applicantpsychjudicial" value="No"> No &nbsp;&nbsp;
 <input <?php if(!(strcmp($_POST['applicantpsychjudicial'],"Yes"))) {echo 'checked="checked"';}?> 
-type="Radio" id="applicantpsychjudicial" name="applicantpsychjudicial" value="Yes"> Yes 
+type="Radio" id="applicantpsychjudicial" name="applicantpsychjudicial" value="Yes"> Yes &nbsp;&nbsp;
 If yes, please explain: <br /> <textarea id="applicantpsychjudicialtext" name="applicantpsychjudicialtext" rows="5" cols="80">
 <?php 
 if(isset($_POST['applicantpsychjudicialtext'])) {
