@@ -26,13 +26,13 @@ include_once("applicantStatementEdit.php");
 
 <p><strong>Applicant Information:</strong>
 
-<input type="text" size="20" id="firstname" name="firstname"
+<p>First Name <input type="text" size="20" id="firstname" name="firstname"
 value="<?php echo($_POST['firstname']); ?>">
 
-<input type="text" size="20" id="lastname" name="lastname"
+Last Name <input type="text" size="20" id="lastname" name="lastname"
 value="<?php echo($_POST['lastname']); ?>">
 
-<select id="futuregrade" name="futuregrade"><?php
+<p>Applying for <select id="futuregrade" name="futuregrade"><?php
 
 $grades = array("6th", "7th", "8th", "9th", "10th", "11th", "12th");
 foreach ($grades as $grade) {
@@ -43,18 +43,28 @@ foreach ($grades as $grade) {
         echo ">" . $grade . "</option>";
 }
 ?>
-</select>
+</select> grade.
 
-<textarea id="applicantResponse" name="applicantResponse" rows="30" cols="80" value="<?php
+<p><strong>Student Statement:</strong>
+
+<p>Please craft an authentic response to this writing prompt. We look forward to your<br>
+personal story:
+
+<br><br>
+
+Tell us a story that reveals something important about who you are. It can be humorous <br>
+or serious, but it should capture a specific moment in your life.
+<br /><textarea id="applicantResponse" name="applicantResponse" rows="30" cols="80" ><?php
 if(isset($_POST['applicantResponse'])) {
         echo ($_POST['applicantResponse']);
 }
-?>">
+?>
 </textarea>
 
+<br><br><br>
 
-<button type="submit" value="_form_submit" name="_form_submit"></button>
-<button type="reset" value="Clear" name="Clear All"></button>
+<button type="submit" value="_form_submit" name="_form_submit">Submit Application </button>
+<button type="reset" value="Clear" name="Clear All">Clear Application</button>
 
 </form>
 
