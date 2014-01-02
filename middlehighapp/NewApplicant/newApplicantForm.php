@@ -183,10 +183,10 @@ foreach ($years as $year) {
 			<tr><td>School Name</td><td><input type="text" size="30" 
 			id="prevschool" name="prevschool" value="<?php echo($_POST['prevschool']); ?>">
 <td width="10"></td>
-			<td>Current Grade<select id="curgrade" name="curgrade">
+			<td>Current Grade <select id="curgrade" name="curgrade">
 			<?php
 
-			$grades = array("5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th");
+			$grades = array("None", "Pre-Kindergarten", "Kindergarten", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th");
 			foreach ($grades as $grade) {
 				echo "<option value'" . $grade . "' ";
 				if ($grade == $_POST['curgrade']){
