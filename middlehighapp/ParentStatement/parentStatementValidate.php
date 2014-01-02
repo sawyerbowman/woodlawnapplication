@@ -22,7 +22,7 @@ function validateForm() {
 		$errors[] = 'Please enter a last name for the applicant.';
 	}
 	if($_POST['parentResponse'] == null){
-		$errors[] = 'Please enter a response for the parent.';
+		$errors[] = 'Please enter a parent statement.';
 	}
 	if(!$errors)
         return "";
