@@ -16,7 +16,7 @@
 //Get the last name of the new applicant
 $last = $_GET['lastname'];
 
-include('newApplicantHeader.html');
+include('../applicationHeader.html');
 include('newApplicantValidate.php');
 	if(!array_key_exists('_form_submit', $_POST)){
 		//the form has not been submitted, so show it
