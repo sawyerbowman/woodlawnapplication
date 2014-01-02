@@ -62,7 +62,7 @@ if(isset($_POST['parentResponse'])) {
 <br><br><br>
 
 <button type="submit" value="_form_submit" name="_form_submit">Submit Statement </button>
-<button type="reset" value="Clear" name="Clear Form">Clear Application</button>
+<button type="reset" value="Clear" name="Clear">Clear Form</button>
 
 <?php 
 include('../applicationFooter.html');
