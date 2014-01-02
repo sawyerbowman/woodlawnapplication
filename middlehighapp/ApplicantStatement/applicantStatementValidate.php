@@ -22,7 +22,7 @@ function validateForm() {
 		$errors[] = 'Please enter a last name for the applicant.';
 	}
 	if($_POST['applicantResponse'] == null){
-		$errors[] = 'Please enter a response for the applicant.';
+		$errors[] = 'Please enter a student statement.';
 	}
 	if(!$errors)
         return "";
