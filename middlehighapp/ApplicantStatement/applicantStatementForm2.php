@@ -17,7 +17,7 @@ $datetime = date('M-d-Y-g-i-a-e');
 ?>
 <form method="POST" id="applicantStatementForm2" name="applicantStatementForm2"
 action="http://us.1.p10.webhosting.yahoo.com/forms?login=dwayneb">
-<input type="hidden" name="next_url" value="http://www.woodlawnschool.org/application/applican_statement/applicantStatementThankYou.php">
+<input type="hidden" name="next_url" value="http://www.woodlawnschool.org/application/applicant_statement/applicantStatementThankYou.php">
 <input type="hidden" name="time_date" value="<?php echo($datetime);?>">
 
 <?php 
