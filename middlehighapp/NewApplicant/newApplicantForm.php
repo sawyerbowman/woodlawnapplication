@@ -66,15 +66,15 @@ foreach ($years as $year) {
 </select>
 
 <fieldset>
-	<legend><span style="font-family: verdana,arial,helvetica; color: green;">Applicant</span></legend>
+	<legend><span style="color: green;">Applicant</span></legend>
 		<table>
-			<tr><td>First</td> <td><input type="text" size="15"
+			<tr><td>First</td> <td><input type="text" size="17"
 			id="firstname" name="firstname" value="<?php echo($_POST['firstname']); ?>"></td><td width="10"></td>
-			<td>Middle</td> <td><input type="text" size="15"
+			<td>Middle</td> <td><input type="text" size="17"
 			id="middle_name" name="middlename" value="<?php echo($_POST['middlename']); ?>"></td><td width="10"></td>
-			<td>Last</td> <td><input type="text" size="15"
+			<td>Last</td> <td><input type="text" size="17"
 			id="lastname" name="lastname" value="<?php echo($_POST['lastname']); ?>"></td></tr>
-			<tr><td>Preferred</td> <td><input type="text" size="15"
+			<tr><td>Preferred</td> <td><input type="text" size="17"
 			id="preferredname" name="preferredname" value="<?php echo($_POST['preferredname']); ?>"></td></tr>
 		</table>
 		<table>
@@ -133,10 +133,10 @@ foreach ($years as $year) {
 	<legend><font color="green">Home Address</font></legend>
 		<table>
 			<tr><td>Street Address</td> <td><input type="text" size="40"
-			id="applicantaddress" name="applicantaddress" value="<?php echo($_POST['applicantaddress']); ?>">
+			id="applicantaddress" name="applicantaddress" value="<?php echo($_POST['applicantaddress']); ?>"></td></tr>
 
 			<tr><td>City</td> <td><input type="text" size="40"
-			id="applicantcity" name="applicantcity" value="<?php echo($_POST['applicantcity']); ?>">
+			id="applicantcity" name="applicantcity" value="<?php echo($_POST['applicantcity']); ?>"></td><td width="10"></td>
 			
 			<td>State</td> <td><select
 			id="applicantstate" name="applicantstate">
@@ -170,7 +170,7 @@ foreach ($years as $year) {
 				echo($_POST['applicantcountry']);
 			}
 			?>"
-			></td>
+			></td><td width="10"></td>
 			<td>Zip</td> <td><input type="text" size="10"
 			id="applicantzip" name="applicantzip" value="<?php echo($_POST['applicantzip']); ?>"></td></tr>
 		</table>
@@ -200,8 +200,8 @@ foreach ($years as $year) {
 			</select></td></tr>
 		</table>
 		<table>
-			<tr><td>School Type</td> <td><input <?php if(!(strcmp($_POST['schooltype'],"Public"))) {echo 'checked="checked"';}?> 
-			type="Radio" id="schooltype" name="schooltype" value="Public"> Public </td> 
+			<tr><td>School Type</td> <td width="10"></td><td><input <?php if(!(strcmp($_POST['schooltype'],"Public"))) {echo 'checked="checked"';}?> 
+			type="Radio" id="schooltype" name="schooltype" value="Public"> Public </td> <td width="5"></td>
 			<td><input <?php if(!(strcmp($_POST['schooltype'],"Private"))) {echo 'checked="checked"';}?> 
 			type="Radio" id="schooltype" name="schooltype" value="Private"> Private</td></tr>
 		</table>
@@ -327,9 +327,9 @@ Clear Guardian 1 Address</button><br />
 	<legend><font color="green">Parent/Guardian 1 Address</font></legend>
 		<table>
 			<tr><td>Street Address</td> <td><input type="text" size="40"
-			id="guardian1address" name="guardian1address" value="<?php echo($_POST['guardian1address']); ?>">
+			id="guardian1address" name="guardian1address" value="<?php echo($_POST['guardian1address']); ?>"></td></tr>
 			<tr><td>City</td> <td><input type="text" size="40"
-			id="guardian1city" name="guardian1city" value="<?php echo($_POST['guardian1city']); ?>">
+			id="guardian1city" name="guardian1city" value="<?php echo($_POST['guardian1city']); ?>"></td><td width="10"></td>
 			<td>State</td> <td><select
 			id="guardian1state" name="guardian1state">
 			<?php 
@@ -360,7 +360,7 @@ Clear Guardian 1 Address</button><br />
 			else{
 				echo($_POST['guardian1country']);
 			}
-			?>"></td>
+			?>"></td><td width="10"></td>
 			<td>Zip</td> <td><input type="text" size="10"
 			id="guardian1zip" name="guardian1zip" value="<?php echo($_POST['guardian1zip']); ?>"></td></tr>
 		</table>
@@ -418,9 +418,9 @@ Clear Guardian 2 Address</button><br />
 	<legend><font color="green">Parent/Guardian 2 Address</font></legend>
 		<table>
 			<tr><td>Street Address</td> <td><input type="text" size="40"
-			id="guardian2address" name="guardian2address" value="<?php echo($_POST['guardian2address']); ?>">
+			id="guardian2address" name="guardian2address" value="<?php echo($_POST['guardian2address']); ?>"></td></tr>
 			<tr><td>City</td> <td><input type="text" size="40"
-			id="guardian2city" name="guardian2city" value="<?php echo($_POST['guardian2city']); ?>">
+			id="guardian2city" name="guardian2city" value="<?php echo($_POST['guardian2city']); ?>"></td><td width="10"></td>
 			<td>State</td> <td><select
 			id="guardian2state" name="guardian2state">
 			<?php 
@@ -451,7 +451,7 @@ Clear Guardian 2 Address</button><br />
 			else{
 				echo($_POST['guardian2country']);
 			}
-			?>"></td>
+			?>"></td><td width="10"></td>
 			<td>Zip</td> <td><input type="text" size="10"
 			id="guardian2zip" name="guardian2zip" value="<?php echo($_POST['guardian2zip']); ?>"></td></tr>
 		</table>
