@@ -114,7 +114,7 @@ function validateForm($last) {
 	if($_POST['guardian2country'] == 'United States of America' && $_POST['guardian2zip'] == null){
 		$errors[] = 'Please enter a zip code for Parent/Guardian 2.';
 	}	
-	if($_POST['guardian2zip'] != null && strlen($_POST['guardian2zip']) != 5){
+	if($_POST['guardian2zip'] != null && strlen($_POST['guardian2zip']) < 5){
 		$errors[] = 'Please enter a valid zip code for Parent/Guardian 2.';
 	}
 	//guardian 2 contact tests
