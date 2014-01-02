@@ -47,7 +47,7 @@ foreach ($grades as $grade) {
 </fieldset>
 
 <p>In an effort to get to know your family and your desire for a new school environment, please
-articulate how the applicant reflects Woodlawn School's mission and philosophies:
+articulate how the applicant reflects Woodlawn School's mission and philosophies.
 
 <br><br>
 
