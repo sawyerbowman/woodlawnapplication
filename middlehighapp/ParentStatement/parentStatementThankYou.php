@@ -13,7 +13,7 @@
  *	@version 12/28/2013
  */
 
-include('parentStatementHeader.html');
+include('../applicationHeader.html');
 
 ?>
 <div class="success">
@@ -28,5 +28,5 @@ include('parentStatementHeader.html');
 <a href="http://www.woodlawnschool.org/application/applicant_statement/applicantStatementEdit.php">Student Statement Form</a>  (for middle and upper school applicants only)
 </p>
 <?php 
-include('parentStatementFooter.html');
+include('../applicationFooter.html');
 ?>	
