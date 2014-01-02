@@ -17,7 +17,7 @@ $datetime = date('M-d-Y-g-i-a-e');
 ?>
 <form method="POST" id="applicantStatementForm2" name="applicantStatementForm2"
 action="http://us.1.p10.webhosting.yahoo.com/forms?login=dwayneb">
-<input type="hidden" name="next_url" value="http://localhost/middlehighapp/ApplicantStatement/applicantStatementThankYou.php">
+<input type="hidden" name="next_url" value="http://www.woodlawnschool.org/application/applican_statement/applicantStatementThankYou.php">
 <input type="hidden" name="time_date" value="<?php echo($datetime);?>">
 
 <?php 
@@ -26,13 +26,11 @@ include_once("applicantStatementEdit.php");
 
 <p><strong>Student Statement:</strong>
 
-<p>Please craft an authentic response to this writing prompt. We look forward to your<br>
-personal story:
+<p>Please craft an authentic response to this writing prompt. We look forward to your personal story.
 
 <br><br>
 
-Tell us a story that reveals something important about who you are. It can be humorous <br>
-or serious, but it should capture a specific moment in your life.
+Tell us a story that reveals something important about who you are. It can be humorous or serious, but it should capture a specific moment in your life.
 <br /> <textarea id="applicantResponse" name="applicantResponse" rows="30" cols="80" ><?php 
 if(isset($_POST['applicantResponse'])) {
 	echo ($_POST['applicantResponse']); 
