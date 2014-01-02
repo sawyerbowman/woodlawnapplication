@@ -24,8 +24,8 @@ include('applicantStatementHeader.html');
 
 <p>Thank you for your submission. Below, you can find other links to complete your application.<br><br>
 
-<a href="http://www.woodlawnschool.org/application/ne_applicant/newApplicantEdit.php">Application Form</a><br>
-<a href="http://www.woodlawnschool.org/application/parent_Statement/parentStatementEdit.php">Parent Personal Statement</a>
+<a href="http://www.woodlawnschool.org/application/new_applicant/newApplicantEdit.php">Application Form</a><br>
+<a href="http://www.woodlawnschool.org/application/parent_statement/parentStatementEdit.php">Parent Personal Statement</a>
 
 
 <?php 
