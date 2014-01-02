@@ -67,7 +67,7 @@ foreach ($years as $year) {
 <fieldset>
 	<legend><span style="color: green;">Applicant</span></legend>
 		<table>
-			<tr><td>First</td> <td><input type="text" size="17"
+			<tr><td>First Name</td> <td><input type="text" size="17"
 			id="firstname" name="firstname" value="<?php echo($_POST['firstname']); ?>"></td><td width="10"></td>
 			<td>Middle</td> <td><input type="text" size="17"
 			id="middle_name" name="middlename" value="<?php echo($_POST['middlename']); ?>"></td><td width="10"></td>
