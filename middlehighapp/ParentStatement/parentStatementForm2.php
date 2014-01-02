@@ -65,10 +65,6 @@ if(isset($_POST['parentResponse'])) {
 <button type="submit" value="_form_submit" name="_form_submit">Submit Application </button>
 <button type="reset" value="Clear" name="Clear All">Clear Application</button>
 
-<?php
-include('parentStatementFooter.html');
-?>
-
 </form>
 
 <script type="text/javascript">
