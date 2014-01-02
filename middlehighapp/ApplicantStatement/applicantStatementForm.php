@@ -59,10 +59,10 @@ if(isset($_POST['applicantResponse'])) {
 ?>
 </textarea>
 
-<br><br><br>
+<br><br>
 
-<button type="submit" value="_form_submit" name="_form_submit">Submit Application </button>
-<button type="reset" value="Clear" name="Clear All">Clear Application</button>
+<button type="submit" value="_form_submit" name="_form_submit">Submit Statement </button>
+<button type="reset" value="Clear" name="Clear All">Clear Form</button>
 
 <?php 
 include('../applicationFooter.html');
