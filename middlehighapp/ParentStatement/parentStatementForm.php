@@ -61,8 +61,8 @@ if(isset($_POST['parentResponse'])) {
 
 <br><br><br>
 
-<button type="submit" value="_form_submit" name="_form_submit">Submit Application </button>
-<button type="reset" value="Clear" name="Clear All">Clear Application</button>
+<button type="submit" value="_form_submit" name="_form_submit">Submit Statement </button>
+<button type="reset" value="Clear" name="Clear Form">Clear Application</button>
 
 <?php 
 include('../applicationFooter.html');
