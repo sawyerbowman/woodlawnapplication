@@ -13,7 +13,7 @@
  *	@version 12/28/2013
  */
 
-include('parentStatementHeader.html');
+include('../applicationHeader.html');
 include('parentStatementValidate.php');
 	if(!array_key_exists('_form_submit', $_POST)){
 		//the form has not been submitted, so show it
