@@ -28,7 +28,7 @@ function validateForm($last) {
 	}
 	//address tests
 	if($_POST['applicantaddress'] == null){
-		$errors[] = 'Please enter a street address.';
+		$errors[] = 'Please enter a street address for the applicant.';
 	}
 	if($_POST['applicantcity'] == null){
 		$errors[] = 'Please enter a city for the applicant.';
@@ -42,113 +42,117 @@ function validateForm($last) {
 	if($_POST['applicantcountry'] == 'United States of America' && $_POST['applicantzip'] == null){
 		$errors[] = 'Please enter a zip code for the applicant.';
 	}
-	if($_POST['applicantzip'] != null && strlen($_POST['applicantzip']) != 5){
+	if($_POST['applicantzip'] != null && strlen($_POST['applicantzip']) < 5){
 		$errors[] = 'Please enter a valid zip code for the applicant.';
 	}
 	//school tests
 	if($_POST['prevschool'] == null){
-		$errors[] = 'Please enter your current school.';
+		$errors[] = 'Please enter the applicant's current school.';
 	}
 	if($_POST['schooltype'] == null){
-		$errors[] = 'Please choose a school type.';
+		$errors[] = 'Please choose a school type for the applicant's current school.';
 	}
 	//Parent Information Tests
 	//guardian 1 tests
 	if($_POST['guardian1name'] == null){
-		$errors[] = 'Please enter a name for Guardian 1.';
+		$errors[] = 'Please enter a name for Parent/Guardian 1.';
 	}
 	//guardian 1 address tests
 	if($_POST['guardian1address'] == null){
-		$errors[] = 'Please enter a street address for Guardian 1.';
+		$errors[] = 'Please enter a street address for Parent/Guardian 1.';
 	}
 	if($_POST['guardian1city'] == null){
-		$errors[] = 'Please enter a city for Guardian 1.';
+		$errors[] = 'Please enter a city for Parent/Guardian 1.';
 	}
 	if($_POST['guardian1country'] == 'United States of America' && $_POST['guardian1state'] == null){
-		$errors[] = 'Please enter a state for Guardian 1.';
+		$errors[] = 'Please enter a state for Parent/Guardian 1.';
 	}
 	if($_POST['guardian1country'] == null){
-		$errors[] = 'Please enter a country for Guardian 1.';
+		$errors[] = 'Please enter a country for Parent/Guardian 1.';
 	}
 	if($_POST['guardian1country'] == 'United States of America' && $_POST['guardian1zip'] == null){
-		$errors[] = 'Please enter a zip code for Guardian 1.';
+		$errors[] = 'Please enter a zip code for Parent/Guardian 1.';
 	}
-	if($_POST['guardian1zip'] != null && strlen($_POST['guardian1zip']) != 5){
-		$errors[] = 'Please enter a valid zip code for Guardian 1.';
+	if($_POST['guardian1zip'] != null && strlen($_POST['guardian1zip']) < 5){
+		$errors[] = 'Please enter a valid zip code for Parent/Guardian 1.';
 	}
 	//guardian 1 contact tests
 	if($_POST['guardian1email'] == null){
-		$errors[] = 'Please enter an email address for Guardian 1.';
+		$errors[] = 'Please enter an email address for Parent/Guardian 1.';
 	}
 	if(!validPhone($_POST['guardian1homephone'])){
-		$errors[] = 'Please enter a valid home phone number for Guardian 1.';
+		$errors[] = 'Please enter a valid home phone number for Parent/Guardian 1.';
 	}
 	if(!validPhone($_POST['guardian1cellphone'])){
-		$errors[] = 'Please enter a valid cell phone number for Guardian 1.';
+		$errors[] = 'Please enter a valid cell phone number for Parent/Guardian 1.';
 	}
+/*  the parent may not be working
 	if($_POST['guardian1employer'] == null){
 		$errors[] = 'Please enter an employer for Guardian 1.';
 	}
 	if($_POST['guardian1occupation'] == null){
 		$errors[] = 'Please enter an occupation for Guardian 1.';
 	}
+*/
 	//guardian 2 tests
 	if($_POST['guardian2name'] == null){
-		$errors[] = 'Please enter a name for Guardian 2.';
+		$errors[] = 'Please enter a name for Parent/Guardian 2.';
 	}
 	//guardian 2 address tests
 	if($_POST['guardian2address'] == null){
-		$errors[] = 'Please enter a street address for Guardian 2.';
+		$errors[] = 'Please enter a street address for Parent/Guardian 2.';
 	}
 	if($_POST['guardian2city'] == null){
-		$errors[] = 'Please enter a city for Guardian 2.';
+		$errors[] = 'Please enter a city for Parent/Guardian 2.';
 	}
 	if($_POST['guardian2country'] == 'United States of America' && $_POST['guardian2state'] == null){
-		$errors[] = 'Please enter a state for Guardian 2.';
+		$errors[] = 'Please enter a state for Parent/Guardian 2.';
 	}
 	if($_POST['guardian2country'] == null){
-		$errors[] = 'Please enter a country for Guardian 2.';
+		$errors[] = 'Please enter a country for Parent/Guardian 2.';
 	}
 	if($_POST['guardian2country'] == 'United States of America' && $_POST['guardian2zip'] == null){
-		$errors[] = 'Please enter a zip code for Guardian 2.';
+		$errors[] = 'Please enter a zip code for Parent/Guardian 2.';
 	}	
 	if($_POST['guardian2zip'] != null && strlen($_POST['guardian2zip']) != 5){
-		$errors[] = 'Please enter a valid zip code for Guardian 2.';
+		$errors[] = 'Please enter a valid zip code for Parent/Guardian 2.';
 	}
 	//guardian 2 contact tests
 	if($_POST['guardian2email'] == null){
-		$errors[] = 'Please enter an email address for Guardian 2.';
+		$errors[] = 'Please enter an email address for Parent/Guardian 2.';
 	}
 	if(!validPhone($_POST['guardian2homephone'])){
-		$errors[] = 'Please enter a valid home phone number for Guardian 2.';
+		$errors[] = 'Please enter a valid home phone number for Parent/Guardian 2.';
 	}
 	if(!validPhone($_POST['guardian2cellphone'])){
-		$errors[] = 'Please enter a valid cell phone number for Guardian 2.';
+		$errors[] = 'Please enter a valid cell phone number for Parent/Guardian 2.';
 	}
+/*  the parent may not be working
 	if($_POST['guardian2employer'] == null){
 		$errors[] = 'Please enter an employer for Guardian 2.';
 	}
 	if($_POST['guardian2occupation'] == null){
 		$errors[] = 'Please enter an occupation for Guardian 2.';
 	}
+*/
 	//General Information Tests
 	//academic, medical, psychological history tests
 	if($_POST['applicanthistory'] == null){
-		$errors[] = 'Please check yes or no for academic, medical or psychological history.';
+		$errors[] = 'Please choose Yes or No for academic, medical or psychological history.';
 	}
 	if($_POST['applicanthistory'] == 'Yes' && $_POST['applicanthistorytext'] == null){
-		$errors[] = 'You checked yes for academic, medical or psychological history.
-		Please enter an explanation or check no.';
+		$errors[] = 'You chose Yes for academic, medical or psychological history.
+		Please enter an explanation or choose No.';
 	}
 	//tests, counseling, treatment, judicial or discipline tests
 	if($_POST['applicantpsychjudicial'] == null){
-		$errors[] = 'Please check yes or no for psychological or educational testing, counseling or
-		treatment, involvement with judicial system or suspensions or expulsions from school.';
+		$errors[] = 'Please choose Yes or No for psychological or educational testing, counseling or
+		treatment, involvement with judicial system, or suspensions or expulsions from school.';
 	}
 	if($_POST['applicantpsychjudicial'] == 'Yes' && $_POST['applicantpsychjudicialtext'] == null){
-		$errors[] = 'You checked yes for psychological or educational testing, counseling or
-		treatment, involvement with judicial system or suspensions or expulsions from school.
-		Please enter an explanation or check no.';
+		$errors[] = 'You chose Yes for psychological or educational testing, counseling or
+		treatment, involvement with judicial system, or suspensions or expulsions from school.
+		Please enter an explanation or choose No.';
 	}
 	if(!$errors)
         return "";
@@ -175,7 +179,7 @@ function validPhone($phone){
 		$phone = str_replace(' ','',str_replace('+','',str_replace('(','',str_replace(')','',str_replace('-','',$phone)))));
 		$test = str_replace('0','',str_replace('1','',str_replace('2','',str_replace('3','',str_replace('4','',str_replace('5','',str_replace('6','',str_replace('7','',str_replace('8','',str_replace('9','',$phone))))))))));
 		if($test != null) return false;
-		if (strlen($phone) != 10) return false;
+		if (strlen($phone) < 10) return false;
 		return true;
 }
 
