@@ -18,15 +18,14 @@ include('newApplicantHeader.html');
 ?>
 <div class="success">
 	<ul>
-	<li><strong><font color="green">"You have successfully submitted your application!"</font></strong></li>
+	<li><strong><font color="green">You have successfully submitted your application!</font></strong></li>
 	</ul></div>
 <br>
 
 <p>Thank you for your submission. Below, you can find other links to complete your application.<br><br>
 
-<a href="http://localhost/middlehighapp/ApplicantStatement/applicantStatementEdit.php">Applicant Personal Statement</a><br>
-<a href="http://localhost/middlehighapp/ParentStatement/parentStatementEdit.php">Parent Personal Statement</a>
-
+<a href="http://www.woodlawnschool.org/application/applicant_statement/applicantStatementEdit.php">Applicant Personal Statement</a> (for middle and upper school applicants only)<br>
+<a href="http://www.woodlawnschool.org/application/parent_statement/parentStatementEdit.php">Parent Personal Statement</a>
 
 <?php 
 include('newApplicantFooter.html');
