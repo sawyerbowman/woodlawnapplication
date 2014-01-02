@@ -33,7 +33,6 @@ include('parentStatementValidate.php');
 		}
 		else {
 			//This was a successful form submission
-			echo("This was a successful form submission.");
 			include('parentStatementForm2.php');
 		}
 		echo('</div>');
