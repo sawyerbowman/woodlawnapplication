@@ -46,7 +46,7 @@ foreach ($grades as $grade) {
 </fieldset>
 
 <p>Please craft an authentic response to this writing prompt. We look forward to your<br>
-personal story:
+personal story.
 
 <br><br>
 
