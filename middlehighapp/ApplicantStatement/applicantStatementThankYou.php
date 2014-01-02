@@ -13,7 +13,7 @@
  *	@version 12/28/2013
  */
 
-include('applicantStatementHeader.html');
+include('../applicationHeader.html');
 
 ?>
 <div class="success">
@@ -29,5 +29,5 @@ include('applicantStatementHeader.html');
 
 
 <?php 
-include('applicantStatementFooter.html');
+include('../applicationFooter.html');
 ?>	
