@@ -21,7 +21,7 @@ $datetime = date('M-d-Y-g-i-a-e');
 <?php 
 include_once("applicantStatementEdit.php");
 ?>
-<p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>Student Statement Form</strong></span></p>
+<p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>Student Statement Form</strong></span><br>(for middle and upper school applicants only)</p>
 <fieldset>
 	<legend><span style="color: green;">Applicant Info</span></legend>
 		<table>
