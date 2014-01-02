@@ -523,7 +523,7 @@ orientation in the administration of its educational policies, scholarship progr
 <button type="reset" value="Clear" name="Clear All">Clear Application</button>
 </p>
 <?php 
-include('newApplicantFooter.html');
+include('../applicationFooter.html');
 ?>
 
 </form>
