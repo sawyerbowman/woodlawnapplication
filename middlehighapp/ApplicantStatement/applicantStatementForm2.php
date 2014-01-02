@@ -24,29 +24,55 @@ action="http://us.1.p10.webhosting.yahoo.com/forms?login=dwayneb">
 include_once("applicantStatementEdit.php");
 ?>
 
+<p><strong>Applicant Information:</strong>
+
+<p>First Name <input type="text" size="20" id="firstname" name="firstname"
+value="<?php echo($_POST['firstname']); ?>">
+
+Last Name <input type="text" size="20" id="lastname" name="lastname"
+value="<?php echo($_POST['lastname']); ?>">
+
+<p>Applying for <select id="futuregrade" name="futuregrade"><?php
+
+$grades = array("6th", "7th", "8th", "9th", "10th", "11th", "12th");
+foreach ($grades as $grade) {
+        echo "<option value'" . $grade . "' ";
+        if ($grade == $_POST['futuregrade']){
+                echo(SELECTED);
+        }
+        echo ">" . $grade . "</option>";
+}
+?>
+</select> grade.
+
 <p><strong>Student Statement:</strong>
 
-<p>Please craft an authentic response to this writing prompt. We look forward to your personal story.
+<p>Please craft an authentic response to this writing prompt. We look forward to your<br>
+personal story:
 
 <br><br>
 
-Tell us a story that reveals something important about who you are. It can be humorous or serious, but it should capture a specific moment in your life.
-<br /> <textarea id="applicantResponse" name="applicantResponse" rows="30" cols="80" ><?php 
+Tell us a story that reveals something important about who you are. It can be humorous <br>
+or serious, but it should capture a specific moment in your life.
+<br /><textarea id="applicantResponse" name="applicantResponse" rows="30" cols="80" ><?php
 if(isset($_POST['applicantResponse'])) {
-	echo ($_POST['applicantResponse']); 
+        echo ($_POST['applicantResponse']);
 }
-?></textarea>
+?>
+</textarea>
 
 <br><br><br>
 
 <button type="submit" value="_form_submit" name="_form_submit">Submit Application </button>
 <button type="reset" value="Clear" name="Clear All">Clear Application</button>
 
-<?php 
+<?php
 include('applicantStatementFooter.html');
 ?>
 
 </form>
+
+
 
 <script type="text/javascript">
 document.applicantStatementForm2.submit();
