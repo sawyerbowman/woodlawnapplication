@@ -32,7 +32,7 @@ value="<?php echo($_POST['lastname']); ?>">
 
 <p>Applying for <select id="futuregrade" name="futuregrade"><?php 
 
-$grades = array("6th", "7th", "8th", "9th", "10th", "11th", "12th");
+$grades = array("Kindergarten", "1st grade", "2nd grade", "3rd grade", "4th grade", "5th grade", "6th grade", "7th grade", "8th grade", "9th grade", "10th grade", "11th grade", "12th grade");
 foreach ($grades as $grade) {
 	echo "<option value'" . $grade . "' ";
 	if ($grade == $_POST['futuregrade']){
@@ -41,7 +41,7 @@ foreach ($grades as $grade) {
 	echo ">" . $grade . "</option>";
 }
 ?>
-</select> grade.
+</select>
 
 <p><strong>Parent Statement:</strong>
 
