@@ -65,7 +65,7 @@ if(isset($_POST['applicantResponse'])) {
 <button type="reset" value="Clear" name="Clear All">Clear Application</button>
 
 <?php 
-include('applicantStatementFooter.html');
+include('../applicationFooter.html');
 ?>
 
 </form>
