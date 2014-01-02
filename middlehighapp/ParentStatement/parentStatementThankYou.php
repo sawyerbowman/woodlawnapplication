@@ -18,14 +18,14 @@ include('parentStatementHeader.html');
 ?>
 <div class="success">
 	<ul>
-	<li><strong><font color="green">"You have successfully submitted your application!"</font></strong></li>
+	<li><strong><font color="green">You have successfully submitted your parent statement!</font></strong></li>
 	</ul></div>
 <br>
 
 <p>Thank you for your submission. Below, you can find other links to complete your application.<br><br>
 
-<a href="http://localhost/middlehighapp/NewApplicant/newApplicantEdit.php">Applicant Form</a><br>
-<a href="http://localhost/middlehighapp/ApplicantStatement/applicantStatementEdit.php">Applicant Personal Statement</a>
+<a href="http://www.woodlawnschool.org/application/new_applicant/newApplicantEdit.php">Application Form</a><br>
+<a href="http://www.woodlawnschool.org/application/applicant_statement/applicantStatementEdit.php">Student Statement</a>
 
 
 <?php 
