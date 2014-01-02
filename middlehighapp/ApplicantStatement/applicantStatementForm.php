@@ -30,7 +30,8 @@ include_once("applicantStatementEdit.php");
 			<td>Last Name</td> <td><input type="text" size="20"
 			id="lastname" name="lastname" value="<?php echo($_POST['lastname']); ?>"></td></tr>
 		</table>
-<p>Applying for <select id="futuregrade" name="futuregrade"><?php 
+<table>
+<tr><td>Applying for <select id="futuregrade" name="futuregrade"><?php 
 
 $grades = array("6th", "7th", "8th", "9th", "10th", "11th", "12th");
 foreach ($grades as $grade) {
@@ -41,7 +42,7 @@ foreach ($grades as $grade) {
 	echo ">" . $grade . "</option>";
 }
 ?>
-</select> grade.</p>
+</select> grade.</td></tr></table>
 </fieldset>
 
 <p>Please craft an authentic response to this writing prompt. We look forward to your<br>
