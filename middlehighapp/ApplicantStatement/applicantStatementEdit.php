@@ -33,7 +33,6 @@ include('applicantStatementValidate.php');
 		}
 		else {
 			//This was a successful form submission
-			echo("This was a successful form submission.");
 			include('applicantStatementForm2.php');
 		}
 		echo('</div>');
