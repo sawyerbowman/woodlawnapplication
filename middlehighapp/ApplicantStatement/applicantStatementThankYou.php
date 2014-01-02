@@ -18,14 +18,14 @@ include('applicantStatementHeader.html');
 ?>
 <div class="success">
 	<ul>
-	<li><strong><font color="green">You have successfully submitted your student statement!</font></strong></li>
+	<li><strong><font color="green">Your Student Statement Form has been sent to our Admissions Office.</font></strong></li>
 	</ul></div>
 <br>
 
 <p>Thank you for your submission. Below, you can find other links to complete your application.<br><br>
 
-<a href="http://www.woodlawnschool.org/application/new_applicant/newApplicantEdit.php">Application Form</a><br>
-<a href="http://www.woodlawnschool.org/application/parent_statement/parentStatementEdit.php">Parent Statement</a>
+<a href="http://www.woodlawnschool.org/application/new_applicant/newApplicantEdit.php">Main Application Form</a><br>
+<a href="http://www.woodlawnschool.org/application/parent_statement/parentStatementEdit.php">Parent Statement Form</a>
 
 
 <?php 
