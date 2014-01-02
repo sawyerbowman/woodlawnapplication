@@ -34,7 +34,7 @@ $currentyear = substr($today, 0, 4);
 
 <p>Applying for <select id="futuregrade" name="futuregrade"><?php 
 
-$grades = array("6th", "7th", "8th", "9th", "10th", "11th", "12th");
+$grades = array("KIndergarten", "1st grade", "2nd grade", "3rd grade", "4th grade", "5th grade", "6th grade", "7th grade", "8th grade", "9th grade", "10th grade", "11th grade", "12th grade");
 foreach ($grades as $grade) {
 	echo "<option value'" . $grade . "' ";
 	if ($grade == $_POST['futuregrade']){
@@ -46,7 +46,7 @@ foreach ($grades as $grade) {
 ?>
 </select>
 
-grade in the school year <select id="schoolyear" name="schoolyear">
+in the school year <select id="schoolyear" name="schoolyear">
 <?php
 
 $nextYear = $currentyear + 1;
@@ -114,7 +114,7 @@ foreach ($years as $year) {
 			<?php 
 			$oldyear = $currentyear - 20;
 			$years = array($oldyear+1, $oldyear+2, $oldyear+3, $oldyear+4, $oldyear+5, $oldyear+6, $oldyear+7,
-							$oldyear+8, $oldyear+9, $oldyear+10);
+							$oldyear+8, $oldyear+9, $oldyear+10, $oldyear+11, $oldyear+12, $oldyear+13, $oldyear+14, $oldyear+15, $oldyear+16, $oldyear+17);
 			foreach($years as $year) {
 				echo "<option value'" . $year ."' ";
 				if ($year == $_POST['dobyear']){
