@@ -13,7 +13,7 @@
  *	@version 12/28/2013
  */
 
-include('newApplicantHeader.html');
+include('../applicationHeader.html');
 
 ?>
 <div class="success">
@@ -28,5 +28,5 @@ include('newApplicantHeader.html');
 <a href="http://www.woodlawnschool.org/application/parent_statement/parentStatementEdit.php">Parent Statement Form</a>
 
 <?php 
-include('newApplicantFooter.html');
+include('../applicationFooter.html');
 ?>	
