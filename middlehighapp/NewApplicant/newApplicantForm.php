@@ -66,15 +66,15 @@ foreach ($years as $year) {
 </select>
 
 <fieldset>
-	<legend><font color="green">Applicant</font></legend>
+	<legend><span style="font-family: verdana,arial,helvetica; color: #336633;">Applicant</span></legend>
 		<table>
-			<tr><td>First</td> <td><input type="text" size="20"
-			id="firstname" name="firstname" value="<?php echo($_POST['firstname']); ?>"></td>
-			<td>Middle</td> <td><input type="text" size="20"
-			id="middle_name" name="middlename" value="<?php echo($_POST['middlename']); ?>"></td>
-			<td>Last</td> <td><input type="text" size="20"
+			<tr><td>First</td> <td><input type="text" size="15"
+			id="firstname" name="firstname" value="<?php echo($_POST['firstname']); ?>"></td><td width="5"></td>
+			<td>Middle</td> <td><input type="text" size="15"
+			id="middle_name" name="middlename" value="<?php echo($_POST['middlename']); ?>"></td><td width="5"></td>
+			<td>Last</td> <td><input type="text" size="15"
 			id="lastname" name="lastname" value="<?php echo($_POST['lastname']); ?>"></td></tr>
-			<tr><td>Preferred</td> <td><input type="text" size="20"
+			<tr><td>Preferred</td> <td><input type="text" size="15"
 			id="preferredname" name="preferredname" value="<?php echo($_POST['preferredname']); ?>"></td></tr>
 		</table>
 		<table>
