@@ -22,28 +22,29 @@ $datetime = date('M-d-Y-g-i-a-e');
 include_once("parentStatementEdit.php");
 ?>
 
-<p><strong>Applicant Information:</strong>
-
-<p>First Name <input type="text" size="20" id="firstname" name="firstname" 
-value="<?php echo($_POST['firstname']); ?>">
-
-Last Name <input type="text" size="20" id="lastname" name="lastname" 
-value="<?php echo($_POST['lastname']); ?>">
-
-<p>Applying for <select id="futuregrade" name="futuregrade"><?php 
+<p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>Student Statement Form</strong></span></p>
+<fieldset>
+        <legend><span style="color: green;">Applicant Info</span></legend>
+                <table>
+                        <tr><td>First Name</td> <td><input type="text" size="20"
+                        id="firstname" name="firstname" value="<?php echo($_POST['firstname']); ?>"></td><td width="10"></td>
+                        <td>Last Name</td> <td><input type="text" size="20"
+                        id="lastname" name="lastname" value="<?php echo($_POST['lastname']); ?>"></td></tr>
+                </table>
+<table>
+<tr><td>Applying for <select id="futuregrade" name="futuregrade"><?php
 
 $grades = array("Kindergarten", "1st grade", "2nd grade", "3rd grade", "4th grade", "5th grade", "6th grade", "7th grade", "8th grade", "9th grade", "10th grade", "11th grade", "12th grade");
 foreach ($grades as $grade) {
-	echo "<option value'" . $grade . "' ";
-	if ($grade == $_POST['futuregrade']){
-		echo(SELECTED);
-	}
-	echo ">" . $grade . "</option>";
+        echo "<option value'" . $grade . "' ";
+        if ($grade == $_POST['futuregrade']){
+                echo(SELECTED);
+        }
+        echo ">" . $grade . "</option>";
 }
 ?>
-</select>
-
-<p><strong>Parent Statement:</strong>
+</select></td></tr></table>
+</fieldset>
 
 <p>In an effort to get to know your family and your desire for a new school environment, please
 articulate how the applicant reflects Woodlawn School's mission and philosophies:
