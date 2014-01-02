@@ -36,7 +36,6 @@ include('newApplicantValidate.php');
 		}
 		else {
 			//This was a successful form submission
-			echo("This was a successful form submission.");
 			include('newApplicantForm2.php');
 		}
 		echo('</div>');
