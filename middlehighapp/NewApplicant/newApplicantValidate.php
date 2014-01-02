@@ -47,10 +47,10 @@ function validateForm($last) {
 	}
 	//school tests
 	if($_POST['prevschool'] == null){
-		$errors[] = 'Please enter the applicant's current school.';
+		$errors[] = 'Please enter a current school for the applicant.';
 	}
 	if($_POST['schooltype'] == null){
-		$errors[] = 'Please choose a school type for the applicant's current school.';
+		$errors[] = 'Please choose a school type for the current school.';
 	}
 	//Parent Information Tests
 	//guardian 1 tests
