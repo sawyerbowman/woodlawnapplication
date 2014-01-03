@@ -78,9 +78,9 @@ foreach ($years as $year) {
 			id="lastname" name="lastname" value="<?php echo($_POST['lastname']); ?>">
 			<input type="hidden" type="text" size="20"
 			id="preferredname" name="preferredname" value="<?php echo($_POST['preferredname']); ?>">
-			<input type="hidden" <?php if(!(strcmp($_POST['gender'],"Female"))) {echo 'checked="checked"';}?> 
+			<input style="display:none;" <?php if(!(strcmp($_POST['gender'],"Female"))) {echo 'checked="checked"';}?> 
 			type="Radio" name="gender" id="female" value="Female">
-			<input type="hidden" <?php if(!(strcmp($_POST['gender'],"Male"))) {echo 'checked="checked"';}?> 
+			<input style="display:none;" <?php if(!(strcmp($_POST['gender'],"Male"))) {echo 'checked="checked"';}?> 
 			type="Radio" name="gender" id="male" value="Male">
 			
 			<select style="display:none;" id="dobmonth" name="dobmonth"><?php 
@@ -179,9 +179,9 @@ foreach ($years as $year) {
 			?>
 			</select>
 			
-			<input type="hidden" <?php if(!(strcmp($_POST['schooltype'],"Public"))) {echo 'checked="checked"';}?> 
+			<input style="display:none;" <?php if(!(strcmp($_POST['schooltype'],"Public"))) {echo 'checked="checked"';}?> 
 			type="Radio" id="schooltype" name="schooltype" value="Public">
-			<input type="hidden" <?php if(!(strcmp($_POST['schooltype'],"Private"))) {echo 'checked="checked"';}?> 
+			<input style="display:none;" <?php if(!(strcmp($_POST['schooltype'],"Private"))) {echo 'checked="checked"';}?> 
 			type="Radio" id="schooltype" name="schooltype" value="Private">
 
 
