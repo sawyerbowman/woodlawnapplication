@@ -24,14 +24,60 @@ function validateForm() {
 	if($_POST['teacher1name'] == null){
 		$errors[] = 'Please enter a name for Teacher 1.';
 	}
-	if($_POST['teacher2name'] == null){
-		$errors[] = 'Please enter a name for Teacher 2.';
+	if ($_POST['futuregrade'] != '1st grade' && $_POST['futuregrade'] != '2nd grade' && 
+	$_POST['futuregrade'] != 'Kindergarten' && $_POST['futuregrade'] != '3rd grade' &&
+	$_POST['futuregrade'] != '4th grade' && $_POST['futuregrade'] != '5th grade'){
+			if($_POST['teacher2name'] == null){
+				$errors[] = 'Please enter a name for Teacher 2.';
+			}
 	}
 	if($_POST['teacher1email'] == null){
 		$errors[] = 'Please enter an email for Teacher 1.';
 	}
-	if($_POST['teacher2email'] == null){
-		$errors[] = 'Please enter an email for Teacher 2.';
+	else{
+		$teacher1email = $_POST['teacher1email'];
+		$atboolean = false;
+		$periodboolean = false;
+		for($i=0; $i<strlen($teacher1email); $i++) {
+			if ($teacher1email[$i] == '@'){
+				$atboolean = true;
+			}
+			if ($teacher1email[$i] == '.'){
+				$periodboolean = true;
+			}
+		}
+		if (!$atboolean){
+			$errors[] = 'Please enter an email address with an \'@\' symbol for Teacher Recommendation 1.';
+		}
+		if (!$periodboolean){
+			$errors[] = 'Please enter an email address with a \'.\' symbol for Teacher Reccomendation 1.';
+		}
+	}
+	if ($_POST['futuregrade'] != '1st grade' && $_POST['futuregrade'] != '2nd grade' && 
+	$_POST['futuregrade'] != 'Kindergarten' && $_POST['futuregrade'] != '3rd grade' &&
+	$_POST['futuregrade'] != '4th grade' && $_POST['futuregrade'] != '5th grade'){
+			if($_POST['teacher2email'] == null){
+				$errors[] = 'Please enter an email for Teacher 2.';
+			}
+			else{
+				$teacher2email = $_POST['teacher2email'];
+				$atboolean2 = false;
+				$periodboolean2 = false;
+				for($i=0; $i<strlen($teacher2email); $i++) {
+					if ($teacher2email[$i] == '@'){
+						$atboolean2 = true;
+					}
+					if ($teacher2email[$i] == '.'){
+						$periodboolean2 = true;
+					}
+				}
+				if (!$atboolean2){
+					$errors[] = 'Please enter an email address with an \'@\' symbol for Teacher Recommendation 2.';
+				}
+				if (!$periodboolean2){
+					$errors[] = 'Please enter an email address with a \'.\' symbol for Teacher Reccomendation 2.';
+				}
+			}
 	}
 	if(!$errors)
         return "";

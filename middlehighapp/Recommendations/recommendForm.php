@@ -32,17 +32,20 @@ include_once("recommendEdit.php");
                         id="lastname" name="lastname" value="<?php echo($_POST['lastname']); ?>"></td></tr>
                 </table>
 <table>
-<tr><td>Applying for <select id="futuregrade" name="futuregrade"><?php
+<tr><td>Applying for <select id="futuregrade" name="futuregrade">
+<?php 
 
-$grades = array("Kindergarten", "1st grade", "2nd grade", "3rd grade", "4th grade", "5th grade", "6th grade", "7th grade", "8th grade", "9th grade", "10th grade", "11th grade", "12th grade");
+$grades = array("Kindergarten", "1st grade", "2nd grade","3rd grade", "4th grade","5th grade",
+"6th grade", "7th grade", "8th grade", "9th grade", "10th grade", "11th grade", "12th grade");
 foreach ($grades as $grade) {
-        echo "<option value'" . $grade . "' ";
-        if ($grade == $_POST['futuregrade']){
-                echo(SELECTED);
-        }
-        echo ">" . $grade . "</option>";
+	echo "<option value'" . $grade . "' ";
+	if ($grade == $_POST['futuregrade']){
+		echo(SELECTED);
+	}
+	echo ">" . $grade . "</option>";
 }
 ?>
+
 </select></td></tr></table>
 </fieldset>
 
@@ -56,6 +59,8 @@ Email <input type="text" size="30" id="teacher1email" name="teacher1email" value
 Teacher 2 Name <input type="text" size="30" id="teacher2name" name="teacher2name" value="<?php echo($_POST['teacher2name']); ?>"> &nbsp;&nbsp;&nbsp;&nbsp; 
 Email <input type="text" size="30" id="teacher2email" name="teacher2email" value="<?php echo($_POST['teacher2email']); ?>"></p>
 
+<?php 
+?>
 
 <button type="submit" value="_form_submit" name="_form_submit">Submit Recommendations </button>
 <button type="reset" value="Clear" name="Clear All">Clear Form</button>

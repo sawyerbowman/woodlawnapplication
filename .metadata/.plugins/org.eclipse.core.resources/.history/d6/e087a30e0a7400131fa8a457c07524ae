@@ -1,0 +1,91 @@
+<?php
+/*
+ * Copyright 2013 by Sawyer Bowman and Dwayne Bowman. This program is 
+ * made originally for Woodlawn School, a nonprofit private school in
+ * Davidson, NC. It comes with absolutely no warranty.  You can redistribute 
+ * and/or modify it under the terms of the GNU Public License as published
+ * by the Free Software Foundation (see <http://www.gnu.org/licenses/).
+*/
+
+/*
+ *  a form for a new parent's personal statement for middle or high school at Woodlawn School
+ *	@Sawyer Bowman
+ *	@version 12/28/2013
+ */
+
+$datetime = date('M-d-Y-g-i-a-e');
+?>
+<form method="POST" id="recommendations" name="recommendations">
+<input type="hidden" name="time_date" value="<?php echo($datetime);?>">
+
+<?php 
+include_once("recommendEdit.php");
+?>
+
+<p align="center"><span style="font-family: verdana,arial,helvetica; color: #336633; font-size: 12pt"><strong>Recommendations Form</strong></span></p>
+<fieldset>
+        <legend><span style="color: green;">Applicant Info</span></legend>
+                <table>
+                        <tr><td>First Name</td> <td><input type="text" size="20"
+                        id="firstname" name="firstname" value="<?php echo($_POST['firstname']); ?>"></td><td width="10"></td>
+                        <td>Last Name</td> <td><input type="text" size="20"
+                        id="lastname" name="lastname" value="<?php echo($_POST['lastname']); ?>"></td></tr>
+                </table>
+<table>
+<tr><td>Applying for <select id="futuregrade" name="futuregrade">
+<option id="Kindergarten" value="<?php echo($_POST['kindergarten']); ?>">Kindergarten</option>
+<option id="1st Grade" value="<?php echo($_POST['1st Grade']); ?>">1st Grade</option>
+<option id="2nd Grade" value="<?php echo($_POST['2nd Grade']); ?>">2nd Grade</option>
+<option id="3rd Grade" value="<?php echo($_POST['3rd Grade']); ?>">3rd Grade</option>
+<option id="4th Grade" value="<?php echo($_POST['4th Grade']); ?>">4th Grade</option>
+<option id="5th Grade" value="<?php echo($_POST['5th Grade']); ?>">5th Grade</option>
+<option id="6th Grade" value="<?php echo($_POST['6th Grade']); ?>">6th Grade</option>
+<option id="7th Grade" value="<?php echo($_POST['7th Grade']); ?>">7th Grade</option>
+<option id="8th Grade" value="<?php echo($_POST['8th Grade']); ?>">8th Grade</option>
+<option id="9th Grade" value="<?php echo($_POST['9th Grade']); ?>">9th Grade</option>
+<option id="10th Grade" value="<?php echo($_POST['10th Grade']); ?>">10th Grade</option>
+<option id="11th Grade" value="<?php echo($_POST['11th Grade']); ?>">11th Grade</option>
+<option id="12th Grade" value="<?php echo($_POST['12th Grade']); ?>">12th Grade</option>
+
+</select></td></tr></table>
+</fieldset>
+
+<p>Please enter the name and email address of two teachers (one teacher is sufficient for lower school applicants) who have had experience with the student in a classroom setting.  Our Admissions Office will email the teachers and provide a form to them in order to give us feedback on the student.</p>
+
+<p>
+Teacher 1 Name <input type="text" size="30" id="teacher1name" name="teacher1name" value="<?php echo($_POST['teacher1name']); ?>"> &nbsp;&nbsp;&nbsp;&nbsp; 
+Email <input type="text" size="30" id="teacher1email" name="teacher1email" value="<?php echo($_POST['teacher1email']); ?>"></p>
+
+<script>
+//jquery
+$('#futuregrade').live('change',function()
+{
+  if($('1st Grade').is(':selected'))
+  {
+    $('#teacher2name').show();
+  }
+  else
+  {
+    if($('#teacher2name').is(':visible'))
+    {
+      $('#teacher2name').hide();
+    }
+  }
+});
+</script>
+
+<p>
+Teacher 2 Name <input style="display:none;" type="text" size="30" id="teacher2name" name="teacher2name" value="<?php echo($_POST['teacher2name']); ?>"> &nbsp;&nbsp;&nbsp;&nbsp; 
+Email <input type="text" size="30" id="teacher2email" name="teacher2email" value="<?php echo($_POST['teacher2email']); ?>"></p>
+
+<?php 
+?>
+
+<button type="submit" value="_form_submit" name="_form_submit">Submit Recommendations </button>
+<button type="reset" value="Clear" name="Clear All">Clear Form</button>
+
+<?php 
+include('../applicationFooter.html');
+?>
+
+</form>

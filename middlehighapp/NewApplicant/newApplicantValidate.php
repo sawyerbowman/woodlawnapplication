@@ -80,6 +80,25 @@ function validateForm($last) {
 	if($_POST['guardian1email'] == null){
 		$errors[] = 'Please enter an email address for Parent/Guardian 1.';
 	}
+	else{
+		$guardian1email = $_POST['guardian1email'];
+		$atboolean = false;
+		$periodboolean = false;
+		for($i=0; $i<strlen($guardian1email); $i++) {
+			if ($guardian1email[$i] == "@"){
+				$atboolean = true;
+			}
+			if ($guardian1email[$i] == "."){
+				$periodboolean = true;
+			}
+		}
+		if (!$atboolean){
+			$errors[] = 'Please enter an email address with an \'@\' symbol for Parent/Guardian 1.';
+		}
+		if (!$periodboolean){
+			$errors[] = 'Please enter an email address with a \'.\' symbol for Parent/Guardian 1.';
+		}
+	}
 	if(!validPhone($_POST['guardian1homephone'])){
 		$errors[] = 'Please enter a valid home phone number for Parent/Guardian 1.';
 	}
@@ -120,6 +139,25 @@ function validateForm($last) {
 	//guardian 2 contact tests
 	if($_POST['guardian2email'] == null){
 		$errors[] = 'Please enter an email address for Parent/Guardian 2.';
+	}
+	else{
+		$guardian2email = $_POST['guardian2email'];
+		$atboolean2 = false;
+		$periodboolean2 = false;
+		for($i=0; $i<strlen($guardian2email); $i++) {
+			if ($guardian2email[$i] == '@'){
+				$atboolean2 = true;
+			}
+			if ($guardian2email[$i] == '.'){
+				$periodboolean2 = true;
+			}
+		}
+		if (!$atboolean2){
+			$errors[] = 'Please enter an email address with an \'@\' symbol for Parent/Guardian 2.';
+		}
+		if (!$periodboolean2){
+			$errors[] = 'Please enter an email address with a \'.\' symbol for Parent/Guardian 2.';
+		}
 	}
 	if(!validPhone($_POST['guardian2homephone'])){
 		$errors[] = 'Please enter a valid home phone number for Parent/Guardian 2.';

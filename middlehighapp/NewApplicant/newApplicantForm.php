@@ -48,6 +48,9 @@ foreach ($grades as $grade) {
 
 in the school year <select id="schoolyear" name="schoolyear">
 <?php
+if($currentmonth == "Jan" || $currentmonth == "Feb" || $currentmonth == "Mar" || $currentmonth == "Apr"){
+	$currentyear -= 1;	
+}
 
 $nextYear = $currentyear + 1;
 $nextYear2 = $nextYear + 1;
