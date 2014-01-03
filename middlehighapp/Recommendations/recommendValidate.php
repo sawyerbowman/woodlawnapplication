@@ -38,6 +38,7 @@ function validateForm() {
 		$teacher1email = $_POST['teacher1email'];
 		$atboolean = false;
 		$periodboolean = false;
+		$spaceboolean = false;
 		for($i=0; $i<strlen($teacher1email); $i++) {
 			if ($teacher1email[$i] == '@'){
 				$atboolean = true;
@@ -45,8 +46,14 @@ function validateForm() {
 			if ($teacher1email[$i] == '.') {
 				$periodboolean = true;
 			}
+			if ($teacher1email[$i] == ' ') {
+				$spaceboolean = true;
+			}
 		}
-		if (!$atboolean && !$periodboolean) {
+		if ($spaceboolean) {
+			$errors[] = 'Please enter a valid email address with no space characters for Teacher 1.';
+		}
+		else if (!$atboolean && !$periodboolean) {
 			$errors[] = 'Please enter a valid email address with both an \'@\' symbol and a \'.\' symbol for Teacher 1.';
 		}
                 else if (!$atboolean) {
@@ -66,6 +73,7 @@ function validateForm() {
 				$teacher2email = $_POST['teacher2email'];
 				$atboolean2 = false;
 				$periodboolean2 = false;
+				$spaceboolean2 = false;
 				for($i=0; $i<strlen($teacher2email); $i++) {
 					if ($teacher2email[$i] == '@'){
 						$atboolean2 = true;
@@ -73,8 +81,14 @@ function validateForm() {
 					if ($teacher2email[$i] == '.'){
 						$periodboolean2 = true;
 					}
+					if ($teacher2email[$i] == ' '){
+						$spaceboolean2 = true;
+					}
 				}
-		                if (!$atboolean2 && !$periodboolean2) {
+		if ($spaceboolean2) {
+			$errors[] = 'Please enter a valid email address with no space characters for Teacher 2.';
+		}
+		                else if (!$atboolean2 && !$periodboolean2) {
 			                $errors[] = 'Please enter a valid email address with both an \'@\' symbol and a \'.\' symbol for Teacher 2.';
 		                }
                                else if (!$atboolean2) {
