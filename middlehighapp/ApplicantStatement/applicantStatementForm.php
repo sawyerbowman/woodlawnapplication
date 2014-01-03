@@ -42,16 +42,14 @@ foreach ($grades as $grade) {
 	echo ">" . $grade . "</option>";
 }
 ?>
-</select> grade.</td></tr></table>
+</select> grade</td></tr></table>
 </fieldset>
 
-<p>Please craft an authentic response to this writing prompt. We look forward to your<br>
-personal story.
+<p>Please craft an authentic response to this writing prompt. We look forward to your personal story.
 
 <br><br>
 
-Tell us a story that reveals something important about who you are. It can be humorous <br>
-or serious, but it should capture a specific moment in your life.
+Tell us a story that reveals something important about who you are. It can be humorous or serious, but it should capture a specific moment in your life.
 <br /><textarea id="applicantResponse" name="applicantResponse" rows="30" cols="80" ><?php 
 if(isset($_POST['applicantResponse'])) {
 	echo ($_POST['applicantResponse']); 
