@@ -59,7 +59,7 @@ if(isset($_POST['parentResponse'])) {
 }
 ?></textarea>
 
-<br><br><br>
+<br><br>
 
 <button type="submit" value="_form_submit" name="_form_submit">Submit Statement </button>
 <button type="reset" value="Clear" name="Clear">Clear Form</button>
