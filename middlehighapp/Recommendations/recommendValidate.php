@@ -42,15 +42,18 @@ function validateForm() {
 			if ($teacher1email[$i] == '@'){
 				$atboolean = true;
 			}
-			if ($teacher1email[$i] == '.'){
+			if ($teacher1email[$i] == '.') {
 				$periodboolean = true;
 			}
 		}
-		if (!$atboolean){
-			$errors[] = 'Please enter an email address with an \'@\' symbol for Teacher Recommendation 1.';
+		if (!$atboolean) && (!$periodboolean) {
+			$errors[] = 'Please enter a valid email address with both an \'@\' symbol and a \'.\' symbol for Teacher 1.';
 		}
-		if (!$periodboolean){
-			$errors[] = 'Please enter an email address with a \'.\' symbol for Teacher Reccomendation 1.';
+                else if (!$atboolean) {
+                        $errors[] = 'Please enter a valid email address with an \'@\' symbol for Teacher 1.';
+                }
+                else if (!$periodboolean) {
+			$errors[] = 'Please enter a valid email address with a \'.\' symbol for Teacher 1.';
 		}
 	}
 	if ($_POST['futuregrade'] != '1st grade' && $_POST['futuregrade'] != '2nd grade' && 
@@ -71,12 +74,15 @@ function validateForm() {
 						$periodboolean2 = true;
 					}
 				}
-				if (!$atboolean2){
-					$errors[] = 'Please enter an email address with an \'@\' symbol for Teacher Recommendation 2.';
-				}
-				if (!$periodboolean2){
-					$errors[] = 'Please enter an email address with a \'.\' symbol for Teacher Reccomendation 2.';
-				}
+		if (!$atboolean2) && (!$periodboolean2) {
+			$errors[] = 'Please enter a valid email address with both an \'@\' symbol and a \'.\' symbol for Teacher 2.';
+		}
+                else if (!$atboolean2) {
+                        $errors[] = 'Please enter a valid email address with an \'@\' symbol for Teacher 2.';
+                }
+                else if (!$periodboolean2) {
+			$errors[] = 'Please enter a valid email address with a \'.\' symbol for Teacher 2.';
+		}
 			}
 	}
 	if(!$errors)
