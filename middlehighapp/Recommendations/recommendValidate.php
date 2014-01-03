@@ -32,7 +32,7 @@ function validateForm() {
 			}
 	}
 	if($_POST['teacher1email'] == null){
-		$errors[] = 'Please enter an email for Teacher 1.';
+		$errors[] = 'Please enter an email address for Teacher 1.';
 	}
 	else{
 		$teacher1email = $_POST['teacher1email'];
@@ -67,7 +67,7 @@ function validateForm() {
 	$_POST['futuregrade'] != 'Kindergarten' && $_POST['futuregrade'] != '3rd grade' &&
 	$_POST['futuregrade'] != '4th grade' && $_POST['futuregrade'] != '5th grade'){
 			if($_POST['teacher2email'] == null){
-				$errors[] = 'Please enter an email for Teacher 2.';
+				$errors[] = 'Please enter an email address for Teacher 2.';
 			}
 			else{
 				$teacher2email = $_POST['teacher2email'];
