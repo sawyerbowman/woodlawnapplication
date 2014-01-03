@@ -99,7 +99,7 @@ function validateForm($last) {
 		if ($spaceboolean){
 			$errors[] = 'Please enter a valid email address with no space characters for Parent/Guardian 1.';
 		}
-		else if (!$atboolean && !periodboolean){
+		else if (!$atboolean && !$periodboolean){
 			$errors[] = 'Please enter a valid email address with both an \'@\' symbol and a \'.\' symbol for Parent/Guardian 1.';
 		}
 		else if (!$atboolean){
@@ -169,7 +169,7 @@ function validateForm($last) {
 		if ($spaceboolean2){
 			$errors[] = 'Please enter a valid email address with no space characters for Parent/Guardian 2.';
 		}
-		else if (!$atboolean2 && !periodboolean2){
+		else if (!$atboolean2 && !$periodboolean2){
 			$errors[] = 'Please enter a valid email address with both an \'@\' symbol and a \'.\' symbol for Parent/Guardian 2.';
 		}
 		else if (!$atboolean2){
