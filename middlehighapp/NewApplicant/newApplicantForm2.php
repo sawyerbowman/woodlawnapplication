@@ -118,8 +118,8 @@ foreach ($years as $year) {
 			
 			<select style="display:none;" id="dobyear" name="dobyear"><?php 
 			$oldyear = $currentyear - 20;
-			$years = array("Year",$oldyear+1, $oldyear+2, $oldyear+3, $oldyear+4, $oldyear+5, $oldyear+6, $oldyear+7,
-							$oldyear+8, $oldyear+9, $oldyear+10);
+                        $years = array("Year",$oldyear+1, $oldyear+2, $oldyear+3, $oldyear+4, $oldyear+5, $oldyear+6, $oldyear+7,
+                                                        $oldyear+8, $oldyear+9, $oldyear+10, $oldyear+11, $oldyear+12, $oldyear+13, $oldyear+14, $oldyear+15, $oldyear+16, $oldyear+17);
 			foreach($years as $year) {
 				echo "<option value'" . $year ."' ";
 				if ($year == $_POST['dobyear']){
