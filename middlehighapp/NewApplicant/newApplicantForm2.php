@@ -175,16 +175,16 @@ foreach ($years as $year) {
 			id="prevschool" name="prevschool" value="<?php echo($_POST['prevschool']); ?>">
 			<select style="display:none;" id="curgrade" name="curgrade"><?php
 
-$grades = array("Select", "None","Pre-Kindergarten","Kindergarten", "1st grade", "2nd grade", "3rd grade", "4th grade", "5th grade", "6th grade", "7th grade", "8th grade", "9th grade", "10th grade", "11th grade", "12th grade");
-			foreach ($grades as $grade) {
-				echo "<option value'" . $grade . "' ";
-				if ($grade == $_POST['curgrade']){
-					echo(SELECTED);
-				}
-				echo ">" . $grade . "</option>";
-			}
+                        $grades = array("Select","None", "Pre-Kindergarten", "Kindergarten", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th");
+                        foreach ($grades as $grade) {
+                                echo "<option value'" . $grade . "' ";
+                                if ($grade == $_POST['curgrade']){
+                                        echo(SELECTED);
+                                }
+                                echo ">" . $grade . "</option>";
+                        }
 
-			?>
+                        ?>
 			</select>
 			
 			<input style="display:none;" <?php if(!(strcmp($_POST['schooltype'],"Public"))) {echo 'checked="checked"';}?> 
