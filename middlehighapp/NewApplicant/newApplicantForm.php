@@ -8,7 +8,7 @@
 */
 
 /*
- *  a form for a new applicant for middle or high school at Woodlawn School
+ *  a form for a new applicant at Woodlawn School
  *	@Sawyer Bowman
  *	@version 12/28/2013
  */
@@ -34,7 +34,7 @@ $currentyear = substr($today, 0, 4);
 
 <p>Applying for <select id="futuregrade" name="futuregrade"><?php 
 
-$grades = array("Kindergarten", "1st grade", "2nd grade", "3rd grade", "4th grade", "5th grade", "6th grade", "7th grade", "8th grade", "9th grade", "10th grade", "11th grade", "12th grade");
+$grades = array("Select", "Kindergarten", "1st grade", "2nd grade", "3rd grade", "4th grade", "5th grade", "6th grade", "7th grade", "8th grade", "9th grade", "10th grade", "11th grade", "12th grade");
 foreach ($grades as $grade) {
 	echo "<option value'" . $grade . "' ";
 	if ($grade == $_POST['futuregrade']){
@@ -85,9 +85,9 @@ foreach ($years as $year) {
 			<td><input <?php if(!(strcmp($_POST['gender'],"Male"))) {echo 'checked="checked"';}?> 
 			type="Radio" name="gender" id="male" value="Male"> Male</td>
 		<td width="40"></td>	
-		<td>Date of Birth: Month</td> <td><select id="dobmonth" name="dobmonth">
+		<td>Date of Birth: </td> <td><select id="dobmonth" name="dobmonth">
 			<?php 
-			$months = array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+			$months = array("Month","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
 			foreach($months as $month) {
 				echo "<option value'" . $month . "' ";
 				if ($month == $_POST['dobmonth']){
@@ -98,9 +98,9 @@ foreach ($years as $year) {
 			?>
 			</select>
 			
-			<td>Day</td> <td><select id="dobday" name="dobday">
+			<td width="5"></td> <td><select id="dobday" name="dobday">
 			<?php 
-			$days = array("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17",
+			$days = array("Day","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17",
 				"18","19","20","21","22","23","24","25","26","27","28","29","30","31");
 			foreach($days as $day) {
 				echo "<option value'" . $day ."' ";
@@ -112,10 +112,10 @@ foreach ($years as $year) {
 			?>
 			</select>
 			
-			<td>Year</td> <td><select id="dobyear" name="dobyear">
+			<td width="5"></td> <td><select id="dobyear" name="dobyear">
 			<?php 
 			$oldyear = $currentyear - 20;
-			$years = array($oldyear+1, $oldyear+2, $oldyear+3, $oldyear+4, $oldyear+5, $oldyear+6, $oldyear+7,
+			$years = array("Year",$oldyear+1, $oldyear+2, $oldyear+3, $oldyear+4, $oldyear+5, $oldyear+6, $oldyear+7,
 							$oldyear+8, $oldyear+9, $oldyear+10, $oldyear+11, $oldyear+12, $oldyear+13, $oldyear+14, $oldyear+15, $oldyear+16, $oldyear+17);
 			foreach($years as $year) {
 				echo "<option value'" . $year ."' ";
@@ -189,7 +189,7 @@ foreach ($years as $year) {
 			<td>Current Grade <select id="curgrade" name="curgrade">
 			<?php
 
-			$grades = array("None", "Pre-Kindergarten", "Kindergarten", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th");
+			$grades = array("Select","None", "Pre-Kindergarten", "Kindergarten", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th");
 			foreach ($grades as $grade) {
 				echo "<option value'" . $grade . "' ";
 				if ($grade == $_POST['curgrade']){
