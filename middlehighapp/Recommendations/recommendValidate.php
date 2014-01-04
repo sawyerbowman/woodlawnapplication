@@ -21,12 +21,15 @@ function validateForm() {
 	if($_POST['lastname'] == null){
 		$errors[] = 'Please enter a last name for the applicant.';
 	}
+        if($_POST['futuregrade'] == "Select"){
+                $errors[] = 'Please choose a grade level for the applicant.';
+        }
 	if($_POST['teacher1name'] == null){
 		$errors[] = 'Please enter a name for Teacher 1.';
 	}
 	if ($_POST['futuregrade'] != '1st grade' && $_POST['futuregrade'] != '2nd grade' && 
 	$_POST['futuregrade'] != 'Kindergarten' && $_POST['futuregrade'] != '3rd grade' &&
-	$_POST['futuregrade'] != '4th grade' && $_POST['futuregrade'] != '5th grade'){
+	$_POST['futuregrade'] != '4th grade' && $_POST['futuregrade'] != '5th grade'  && $_POST['futuregrade'] != 'Select'){
 			if($_POST['teacher2name'] == null){
 				$errors[] = 'Please enter a name for Teacher 2.';
 			}
@@ -65,7 +68,7 @@ function validateForm() {
 	}
 	if ($_POST['futuregrade'] != '1st grade' && $_POST['futuregrade'] != '2nd grade' && 
 	$_POST['futuregrade'] != 'Kindergarten' && $_POST['futuregrade'] != '3rd grade' &&
-	$_POST['futuregrade'] != '4th grade' && $_POST['futuregrade'] != '5th grade'){
+	$_POST['futuregrade'] != '4th grade' && $_POST['futuregrade'] != '5th grade' && $_POST['futuregrade'] != 'Kindergarten'){
 			if($_POST['teacher2email'] == null){
 				$errors[] = 'Please enter an email address for Teacher 2.';
 			}
