@@ -24,6 +24,9 @@ function validateForm() {
 	if($_POST['applicantResponse'] == null){
 		$errors[] = 'Please enter a student statement.';
 	}
+	if($_POST['futureGrade'] == "Select"){
+		$errors[] = 'Please choose a grade level for the applicant.';
+	}
 	if(!$errors)
         return "";
     else
