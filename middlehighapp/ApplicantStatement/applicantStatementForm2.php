@@ -11,7 +11,7 @@
  *  a form for a new applicant's personal statement for middle or high school at Woodlawn School
  *	@Sawyer Bowman
  *	@version 12/28/2013
- *<input type="hidden" name="next_url" value="http://www.woodlawnschool.org/application/applicant_statement/applicantStatementThankYou.php">
+ *
  */
 
 $datetime = date('M-d-Y-g-i-a-e');
