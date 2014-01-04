@@ -11,7 +11,7 @@
  *  a form for a new parent's personal statement for middle or high school at Woodlawn School
  *	@Sawyer Bowman
  *	@version 12/28/2013
- *<input type="hidden" name="next_url" value="http://www.woodlawnschool.org/application/parent_statement/parentStatementThankYou.php">
+ *
  */
 
 $datetime = date('M-d-Y-g-i-a-e');
@@ -20,7 +20,13 @@ $datetime = date('M-d-Y-g-i-a-e');
 
 <form method="POST" id="parentStatementForm2" name="parentStatementForm2"
 action="http://us.1.p10.webhosting.yahoo.com/forms?login=dwayneb">
+
+<?php
+if ($_SERVER['SERVER_NAME'] == "localhost") { ?>
 <input type="hidden" name="next_url" value="http://localhost/middlehighapp/ParentStatement/parentStatementThankYou.php">
+<?php } else { ?>
+<input type="hidden" name="next_url" value="http://www.woodlawnschool.org/application/parent_statement/parentStatementThankYou.php">
+<?php } ?>
 
 <input type="hidden" name="time_date" value="<?php echo($datetime);?>">
 
