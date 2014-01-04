@@ -11,7 +11,7 @@
  *  a duplicate form for submission purposes
  *	@Sawyer Bowman
  *	@version 12/28/2013
- *<input type="hidden" name="next_url" value="http://www.woodlawnschool.org/application/new_applicant/newApplicantThankYou.php">
+ *
  */
 
 $datetime = date('M-d-Y-g-i-a-e');
