@@ -57,7 +57,11 @@ foreach ($grades as $grade) {
 ?>
 </select>
 
-<select style="display:none;" id="schoolyear" name="schoolyear"> <?php
+<select style="display:none;" id="schoolyear" name="schoolyear"> 
+<?php
+if($currentmonth == "Jan" || $currentmonth == "Feb" || $currentmonth == "Mar" || $currentmonth == "Apr"){
+        $currentyear -= 1;        
+}
 
 $nextYear = $currentyear + 1;
 $nextYear2 = $nextYear + 1;
@@ -65,13 +69,12 @@ $stringyear1 = "$currentyear-$nextYear";
 $stringyear2 = "$nextYear-$nextYear2";
 $years = array($stringyear1, $stringyear2);
 foreach ($years as $year) {
-	echo "<option value'" . $year . "' ";
-	if ($year == $_POST['schoolyear']){
-		echo(SELECTED);
-	}
-	echo ">" . $year . "</option>";
+        echo "<option value'" . $year . "' ";
+        if ($year == $_POST['schoolyear']){
+                echo(SELECTED);
+        }
+        echo ">" . $year . "</option>";
 }
-
 ?>
 </select>
 
