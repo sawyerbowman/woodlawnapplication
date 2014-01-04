@@ -21,11 +21,11 @@ function validateForm() {
 	if($_POST['lastname'] == null){
 		$errors[] = 'Please enter a last name for the applicant.';
 	}
+	if($_POST['futuregrade'] == "Select"){
+		$errors[] = 'Please choose a grade level for the applicant.';
+	}
 	if($_POST['applicantResponse'] == null){
 		$errors[] = 'Please enter a student statement.';
-	}
-	if($_POST['futureGrade'] == "Select"){
-		$errors[] = 'Please choose a grade level for the applicant.';
 	}
 	if(!$errors)
         return "";
