@@ -19,8 +19,6 @@ $datetime = date('M-d-Y-g-i-a-e');
 
 <p>Your statement is being processed... Please wait!</p>
 
-<?php echo ($_SERVER['SERVER_NAME']); ?>
-
 <form method="POST" id="applicantStatementForm2" name="applicantStatementForm2"
 action="http://us.1.p10.webhosting.yahoo.com/forms?login=dwayneb">
 
