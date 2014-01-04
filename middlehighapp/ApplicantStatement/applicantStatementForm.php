@@ -33,7 +33,7 @@ include_once("applicantStatementEdit.php");
 <table>
 <tr><td>Applying for <select id="futuregrade" name="futuregrade"><?php 
 
-$grades = array("6th", "7th", "8th", "9th", "10th", "11th", "12th");
+$grades = array("Select", "6th", "7th", "8th", "9th", "10th", "11th", "12th");
 foreach ($grades as $grade) {
 	echo "<option value'" . $grade . "' ";
 	if ($grade == $_POST['futuregrade']){
