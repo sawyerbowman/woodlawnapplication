@@ -19,10 +19,17 @@ $datetime = date('M-d-Y-g-i-a-e');
 
 <p>Your statement is being processed... Please wait!</p>
 
+<?php echo ($_SERVER['SERVER_NAME']); ?>
 
 <form method="POST" id="applicantStatementForm2" name="applicantStatementForm2"
 action="http://us.1.p10.webhosting.yahoo.com/forms?login=dwayneb">
-<input type="hidden" name="next_url" value="http://localhost/middlehighapp/ApplicantStatement/applicantStatementThankYou.php">
+
+<?php
+if ($_SERVER['SERVER_NAME'] == "localhost") {  ?>
+         <input type="hidden" name="next_url" value="http://localhost/middlehighapp/ApplicantStatement/applicantStatementThankYou.php">
+<?php } else { ?>
+<input type="hidden" name="next_url" value="http://www.woodlawnschool.org/application/applicant_statement/applicantStatementThankYou.php">
+<?php } ?>
 
 <input type="hidden" name="time_date" value="<?php echo($datetime);?>">
 
