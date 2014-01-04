@@ -21,6 +21,9 @@ function validateForm() {
 	if($_POST['lastname'] == null){
 		$errors[] = 'Please enter a last name for the applicant.';
 	}
+        if($_POST['futuregrade'] == "Select"){
+                $errors[] = 'Please choose a grade level for the applicant.';
+        }
 	if($_POST['parentResponse'] == null){
 		$errors[] = 'Please enter a parent statement.';
 	}
