@@ -68,7 +68,7 @@ function validateForm() {
 	}
 	if ($_POST['futuregrade'] != '1st grade' && $_POST['futuregrade'] != '2nd grade' && 
 	$_POST['futuregrade'] != 'Kindergarten' && $_POST['futuregrade'] != '3rd grade' &&
-	$_POST['futuregrade'] != '4th grade' && $_POST['futuregrade'] != '5th grade' && $_POST['futuregrade'] != 'Kindergarten'){
+	$_POST['futuregrade'] != '4th grade' && $_POST['futuregrade'] != '5th grade' && $_POST['futuregrade'] != 'Select'){
 			if($_POST['teacher2email'] == null){
 				$errors[] = 'Please enter an email address for Teacher 2.';
 			}
