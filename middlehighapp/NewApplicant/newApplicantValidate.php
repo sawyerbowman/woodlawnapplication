@@ -17,6 +17,9 @@ function validateForm($last) {
 	//Applicant Information Tests
 	//applicant tests
 	$errors[] = array();
+        if($_POST['futuregrade'] == "Select"){
+                $errors[] = 'Please choose a grade level to which the applicant is applying.';
+        }
 	if($_POST['firstname'] == null){
 		$errors[] = 'Please enter a first name for the applicant.';
 	}
@@ -26,6 +29,9 @@ function validateForm($last) {
 	if($_POST['gender'] == null){
 		$errors[] = 'Please choose a gender for the applicant.';
 	}
+        if($_POST['dobmonth'] == "Month" || $_POST['dobday'] == "Day" || $_POST['dobyear'] == "Year"){
+                $errors[] = 'Please choose a date of birth for the applicant.';
+        }
 	//address tests
 	if($_POST['applicantaddress'] == null){
 		$errors[] = 'Please enter a street address for the applicant.';
@@ -52,6 +58,9 @@ function validateForm($last) {
 	if($_POST['schooltype'] == null){
 		$errors[] = 'Please choose a school type for the current school.';
 	}
+        if($_POST['currgrade'] == "Select"){
+                $errors[] = 'Please choose a current grade level for the applicant.';
+        }
 	//Parent Information Tests
 	//guardian 1 tests
 	if($_POST['guardian1name'] == null){
