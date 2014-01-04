@@ -58,7 +58,7 @@ function validateForm($last) {
 	if($_POST['schooltype'] == null){
 		$errors[] = 'Please choose a school type for the current school.';
 	}
-        if($_POST['currgrade'] == "Select"){
+        if($_POST['curgrade'] == "Select"){
                 $errors[] = 'Please choose a current grade level for the applicant.';
         }
 	//Parent Information Tests
