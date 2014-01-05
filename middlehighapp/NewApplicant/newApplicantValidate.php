@@ -13,7 +13,7 @@
  *	@version 12/28/2013
  */
  
-function validateForm($last) {
+function validateForm() {
 	//Applicant Information Tests
 	//applicant tests
 	$errors[] = array();
