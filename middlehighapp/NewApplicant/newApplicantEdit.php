@@ -13,9 +13,6 @@
  *	@version 12/28/2013
  */
 
-//Get the last name of the new applicant
-$last = $_GET['lastname'];
-
 include('../applicationHeader.html');
 include('newApplicantValidate.php');
 	if(!array_key_exists('_form_submit', $_POST)){
@@ -25,7 +22,7 @@ include('newApplicantValidate.php');
 	else {
 		//form has been submitted, so validate it
 		//step 1: errors array lists problems on form submitted
-		$errors = validateForm($last);
+		$errors = validateForm();
 		//get rid of 0th position
 		array_shift($errors);
 		//step 2: display the errors on the form to fix
