@@ -34,7 +34,7 @@ include_once("teacherRecommendEdit.php");
 </fieldset>
 
 <p>
-Name of Teacher completing this form <input type="text" size="30" id="teachername" name="teachername" value="<?php echo($_POST['teachername']); ?>"> <br>
+Name of Teacher completing this form <input type="text" size="30" id="teachername" name="teachername" value="<?php echo($_POST['teachername']); ?>"> <br><br>
 Curriculum or Text(s) used <input type="text" size="30" id="curriculum" name="curriculum" value="<?php echo($_POST['curriculum']); ?>"> &nbsp;&nbsp;&nbsp;&nbsp;
 Grade <select id="curgrade" name="curgrade"><?php
 $grades = array("Select", "Kindergarten", "1st grade", "2nd grade", "3rd grade", "4th grade", "5th grade", "6th grade", "7th grade", "8th grade", "9th grade", "10th grade", "11th grade", "12th grade");
@@ -46,18 +46,18 @@ foreach ($grades as $grade) {
         echo ">" . $grade . "</option>";
 }
 ?>
-</select><br>
+</select><br><br>
 School <input type="text" size="30" id="school" name="school" value="<?php echo($_POST['school']); ?>"> &nbsp;&nbsp;&nbsp;&nbsp;
-Phone <input type="text" size="30" id="phone" name="phone" value="<?php echo($_POST['phone']); ?>"> <br>
+Phone <input type="text" size="30" id="phone" name="phone" value="<?php echo($_POST['phone']); ?>">
 </p>
 
 <table><tr>
 <td>Student Qualities</td>
-<td>Excellent</td>
-<td>Good</td>
-<td>Average</td>
-<td>Fair</td>
-<td>Poor</td></tr>
+<td width="20" align="center">Excellent</td>
+<td width="20" align="center">Good</td>
+<td width="20" align="center">Average</td>
+<td width="20" align="center">Fair</td>
+<td width="20" align="center">Poor</td></tr>
 <tr>
 <td>Work Habits</td>
 <td><input <?php if(!(strcmp($_POST['workhabits'],"excellent"))) {echo 'checked="checked"';}?>
