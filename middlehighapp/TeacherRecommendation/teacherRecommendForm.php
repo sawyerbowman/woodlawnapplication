@@ -31,36 +31,36 @@ include_once("teacherRecommendEdit.php");
                         <td>Last Name</td> <td><input type="text" size="20"
                         id="lastname" name="lastname" value="<?php echo($_POST['lastname']); ?>"></td></tr>
                 </table>
-<table>
-<tr><td>Applying for <select id="futuregrade" name="futuregrade">
-<?php 
-
-$grades = array("Kindergarten", "1st grade", "2nd grade","3rd grade", "4th grade","5th grade",
-"6th grade", "7th grade", "8th grade", "9th grade", "10th grade", "11th grade", "12th grade");
-foreach ($grades as $grade) {
-	echo "<option value'" . $grade . "' ";
-	if ($grade == $_POST['futuregrade']){
-		echo(SELECTED);
-	}
-	echo ">" . $grade . "</option>";
-}
-?>
-
-</select></td></tr></table>
 </fieldset>
 
-<p>Please enter the name and email address of two teachers (one teacher is sufficient for lower school applicants) who have had experience with the student in a classroom setting.  Our Admissions Office will email the teachers and provide a form to them in order to give us feedback on the student.</p>
-
 <p>
-Teacher 1 Name <input type="text" size="30" id="teacher1name" name="teacher1name" value="<?php echo($_POST['teacher1name']); ?>"> &nbsp;&nbsp;&nbsp;&nbsp; 
-Email <input type="text" size="30" id="teacher1email" name="teacher1email" value="<?php echo($_POST['teacher1email']); ?>"></p>
+Name of Teacher completing this form <input type="text" size="30" id="teachername" name="teachername" value="<?php echo($_POST['teachername']); ?>"> <br>
+Curriculum or Text(s) used <input type="text" size="30" id="curriculum" name="curriculum" value="<?php echo($_POST['curriculum']); ?>"> &nbsp;&nbsp;&nbsp;&nbsp;
+Grade <br>
+School <input type="text" size="30" id="school" name="school" value="<?php echo($_POST['school']); ?>"> &nbsp;&nbsp;&nbsp;&nbsp;
+Phone <input type="text" size="30" id="phone" name="phone" value="<?php echo($_POST['phone']); ?>"> <br>
+</p>
 
-<p>
-Teacher 2 Name <input type="text" size="30" id="teacher2name" name="teacher2name" value="<?php echo($_POST['teacher2name']); ?>"> &nbsp;&nbsp;&nbsp;&nbsp; 
-Email <input type="text" size="30" id="teacher2email" name="teacher2email" value="<?php echo($_POST['teacher2email']); ?>"></p>
-
-<?php 
-?>
+<table><tr>
+<td>Student Qualities</td>
+<td>Excellent</td>
+<td>Good</td>
+<td>Average</td>
+<td>Fair</td>
+<td>Poor</td></tr>
+<tr>
+<td>Work Habits</td>
+<td><input <?php if(!(strcmp($_POST['workhabits'],"excellent"))) {echo 'checked="checked"';}?>
+    type="Radio" name="workhabits" id="excellent" value="excellent"></td>
+<td><input <?php if(!(strcmp($_POST['workhabits'],"good"))) {echo 'checked="checked"';}?>
+    type="Radio" name="workhabits" id="good" value="good"></td>
+<td><input <?php if(!(strcmp($_POST['workhabits'],"average"))) {echo 'checked="checked"';}?>
+    type="Radio" name="workhabits" id="average" value="average"></td>
+<td><input <?php if(!(strcmp($_POST['workhabits'],"fair"))) {echo 'checked="checked"';}?>
+    type="Radio" name="workhabits" id="fair" value="fair"></td>
+<td><input <?php if(!(strcmp($_POST['workhabits'],"poor"))) {echo 'checked="checked"';}?>
+    type="Radio" name="workhabits" id="poor" value="poor"></td></tr>
+</table>
 
 <button type="submit" value="_form_submit" name="_form_submit">Submit Recommendations </button>
 <button type="reset" value="Clear" name="Clear All">Clear Form</button>
