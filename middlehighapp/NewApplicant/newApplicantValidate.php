@@ -118,12 +118,16 @@ function validateForm($last) {
 			$errors[] = 'Please enter a valid email address with a \'.\' symbol for Parent/Guardian 1.';
 		}
 	}
-	if(!validPhone($_POST['guardian1homephone'])){
-		$errors[] = 'Please enter a valid home phone number for Parent/Guardian 1.';
+	if($_POST['guardian1homephone'] == null && $_POST['guardian1cellphone'] == null){
+		$errors[] = 'Please enter either a home or cell phone number for Parent/Guardian 1.';
+	} else {
+if($_POST['guardian1homephone'] != null && !validPhone($_POST['guardian1homephone'])){
+		$errors[] = 'Please enter a 10-digit home phone number for Parent/Guardian 1.';
 	}
-	if(!validPhone($_POST['guardian1cellphone'])){
-		$errors[] = 'Please enter a valid cell phone number for Parent/Guardian 1.';
+	if($_POST['guardian1cellphone'] != null && !validPhone($_POST['guardian1cellphone'])){
+		$errors[] = 'Please enter a 10-digit cell phone number for Parent/Guardian 1.';
 	}
+}
 /*  the parent may not be working
 	if($_POST['guardian1employer'] == null){
 		$errors[] = 'Please enter an employer for Guardian 1.';
@@ -188,12 +192,16 @@ function validateForm($last) {
 			$errors[] = 'Please enter a valid email address with a \'.\' symbol for Parent/Guardian 2.';
 		}
 	}
-	if(!validPhone($_POST['guardian2homephone'])){
-		$errors[] = 'Please enter a valid home phone number for Parent/Guardian 2.';
+	if($_POST['guardian2homephone'] == null && $_POST['guardian2cellphone'] == null){
+		$errors[] = 'Please enter either a home or cell phone number for Parent/Guardian 2.';
+	} else {
+if($_POST['guardian2homephone'] != null && !validPhone($_POST['guardian2homephone'])){
+		$errors[] = 'Please enter a 10-digit home phone number for Parent/Guardian 2.';
 	}
-	if(!validPhone($_POST['guardian2cellphone'])){
-		$errors[] = 'Please enter a valid cell phone number for Parent/Guardian 2.';
+	if($_POST['guardian2cellphone'] != null && !validPhone($_POST['guardian2cellphone'])){
+		$errors[] = 'Please enter a 10-digit cell phone number for Parent/Guardian 2.';
 	}
+}
 /*  the parent may not be working
 	if($_POST['guardian2employer'] == null){
 		$errors[] = 'Please enter an employer for Guardian 2.';
