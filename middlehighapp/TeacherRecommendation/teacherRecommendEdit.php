@@ -14,7 +14,7 @@
  */
 
 include('../applicationHeader.html');
-include('recommendValidate.php');
+include('teacherRecommendValidate.php');
 	if(!array_key_exists('_form_submit', $_POST)){
 		//the form has not been submitted, so show it
 		include('teacherRecommendForm.php');
