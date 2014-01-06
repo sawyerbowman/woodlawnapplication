@@ -33,10 +33,13 @@ include_once("teacherRecommendEdit.php");
                 </table>
 </fieldset>
 
-<p>
-Name of Teacher completing this form <input type="text" size="30" id="teachername" name="teachername" value="<?php echo($_POST['teachername']); ?>"> <br><br>
-Curriculum or Text(s) used <input type="text" size="30" id="curriculum" name="curriculum" value="<?php echo($_POST['curriculum']); ?>"> &nbsp;&nbsp;&nbsp;&nbsp;
-Grade <select id="curgrade" name="curgrade"><?php
+<table>
+<tr><td>Name of Teacher completing this form</td>
+<td><input type="text" size="30" id="teachername" name="teachername" value="<?php echo($_POST['teachername']); ?>"> </td><td></td><td></td></tr>
+<tr><td>Curriculum or Text(s) used</td>
+<td><input type="text" size="30" id="curriculum" name="curriculum" value="<?php echo($_POST['curriculum']); ?>"> </td>
+<td>Grade</td>
+<td><select id="curgrade" name="curgrade"><?php
 $grades = array("Select", "Kindergarten", "1st grade", "2nd grade", "3rd grade", "4th grade", "5th grade", "6th grade", "7th grade", "8th grade", "9th grade", "10th grade", "11th grade", "12th grade");
 foreach ($grades as $grade) {
         echo "<option value'" . $grade . "' ";
@@ -46,10 +49,12 @@ foreach ($grades as $grade) {
         echo ">" . $grade . "</option>";
 }
 ?>
-</select><br><br>
-School <input type="text" size="30" id="school" name="school" value="<?php echo($_POST['school']); ?>"> &nbsp;&nbsp;&nbsp;&nbsp;
-Phone <input type="text" size="30" id="phone" name="phone" value="<?php echo($_POST['phone']); ?>">
-</p>
+</select></td></tr>
+<tr><td>School</td>
+<td><input type="text" size="30" id="school" name="school" value="<?php echo($_POST['school']); ?>"> </td>
+<td>Phone</td>
+<td><input type="text" size="30" id="phone" name="phone" value="<?php echo($_POST['phone']); ?>"></td></tr>
+</table>
 
 <table><tr>
 <td width="200"><b>Student Qualities</b></td>
