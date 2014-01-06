@@ -34,9 +34,9 @@ include_once("teacherRecommendEdit.php");
 </fieldset>
 
 <table>
-<tr><td>Name of Teacher completing this form</td>
-<td><input type="text" size="30" id="teachername" name="teachername" value="<?php echo($_POST['teachername']); ?>"> </td><td></td><td></td></tr>
-<tr><td>Curriculum or Text(s) used</td>
+<tr><td width="200">Name of Teacher completing this form</td>
+<td><input type="text" size="30" id="teachername" name="teachername" value="<?php echo($_POST['teachername']); ?>"> </td><td></td><td></td><td></td></tr>
+<tr><td>Curriculum or text(s) used</td>
 <td><input type="text" size="30" id="curriculum" name="curriculum" value="<?php echo($_POST['curriculum']); ?>"> </td>
 <td width="10"></td><td>Grade</td>
 <td><select id="curgrade" name="curgrade"><?php
@@ -50,7 +50,7 @@ foreach ($grades as $grade) {
 }
 ?>
 </select></td></tr>
-<tr><td>School</td>
+<tr><td>School Name</td>
 <td><input type="text" size="30" id="school" name="school" value="<?php echo($_POST['school']); ?>"> </td>
 <td width="10"></td><td>Phone</td>
 <td><input type="text" size="15" id="phone" name="phone" value="<?php echo($_POST['phone']); ?>"></td></tr>
