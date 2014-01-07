@@ -324,11 +324,23 @@ foreach ($grades as $grade) {
 <input <?php if(!(strcmp($_POST['critical_thinking'],"below_level"))) {echo 'checked="checked"';}?>
     type="Radio" style="display:none;" name="critical_thinking" id="below_level" value="below_level">
 
-<textarea style="display:none;" id="greatest_strengths" name="greatest_strengths" rows="7" cols="80" ></textarea>
+<textarea style="display:none;" id="greatest_strengths" name="greatest_strengths" rows="7" cols="80" ><?php
+if(isset($_POST['greatest_strengths'])) {
+        echo ($_POST['greatest_strengths']);
+}
+?></textarea>
 
-<textarea style="display:none;" id="greatest_challenges" name="greatest_challenges" rows="7" cols="80" ></textarea>
+<textarea style="display:none;" id="greatest_challenges" name="greatest_challenges" rows="7" cols="80" ><?php
+if(isset($_POST['greatest_challenges'])) {
+        echo ($_POST['greatest_challenges']);
+}
+?></textarea>
 
-<textarea style="display:none;" id="other_info" name="other_info" rows="7" cols="80" ></textarea>
+<textarea style="display:none;" id="other_info" name="other_info" rows="7" cols="80" ><?php
+if(isset($_POST['other_info'])) {
+        echo ($_POST['other_info']);
+}
+?></textarea>
 
 <?php 
 include('../applicationFooter.html');
