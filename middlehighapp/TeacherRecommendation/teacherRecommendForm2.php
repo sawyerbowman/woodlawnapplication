@@ -34,20 +34,17 @@ if ($_SERVER['SERVER_NAME'] == "localhost") { ?>
 include_once("teacherRecommendEdit.php");
 ?>
 
-<fieldset>
-        <legend><span style="color: green;">Applicant Info</span></legend>
                 <table>
-                        <tr><td>First Name</td> <td><input type="text" size="20"
+                        <tr><td></td> <td><input type="hidden" type="text" size="20"
                         id="firstname" name="firstname" value="<?php echo($_POST['firstname']); ?>"></td><td width="10"></td>
-                        <td>Last Name</td> <td><input type="text" size="20"
+                        <td></td> <td><input type="hidden" type="text" size="20"
                         id="lastname" name="lastname" value="<?php echo($_POST['lastname']); ?>"></td></tr>
                 </table>
-</fieldset>
 
 <p>
-Name of Teacher completing this form <input type="text" size="30" id="teachername" name="teachername" value="<?php echo($_POST['teachername']); ?>"> <br><br>
-Curriculum or Text(s) used <input type="text" size="30" id="curriculum" name="curriculum" value="<?php echo($_POST['curriculum']); ?>"> &nbsp;&nbsp;&nbsp;&nbsp;
-Grade <select id="curgrade" name="curgrade"><?php
+<input type="hidden" type="text" size="30" id="teachername" name="teachername" value="<?php echo($_POST['teachername']); ?>"> <br><br>
+<input type="hidden" type="text" size="30" id="curriculum" name="curriculum" value="<?php echo($_POST['curriculum']); ?>"> 
+<select id="curgrade" name="curgrade"><?php
 $grades = array("Select", "Kindergarten", "1st grade", "2nd grade", "3rd grade", "4th grade", "5th grade", "6th grade", "7th grade", "8th grade", "9th grade", "10th grade", "11th grade", "12th grade");
 foreach ($grades as $grade) {
         echo "<option value'" . $grade . "' ";
@@ -58,29 +55,23 @@ foreach ($grades as $grade) {
 }
 ?>
 </select><br><br>
-School <input type="text" size="30" id="school" name="school" value="<?php echo($_POST['school']); ?>"> &nbsp;&nbsp;&nbsp;&nbsp;
-Phone <input type="text" size="30" id="phone" name="phone" value="<?php echo($_POST['phone']); ?>">
+<input type="hidden" type="text" size="30" id="school" name="school" value="<?php echo($_POST['school']); ?>">
+ <input type="hidden" type="text" size="30" id="phone" name="phone" value="<?php echo($_POST['phone']); ?>">
 </p>
 
-<table><tr>
-<td width="200"><b>Student Qualities</b></td>
-<td width="50" align="center"><b>Excellent</b></td>
-<td width="50" align="center"><b>Good</b></td>
-<td width="50" align="center"><b>Average</b></td>
-<td width="50" align="center"><b>Fair</b></td>
-<td width="50" align="center"><b>Poor</b></td></tr>
+<table>
 <tr>
-<td>Work Habits</td>
+<td></td>
 <td align="center"><input <?php if(!(strcmp($_POST['workhabits'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" name="workhabits" id="excellent" value="excellent"></td>
+    type="Radio" type="hidden" name="workhabits" id="excellent" value="excellent"></td>
 <td align="center"><input <?php if(!(strcmp($_POST['workhabits'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" name="workhabits" id="good" value="good"></td>
+    type="Radio" type="hidden" name="workhabits" id="good" value="good"></td>
 <td align="center"><input <?php if(!(strcmp($_POST['workhabits'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" name="workhabits" id="average" value="average"></td>
+    type="Radio" type="hidden" name="workhabits" id="average" value="average"></td>
 <td align="center"><input <?php if(!(strcmp($_POST['workhabits'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" name="workhabits" id="fair" value="fair"></td>
+    type="Radio" type="hidden" name="workhabits" id="fair" value="fair"></td>
 <td align="center"><input <?php if(!(strcmp($_POST['workhabits'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" name="workhabits" id="poor" value="poor"></td></tr>
+    type="Radio" type="hidden" name="workhabits" id="poor" value="poor"></td></tr>
 <tr>
 <td>Motivation</td>
 <td align="center"><input <?php if(!(strcmp($_POST['motivation'],"excellent"))) {echo 'checked="checked"';}?>
