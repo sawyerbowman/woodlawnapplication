@@ -24,6 +24,24 @@ function validateForm() {
 	if($_POST['teachername'] == null){
 		$errors[] = 'Please enter a name for the teacher completing this form.';
 	}
+	if($_POST['curriculum'] == null){
+		$errors[] = 'Please enter the curriculum name or the name of a text used in your class.';
+	}
+	if($_POST['curgrade'] == "Select"){
+		$errors[] = 'Please enter the grade level of the applicant when he/she was in your class.';
+	}
+	if($_POST['school'] == null){
+		$errors[] = 'Please enter the name of the school where you taught the applicant.';
+	}
+	if($_POST['phone'] == null){
+		$errors[] = 'Please enter a phone number where we could reach you if further info is needed.';
+	}
+	if($_POST['greatest_strengths'] == null){
+		$errors[] = 'Please enter the greatest strengths of the applicant.';
+	}
+	if($_POST['greatest_challenges'] == null){
+		$errors[] = 'Please enter the greatest challenges faced by the applicant.';
+	}
 
 
 	if(!$errors)
