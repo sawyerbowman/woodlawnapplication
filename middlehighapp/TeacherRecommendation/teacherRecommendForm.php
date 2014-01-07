@@ -380,13 +380,25 @@ foreach ($grades as $grade) {
 <p></p>
 
 <p>What are the student's greatest strengths?<br>
-<textarea id="greatest_strengths" name="greeatest_strengths" rows="7" cols="80" ></textarea></p>
+<textarea id="greatest_strengths" name="greeatest_strengths" rows="7" cols="80" ><?php
+if(isset($_POST['greatest_strengths'])) {
+        echo ($_POST['greatest_strengths']);
+}
+?></textarea></p>
 
 <p>What are the student's greatest challenges?<br>
-<textarea id="greatest_challenges" name="greeatest_challenges" rows="7" cols="80" ></textarea></p>
+<textarea id="greatest_challenges" name="greeatest_challenges" rows="7" cols="80" ><?php
+if(isset($_POST['greatest_challenges'])) {
+        echo ($_POST['greatest_challenges']);
+}
+?></textarea></p>
 
 <p>Please provide any additional information that may help us make an informed decision.<br>
-<textarea id="other_info" name="other_info" rows="7" cols="80" ></textarea></p>
+<textarea id="other_info" name="other_info" rows="7" cols="80" ><?php
+if(isset($_POST['other_info'])) {
+        echo ($_POST['other_info']);
+}
+?></textarea></p>
 
 <p></p>
 
