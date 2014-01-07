@@ -25,7 +25,7 @@ action="http://us.1.p10.webhosting.yahoo.com/forms?login=dwayneb">
 if ($_SERVER['SERVER_NAME'] == "localhost") { ?>
 <input type="hidden" name="next_url" value="http://localhost/middlehighapp/TeacherRecommendations/teacherRecommendThankYou.php">
 <?php } else { ?>
-<input type="hidden" name="next_url" value="http://www.woodlawnschool.org/application/teacher_recommendations/teacherRecommendThankYou.php">
+<input type="hidden" name="next_url" value="http://www.woodlawnschool.org/application/teacher_recommendation/teacherRecommendThankYou.php">
 <?php } ?>
 
 <input type="hidden" name="time_date" value="<?php echo($datetime);?>">
@@ -155,178 +155,178 @@ foreach ($grades as $grade) {
     type="Radio" style="display:none;" name="attendance" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['leadership'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="leadership" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="leadership" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['leadership'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="leadership" id="good" value="good">
+    type="Radio" style="display:none;" name="leadership" id="good" value="good">
 <input <?php if(!(strcmp($_POST['leadership'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="leadership" id="average" value="average">
+    type="Radio" style="display:none;" name="leadership" id="average" value="average">
 <input <?php if(!(strcmp($_POST['leadership'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="leadership" id="fair" value="fair">
+    type="Radio" style="display:none;" name="leadership" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['leadership'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="leadership" id="poor" value="poor">
+    type="Radio" style="display:none;" name="leadership" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['peer_relations'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="peer_relations" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="peer_relations" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['peer_relations'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="peer_relations" id="good" value="good">
+    type="Radio" style="display:none;" name="peer_relations" id="good" value="good">
 <input <?php if(!(strcmp($_POST['peer_relations'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="peer_relations" id="average" value="average">
+    type="Radio" style="display:none;" name="peer_relations" id="average" value="average">
 <input <?php if(!(strcmp($_POST['peer_relations'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="peer_relations" id="fair" value="fair">
+    type="Radio" style="display:none;" name="peer_relations" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['peer_relations'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="peer_relations" id="poor" value="poor">
+    type="Radio" style="display:none;" name="peer_relations" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['concern_for_others'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="concern_for_others" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="concern_for_others" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['concern_for_others'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="concern_for_others" id="good" value="good">
+    type="Radio" style="display:none;" name="concern_for_others" id="good" value="good">
 <input <?php if(!(strcmp($_POST['concern_for_others'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="concern_for_others" id="average" value="average">
+    type="Radio" style="display:none;" name="concern_for_others" id="average" value="average">
 <input <?php if(!(strcmp($_POST['concern_for_others'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="concern_for_others" id="fair" value="fair">
+    type="Radio" style="display:none;" name="concern_for_others" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['concern_for_others'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="concern_for_others" id="poor" value="poor">
+    type="Radio" style="display:none;" name="concern_for_others" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['responsibility'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="responsibility" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="responsibility" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['responsibility'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="responsibility" id="good" value="good">
+    type="Radio" style="display:none;" name="responsibility" id="good" value="good">
 <input <?php if(!(strcmp($_POST['responsibility'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="responsibility" id="average" value="average">
+    type="Radio" style="display:none;" name="responsibility" id="average" value="average">
 <input <?php if(!(strcmp($_POST['responsibility'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="responsibility" id="fair" value="fair">
+    type="Radio" style="display:none;" name="responsibility" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['responsibility'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="responsibility" id="poor" value="poor">
+    type="Radio" style="display:none;" name="responsibility" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['resourcefulness'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="resourcefulness" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="resourcefulness" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['resourcefulness'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="resourcefulness" id="good" value="good">
+    type="Radio" style="display:none;" name="resourcefulness" id="good" value="good">
 <input <?php if(!(strcmp($_POST['resourcefulness'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="resourcefulness" id="average" value="average">
+    type="Radio" style="display:none;" name="resourcefulness" id="average" value="average">
 <input <?php if(!(strcmp($_POST['resourcefulness'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="resourcefulness" id="fair" value="fair">
+    type="Radio" style="display:none;" name="resourcefulness" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['resourcefulness'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="resourcefulness" id="poor" value="poor">
+    type="Radio" style="display:none;" name="resourcefulness" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['creativity'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="creativity" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="creativity" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['creativity'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="creativity" id="good" value="good">
+    type="Radio" style="display:none;" name="creativity" id="good" value="good">
 <input <?php if(!(strcmp($_POST['creativity'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="creativity" id="average" value="average">
+    type="Radio" style="display:none;" name="creativity" id="average" value="average">
 <input <?php if(!(strcmp($_POST['creativity'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="creativity" id="fair" value="fair">
+    type="Radio" style="display:none;" name="creativity" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['creativity'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="creativity" id="poor" value="poor">
+    type="Radio" style="display:none;" name="creativity" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['confidence'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="confidence" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="confidence" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['confidence'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="confidence" id="good" value="good">
+    type="Radio" style="display:none;" name="confidence" id="good" value="good">
 <input <?php if(!(strcmp($_POST['confidence'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="confidence" id="average" value="average">
+    type="Radio" style="display:none;" name="confidence" id="average" value="average">
 <input <?php if(!(strcmp($_POST['confidence'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="confidence" id="fair" value="fair">
+    type="Radio" style="display:none;" name="confidence" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['confidence'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="confidence" id="poor" value="poor">
+    type="Radio" style="display:none;" name="confidence" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['humor'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="humor" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="humor" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['humor'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="humor" id="good" value="good">
+    type="Radio" style="display:none;" name="humor" id="good" value="good">
 <input <?php if(!(strcmp($_POST['humor'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="humor" id="average" value="average">
+    type="Radio" style="display:none;" name="humor" id="average" value="average">
 <input <?php if(!(strcmp($_POST['humor'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="humor" id="fair" value="fair">
+    type="Radio" style="display:none;" name="humor" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['humor'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="humor" id="poor" value="poor">
+    type="Radio" style="display:none;" name="humor" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['integrity'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="integrity" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="integrity" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['integrity'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="integrity" id="good" value="good">
+    type="Radio" style="display:none;" name="integrity" id="good" value="good">
 <input <?php if(!(strcmp($_POST['integrity'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="integrity" id="average" value="average">
+    type="Radio" style="display:none;" name="integrity" id="average" value="average">
 <input <?php if(!(strcmp($_POST['integrity'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="integrity" id="fair" value="fair">
+    type="Radio" style="display:none;" name="integrity" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['integrity'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="integrity" id="poor" value="poor">
+    type="Radio" style="display:none;" name="integrity" id="poor" value="poor">
 
 
 <input <?php if(!(strcmp($_POST['reading_fluency'],"above_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="reading_fluency" id="above_level" value="above_level">
+    type="Radio" style="display:none;" name="reading_fluency" id="above_level" value="above_level">
 <input <?php if(!(strcmp($_POST['reading_fluency'],"on_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="reading_fluency" id="on_level" value="on_level">
+    type="Radio" style="display:none;" name="reading_fluency" id="on_level" value="on_level">
 <input <?php if(!(strcmp($_POST['reading_fluency'],"below_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="reading_fluency" id="below_level" value="below_level">
+    type="Radio" style="display:none;" name="reading_fluency" id="below_level" value="below_level">
 
 <input <?php if(!(strcmp($_POST['reading_comp'],"above_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="reading_comp" id="above_level" value="above_level">
+    type="Radio" style="display:none;" name="reading_comp" id="above_level" value="above_level">
 <input <?php if(!(strcmp($_POST['reading_comp'],"on_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="reading_comp" id="on_level" value="on_level">
+    type="Radio" style="display:none;" name="reading_comp" id="on_level" value="on_level">
 <input <?php if(!(strcmp($_POST['reading_comp'],"below_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="reading_comp" id="below_level" value="below_level">
+    type="Radio" style="display:none;" name="reading_comp" id="below_level" value="below_level">
 
 <input <?php if(!(strcmp($_POST['oral_language'],"above_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="oral_language" id="above_level" value="above_level">
+    type="Radio" style="display:none;" name="oral_language" id="above_level" value="above_level">
 <input <?php if(!(strcmp($_POST['oral_language'],"on_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="oral_language" id="on_level" value="on_level">
+    type="Radio" style="display:none;" name="oral_language" id="on_level" value="on_level">
 <input <?php if(!(strcmp($_POST['oral_language'],"below_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="oral_language" id="below_level" value="below_level">
+    type="Radio" style="display:none;" name="oral_language" id="below_level" value="below_level">
 
 <input <?php if(!(strcmp($_POST['writing_content'],"above_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="writing_content" id="above_level" value="above_level">
+    type="Radio" style="display:none;" name="writing_content" id="above_level" value="above_level">
 <input <?php if(!(strcmp($_POST['writing_content'],"on_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="writing_content" id="on_level" value="on_level">
+    type="Radio" style="display:none;" name="writing_content" id="on_level" value="on_level">
 <input <?php if(!(strcmp($_POST['writing_content'],"below_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="writing_content" id="below_level" value="below_level">
+    type="Radio" style="display:none;" name="writing_content" id="below_level" value="below_level">
 
 <input <?php if(!(strcmp($_POST['writing_style'],"above_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="writing_style" id="above_level" value="above_level">
+    type="Radio" style="display:none;" name="writing_style" id="above_level" value="above_level">
 <input <?php if(!(strcmp($_POST['writing_style'],"on_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="writing_style" id="on_level" value="on_level">
+    type="Radio" style="display:none;" name="writing_style" id="on_level" value="on_level">
 <input <?php if(!(strcmp($_POST['writing_style'],"below_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="writing_style" id="below_level" value="below_level">
+    type="Radio" style="display:none;" name="writing_style" id="below_level" value="below_level">
 
 <input <?php if(!(strcmp($_POST['writing_mechanics'],"above_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="writing_mechanics" id="above_level" value="above_level">
+    type="Radio" style="display:none;" name="writing_mechanics" id="above_level" value="above_level">
 <input <?php if(!(strcmp($_POST['writing_mechanics'],"on_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="writing_mechanics" id="on_level" value="on_level">
+    type="Radio" style="display:none;" name="writing_mechanics" id="on_level" value="on_level">
 <input <?php if(!(strcmp($_POST['writing_mechanics'],"below_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="writing_mechanics" id="below_level" value="below_level">
+    type="Radio" style="display:none;" name="writing_mechanics" id="below_level" value="below_level">
 
 <input <?php if(!(strcmp($_POST['math_skills'],"above_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="math_skills" id="above_level" value="above_level">
+    type="Radio" style="display:none;" name="math_skills" id="above_level" value="above_level">
 <input <?php if(!(strcmp($_POST['math_skills'],"on_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="math_skills" id="on_level" value="on_level">
+    type="Radio" style="display:none;" name="math_skills" id="on_level" value="on_level">
 <input <?php if(!(strcmp($_POST['math_skills'],"below_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="math_skills" id="below_level" value="below_level">
+    type="Radio" style="display:none;" name="math_skills" id="below_level" value="below_level">
 
 <input <?php if(!(strcmp($_POST['math_comp'],"above_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="math_comp" id="above_level" value="above_level">
+    type="Radio" style="display:none;" name="math_comp" id="above_level" value="above_level">
 <input <?php if(!(strcmp($_POST['math_comp'],"on_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="math_comp" id="on_level" value="on_level">
+    type="Radio" style="display:none;" name="math_comp" id="on_level" value="on_level">
 <input <?php if(!(strcmp($_POST['math_comp'],"below_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="math_comp" id="below_level" value="below_level">
+    type="Radio" style="display:none;" name="math_comp" id="below_level" value="below_level">
 
 <input <?php if(!(strcmp($_POST['problem_solving'],"above_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="problem_solving" id="above_level" value="above_level">
+    type="Radio" style="display:none;" name="problem_solving" id="above_level" value="above_level">
 <input <?php if(!(strcmp($_POST['problem_solving'],"on_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="problem_solving" id="on_level" value="on_level">
+    type="Radio" style="display:none;" name="problem_solving" id="on_level" value="on_level">
 <input <?php if(!(strcmp($_POST['problem_solving'],"below_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="problem_solving" id="below_level" value="below_level">
+    type="Radio" style="display:none;" name="problem_solving" id="below_level" value="below_level">
 
 <input <?php if(!(strcmp($_POST['critical_thinking'],"above_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="critical_thinking" id="above_level" value="above_level">
+    type="Radio" style="display:none;" name="critical_thinking" id="above_level" value="above_level">
 <input <?php if(!(strcmp($_POST['critical_thinking'],"on_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="critical_thinking" id="on_level" value="on_level">
+    type="Radio" style="display:none;" name="critical_thinking" id="on_level" value="on_level">
 <input <?php if(!(strcmp($_POST['critical_thinking'],"below_level"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="critical_thinking" id="below_level" value="below_level">
+    type="Radio" style="display:none;" name="critical_thinking" id="below_level" value="below_level">
 
-<textarea style="display:none;" id="greatest_strengths" name="greeatest_strengths" rows="7" cols="80" ></textarea>
+<textarea style="display:none;" id="greatest_strengths" name="greatest_strengths" rows="7" cols="80" ></textarea>
 
-<textarea style="display:none;" id="greatest_challenges" name="greeatest_challenges" rows="7" cols="80" ></textarea>
+<textarea style="display:none;" id="greatest_challenges" name="greatest_challenges" rows="7" cols="80" ></textarea>
 
 <textarea style="display:none;" id="other_info" name="other_info" rows="7" cols="80" ></textarea>
 
