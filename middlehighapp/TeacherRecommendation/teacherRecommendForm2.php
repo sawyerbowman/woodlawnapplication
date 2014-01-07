@@ -17,7 +17,7 @@
 $datetime = date('M-d-Y-g-i-a-e');
 ?>
 <p>Your recommendation is being processed... Please wait!</p>
-
+<br>
 <form method="POST" id="teacherRecommendForm2" name="teacherRecommendForm2"
 action="http://us.1.p10.webhosting.yahoo.com/forms?login=dwayneb">
 
@@ -329,9 +329,6 @@ foreach ($grades as $grade) {
 <textarea style="display:none;" id="greatest_challenges" name="greatest_challenges" rows="7" cols="80" ></textarea>
 
 <textarea style="display:none;" id="other_info" name="other_info" rows="7" cols="80" ></textarea>
-
-<button type="submit" value="_form_submit" name="_form_submit">Submit Recommendation </button>
-<button type="reset" value="Clear" name="Clear All">Clear Form</button>
 
 <?php 
 include('../applicationFooter.html');
