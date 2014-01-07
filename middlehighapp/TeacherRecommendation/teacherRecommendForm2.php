@@ -56,103 +56,103 @@ foreach ($grades as $grade) {
  <input type="hidden" type="text" size="30" id="phone" name="phone" value="<?php echo($_POST['phone']); ?>">
 
 <input <?php if(!(strcmp($_POST['workhabits'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="workhabits" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="workhabits" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['workhabits'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="workhabits" id="good" value="good">
+    type="Radio" style="display:none;" name="workhabits" id="good" value="good">
 <input <?php if(!(strcmp($_POST['workhabits'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="workhabits" id="average" value="average">
+    type="Radio" style="display:none;" name="workhabits" id="average" value="average">
 <input <?php if(!(strcmp($_POST['workhabits'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="workhabits" id="fair" value="fair">
+    type="Radio" style="display:none;" name="workhabits" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['workhabits'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="workhabits" id="poor" value="poor">
+    type="Radio" style="display:none;" name="workhabits" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['motivation'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="motivation" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="motivation" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['motivation'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="motivation" id="good" value="good">
+    type="Radio" style="display:none;" name="motivation" id="good" value="good">
 <input <?php if(!(strcmp($_POST['motivation'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="motivation" id="average" value="average">
+    type="Radio" style="display:none;" name="motivation" id="average" value="average">
 <input <?php if(!(strcmp($_POST['motivation'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="motivation" id="fair" value="fair">
+    type="Radio" style="display:none;" name="motivation" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['motivation'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="motivation" id="poor" value="poor">
+    type="Radio" style="display:none;" name="motivation" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['works_independently'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="works_independently" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="works_independently" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['works_independently'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="works_independently" id="good" value="good">
+    type="Radio" style="display:none;" name="works_independently" id="good" value="good">
 <input <?php if(!(strcmp($_POST['works_independently'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="works_independently" id="average" value="average">
+    type="Radio" style="display:none;" name="works_independently" id="average" value="average">
 <input <?php if(!(strcmp($_POST['works_independently'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="works_independently" id="fair" value="fair">
+    type="Radio" style="display:none;" name="works_independently" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['works_independently'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="works_independently" id="poor" value="poor">
+    type="Radio" style="display:none;" name="works_independently" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['works_cooperatively'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="works_cooperatively" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="works_cooperatively" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['works_cooperatively'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="works_cooperatively" id="good" value="good">
+    type="Radio" style="display:none;" name="works_cooperatively" id="good" value="good">
 <input <?php if(!(strcmp($_POST['works_cooperatively'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="works_cooperatively" id="average" value="average">
+    type="Radio" style="display:none;" name="works_cooperatively" id="average" value="average">
 <input <?php if(!(strcmp($_POST['works_cooperatively'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="works_cooperatively" id="fair" value="fair">
+    type="Radio" style="display:none;" name="works_cooperatively" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['works_cooperatively'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="works_cooperatively" id="poor" value="poor">
+    type="Radio" style="display:none;" name="works_cooperatively" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['curiosity'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="curiosity" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="curiosity" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['curiosity'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="curiosity" id="good" value="good">
+    type="Radio" style="display:none;" name="curiosity" id="good" value="good">
 <input <?php if(!(strcmp($_POST['curiosity'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="curiosity" id="average" value="average">
+    type="Radio" style="display:none;" name="curiosity" id="average" value="average">
 <input <?php if(!(strcmp($_POST['curiosity'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="curiosity" id="fair" value="fair">
+    type="Radio" style="display:none;" name="curiosity" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['curiosity'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="curiosity" id="poor" value="poor">
+    type="Radio" style="display:none;" name="curiosity" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['organizational'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="organizational" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="organizational" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['organizational'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="organizational" id="good" value="good">
+    type="Radio" style="display:none;" name="organizational" id="good" value="good">
 <input <?php if(!(strcmp($_POST['organizational'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="organizational" id="average" value="average">
+    type="Radio" style="display:none;" name="organizational" id="average" value="average">
 <input <?php if(!(strcmp($_POST['organizational'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="organizational" id="fair" value="fair">
+    type="Radio" style="display:none;" name="organizational" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['organizational'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="organizational" id="poor" value="poor">
+    type="Radio" style="display:none;" name="organizational" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['behavior'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="behavior" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="behavior" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['behavior'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="behavior" id="good" value="good">
+    type="Radio" style="display:none;" name="behavior" id="good" value="good">
 <input <?php if(!(strcmp($_POST['behavior'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="behavior" id="average" value="average">
+    type="Radio" style="display:none;" name="behavior" id="average" value="average">
 <input <?php if(!(strcmp($_POST['behavior'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="behavior" id="fair" value="fair">
+    type="Radio" style="display:none;" name="behavior" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['behavior'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="behavior" id="poor" value="poor">
+    type="Radio" style="display:none;" name="behavior" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['passion'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="passion" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="passion" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['passion'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="passion" id="good" value="good">
+    type="Radio" style="display:none;" name="passion" id="good" value="good">
 <input <?php if(!(strcmp($_POST['passion'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="passion" id="average" value="average">
+    type="Radio" style="display:none;" name="passion" id="average" value="average">
 <input <?php if(!(strcmp($_POST['passion'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="passion" id="fair" value="fair">
+    type="Radio" style="display:none;" name="passion" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['passion'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="passion" id="poor" value="poor">
+    type="Radio" style="display:none;" name="passion" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['attendance'],"excellent"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="attendance" id="excellent" value="excellent">
+    type="Radio" style="display:none;" name="attendance" id="excellent" value="excellent">
 <input <?php if(!(strcmp($_POST['attendance'],"good"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="attendance" id="good" value="good">
+    type="Radio" style="display:none;" name="attendance" id="good" value="good">
 <input <?php if(!(strcmp($_POST['attendance'],"average"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="attendance" id="average" value="average">
+    type="Radio" style="display:none;" name="attendance" id="average" value="average">
 <input <?php if(!(strcmp($_POST['attendance'],"fair"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="attendance" id="fair" value="fair">
+    type="Radio" style="display:none;" name="attendance" id="fair" value="fair">
 <input <?php if(!(strcmp($_POST['attendance'],"poor"))) {echo 'checked="checked"';}?>
-    type="Radio" type="hidden" name="attendance" id="poor" value="poor">
+    type="Radio" style="display:none;" name="attendance" id="poor" value="poor">
 
 <input <?php if(!(strcmp($_POST['leadership'],"excellent"))) {echo 'checked="checked"';}?>
     type="Radio" type="hidden" name="leadership" id="excellent" value="excellent">
@@ -324,11 +324,11 @@ foreach ($grades as $grade) {
 <input <?php if(!(strcmp($_POST['critical_thinking'],"below_level"))) {echo 'checked="checked"';}?>
     type="Radio" type="hidden" name="critical_thinking" id="below_level" value="below_level">
 
-<textarea type="hidden" id="greatest_strengths" name="greeatest_strengths" rows="7" cols="80" ></textarea>
+<textarea style="display:none;" id="greatest_strengths" name="greeatest_strengths" rows="7" cols="80" ></textarea>
 
-<textarea type="hidden" id="greatest_challenges" name="greeatest_challenges" rows="7" cols="80" ></textarea>
+<textarea style="display:none;" id="greatest_challenges" name="greeatest_challenges" rows="7" cols="80" ></textarea>
 
-<textarea type="hidden" id="other_info" name="other_info" rows="7" cols="80" ></textarea>
+<textarea style="display:none;" id="other_info" name="other_info" rows="7" cols="80" ></textarea>
 
 <button type="submit" value="_form_submit" name="_form_submit">Submit Recommendation </button>
 <button type="reset" value="Clear" name="Clear All">Clear Form</button>
