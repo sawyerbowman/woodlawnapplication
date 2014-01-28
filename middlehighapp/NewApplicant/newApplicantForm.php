@@ -205,7 +205,7 @@ foreach ($years as $year) {
 			<tr><td>School Type</td> <td width="10"></td><td><input <?php if(!(strcmp($_POST['schooltype'],"Public"))) {echo 'checked="checked"';}?> 
 			type="Radio" id="schooltype" name="schooltype" value="Public"> Public </td> <td width="5"></td>
 			<td><input <?php if(!(strcmp($_POST['schooltype'],"Private"))) {echo 'checked="checked"';}?> 
-			type="Radio" id="schooltype" name="schooltype" value="Private"> Private</td></tr>
+			type="Radio" id="schooltype" name="schooltype" value="Private"> Private</td><td>&nbsp;&nbsp;&nbsp;&nbsp;(We will contact this school to request a student transcript.)</td></tr>
 		</table>
 </fieldset>
 
