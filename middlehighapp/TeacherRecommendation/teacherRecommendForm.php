@@ -40,7 +40,7 @@ include_once("teacherRecommendEdit.php");
 <td><input type="text" size="30" id="curriculum" name="curriculum" value="<?php echo($_POST['curriculum']); ?>"> </td>
 <td width="10"></td><td>Grade</td>
 <td><select id="curgrade" name="curgrade"><?php
-$grades = array("Select", "Kindergarten", "1st grade", "2nd grade", "3rd grade", "4th grade", "5th grade", "6th grade", "7th grade", "8th grade", "9th grade", "10th grade", "11th grade", "12th grade");
+$grades = array("Select", "Pre-Kindergarten", "Kindergarten", "1st grade", "2nd grade", "3rd grade", "4th grade", "5th grade", "6th grade", "7th grade", "8th grade", "9th grade", "10th grade", "11th grade", "12th grade");
 foreach ($grades as $grade) {
         echo "<option value'" . $grade . "' ";
         if ($grade == $_POST['curgrade']){
