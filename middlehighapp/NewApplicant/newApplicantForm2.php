@@ -186,6 +186,35 @@ foreach ($years as $year) {
 
                         ?>
 			</select>
+
+<input type="hidden" type="text" size="30"
+			id="schooladdress" name="schooladdress" value="<?php echo($_POST['schooladdress']); ?>">
+
+			<input type="hidden" type="text" size="30"
+			id="schoolcity" name="schoolcity" value="<?php echo($_POST['schoolcity']); ?>">
+			
+			<select
+			style="display:none;" id="schoolstate" name="schoolstate"><?php 
+			$sstates = array("","AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL","IN","IA",
+					        "KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM",
+					        "NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA",
+					        "WV","WI","WY");
+			foreach ($sstates as $sstate) {
+				echo "<option value'" . $sstate ."' ";
+				if ($_POST['schoolstate'] == null){
+					if ($sstate == "NC") echo("SELECTED");
+					echo ">" . $sstate . "</option>";
+				}
+				else {
+					if ($sstate == $_POST['schoolstate']){
+						echo(SELECTED);
+					}
+					echo ">" . $sstate . "</option>";
+				}	
+			}
+			
+			?>
+			</select>
 			
 			<input style="display:none;" <?php if(!(strcmp($_POST['schooltype'],"Public"))) {echo 'checked="checked"';}?> 
 			type="Radio" id="schooltype" name="schooltype" value="Public">
