@@ -200,6 +200,35 @@ foreach ($years as $year) {
 
 			?>
 			</select></td></tr>
+<tr><td>Street Address</td> <td><input type="text" size="30"
+			id="schooladdress" name="schooladdress" value="<?php echo($_POST['schooladdress']); ?>"></td></tr>
+
+			<tr><td>City</td> <td><input type="text" size="30"
+			id="schoolcity" name="schoolcity" value="<?php echo($_POST['schoolcity']); ?>"></td><td width="10"></td>
+			
+			<td>State</td> <td><select
+			id="schoolstate" name="schoolstate">
+			<?php 
+			$sstates = array("","AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL","IN","IA",
+					        "KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM",
+					        "NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA",
+					        "WV","WI","WY");
+			foreach ($sstates as $sstate) {
+				echo "<option value'" . $sstate ."' ";
+				if ($_POST['schoolstate'] == null){
+					if ($sstate == "NC") echo("SELECTED");
+					echo ">" . $sstate . "</option>";
+				}
+				else {
+					if ($sstate == $_POST['schoolstate']){
+						echo(SELECTED);
+					}
+					echo ">" . $sstate . "</option>";
+				}	
+			}
+			
+			?>
+			</select>
 		</table>
 		<table>
 			<tr><td>School Type</td> <td width="10"></td><td><input <?php if(!(strcmp($_POST['schooltype'],"Public"))) {echo 'checked="checked"';}?> 
