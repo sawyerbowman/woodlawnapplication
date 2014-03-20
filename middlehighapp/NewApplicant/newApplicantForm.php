@@ -206,7 +206,7 @@ foreach ($years as $year) {
 			<tr><td>City</td> <td><input type="text" size="30"
 			id="schoolcity" name="schoolcity" value="<?php echo($_POST['schoolcity']); ?>"></td><td width="10"></td>
 			
-			<td>State</td> <td><select
+			<td>State <select
 			id="schoolstate" name="schoolstate">
 			<?php 
 			$sstates = array("","AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL","IN","IA",
